@@ -47,9 +47,13 @@ export default function Navbar() {
           </nav>
 
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
-            <SheetTrigger asChild className="md:hidden">
-              <Button variant="ghost" size="icon">
-                <Menu className="h-6 w-6" />
+            <SheetTrigger asChild>
+              <Button 
+                variant="ghost" 
+                size="icon" 
+                className="md:hidden p-0"
+              >
+                <Menu className="h-6 w-6 text-gray-700" />
               </Button>
             </SheetTrigger>
             <SheetContent>

@@ -26,6 +26,10 @@ const resources = {
         selene: {
           title: "Selene Deposit",
           description: "Our primary deposit showcasing high-quality perlite reserves in a pristine natural setting."
+        },
+        bendicion: {
+          title: "La Bendición Deposit",
+          description: "Our second high-quality perlite deposit, demonstrating the rich mineral resources of our ranch."
         }
       },
       product: {
@@ -85,6 +89,10 @@ const resources = {
         selene: {
           title: "Depósito Selene",
           description: "Nuestro depósito principal que muestra reservas de perlita de alta calidad en un entorno natural prístino."
+        },
+        bendicion: {
+          title: "Depósito La Bendición",
+          description: "Nuestro segundo depósito de perlita de alta calidad, que demuestra los ricos recursos minerales de nuestro rancho."
         }
       },
       product: {

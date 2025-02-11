@@ -32,6 +32,24 @@ export default function Deposits() {
               </p>
             </CardContent>
           </Card>
+
+          <Card className="overflow-hidden">
+            <div className="h-64 w-full relative">
+              <img
+                src="/images/la-bendicion-deposit.jpg"
+                alt="La Bendición Deposit"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <CardContent className="pt-6">
+              <h3 className="text-2xl font-semibold mb-4">
+                {t('deposits.bendicion.title')}
+              </h3>
+              <p className="text-gray-700">
+                {t('deposits.bendicion.description')}
+              </p>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>
