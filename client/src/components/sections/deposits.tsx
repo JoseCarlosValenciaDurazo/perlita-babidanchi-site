@@ -36,7 +36,7 @@ export default function Deposits() {
           <Card className="overflow-hidden">
             <div className="h-64 w-full relative">
               <img
-                src="/images/la-bendicion-deposit.jpg"
+                src="/images/bendicion-deposit.jpg"
                 alt="La Bendición Deposit"
                 className="w-full h-full object-cover"
               />
