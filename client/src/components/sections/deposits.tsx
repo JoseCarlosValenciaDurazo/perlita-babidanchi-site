@@ -18,7 +18,7 @@ export default function Deposits() {
           <Card className="overflow-hidden">
             <div className="h-64 w-full relative">
               <img
-                src="https://images.unsplash.com/photo-1523848309072-c199db53f137"
+                src="/images/selene-deposit.jpg"
                 alt="Selene Deposit"
                 className="w-full h-full object-cover"
               />
