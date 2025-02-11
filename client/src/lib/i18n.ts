@@ -6,18 +6,27 @@ const resources = {
     translation: {
       nav: {
         about: "About Us",
+        deposits: "Deposits",
         product: "Our Product",
         invest: "Invest",
         contact: "Contact",
       },
       hero: {
-        title: "Sonora Perlite Mine",
+        title: "Perlite Babidanchi",
         subtitle: "Premium Perlite Mining Investment Opportunity",
         cta: "Learn More",
       },
       about: {
         title: "About Us",
         description: "Located in the heart of Sonora, Mexico, our family-owned perlite mine represents a unique investment opportunity in the industrial minerals sector. With vast reserves of high-quality perlite and strategic location, we're positioned for significant growth in the North American market.",
+      },
+      deposits: {
+        title: "Our Deposits",
+        description: "We proudly own two premium perlite deposits in our ranch:",
+        selene: {
+          title: "Selene Deposit",
+          description: "Our primary deposit showcasing high-quality perlite reserves in a pristine natural setting."
+        }
       },
       product: {
         title: "What is Perlite?",
@@ -56,18 +65,27 @@ const resources = {
     translation: {
       nav: {
         about: "Nosotros",
+        deposits: "Depósitos",
         product: "Nuestro Producto",
         invest: "Invertir",
         contact: "Contacto",
       },
       hero: {
-        title: "Mina de Perlita Sonora",
+        title: "Perlita Babidanchi",
         subtitle: "Oportunidad de Inversión en Minería de Perlita Premium",
         cta: "Conoce Más",
       },
       about: {
         title: "Sobre Nosotros",
         description: "Ubicada en el corazón de Sonora, México, nuestra mina familiar de perlita representa una oportunidad única de inversión en el sector de minerales industriales. Con vastas reservas de perlita de alta calidad y ubicación estratégica, estamos posicionados para un crecimiento significativo en el mercado norteamericano.",
+      },
+      deposits: {
+        title: "Nuestros Depósitos",
+        description: "Orgullosamente contamos con dos depósitos de perlita premium en nuestro rancho:",
+        selene: {
+          title: "Depósito Selene",
+          description: "Nuestro depósito principal que muestra reservas de perlita de alta calidad en un entorno natural prístino."
+        }
       },
       product: {
         title: "¿Qué es la Perlita?",
