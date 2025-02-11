@@ -16,11 +16,13 @@ export default function Deposits() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <Card className="overflow-hidden">
-            <img
-              src="/attached_assets/Selene%20Deposit.jpg"
-              alt="Selene Deposit"
-              className="w-full h-64 object-cover"
-            />
+            <div className="h-64 w-full relative">
+              <img
+                src="https://images.unsplash.com/photo-1523848309072-c199db53f137"
+                alt="Selene Deposit"
+                className="w-full h-full object-cover"
+              />
+            </div>
             <CardContent className="pt-6">
               <h3 className="text-2xl font-semibold mb-4">
                 {t('deposits.selene.title')}
