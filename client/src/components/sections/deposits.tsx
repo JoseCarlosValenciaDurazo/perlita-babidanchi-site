@@ -17,7 +17,7 @@ export default function Deposits() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <Card className="overflow-hidden">
             <img
-              src="/attached_assets/Selene Deposit.jpg"
+              src="/attached_assets/Selene%20Deposit.jpg"
               alt="Selene Deposit"
               className="w-full h-64 object-cover"
             />
