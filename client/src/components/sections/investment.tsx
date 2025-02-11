@@ -5,6 +5,7 @@ import { TrendingUp } from "lucide-react";
 
 export default function Investment() {
   const { t } = useTranslation();
+  const points = t('investment.points', { returnObjects: true }) as string[];
 
   return (
     <section id="invest" className="py-20 bg-white">
@@ -17,9 +18,9 @@ export default function Investment() {
             {t('investment.description')}
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {t('investment.points', { returnObjects: true }).map((point: string, index: number) => (
+          {points.map((point, index) => (
             <Card key={index}>
               <CardContent className="pt-6">
                 <div className="flex items-center justify-center mb-4">

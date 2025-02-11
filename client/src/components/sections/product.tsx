@@ -4,6 +4,7 @@ import { CheckCircle } from "lucide-react";
 
 export default function Product() {
   const { t } = useTranslation();
+  const uses = t('product.uses', { returnObjects: true }) as string[];
 
   return (
     <section id="product" className="py-20 bg-gray-50">
@@ -18,7 +19,7 @@ export default function Product() {
                 {t('product.description')}
               </p>
               <ul className="space-y-4">
-                {t('product.uses', { returnObjects: true }).map((use: string, index: number) => (
+                {uses.map((use, index) => (
                   <li key={index} className="flex items-center text-gray-700">
                     <CheckCircle className="h-5 w-5 text-green-500 mr-2" />
                     {use}
