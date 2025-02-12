@@ -15,7 +15,7 @@ export default function Footer() {
               Premium perlite mining investment opportunity in Sonora, Mexico.
             </p>
           </div>
-          
+
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Location</h3>
             <p>Sonora, Mexico</p>
@@ -23,7 +23,7 @@ export default function Footer() {
 
           <div>
             <h3 className="text-lg font-semibold text-white mb-4">Contact</h3>
-            <p>Email: info@sonoraperlite.com</p>
+            <p>Email: josecarlosvalencia.contacto@gmail.com</p>
           </div>
         </div>
 
