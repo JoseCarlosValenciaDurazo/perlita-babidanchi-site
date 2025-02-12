@@ -42,26 +42,27 @@ export default function Navbar() {
 
           <nav className="hidden md:flex items-center space-x-8">
             <NavLinks />
-            <LanguageToggle />
           </nav>
 
-          <Sheet open={isOpen} onOpenChange={setIsOpen}>
-            <SheetTrigger asChild>
-              <Button 
-                variant="ghost" 
-                size="icon" 
-                className="md:hidden p-0"
-              >
-                <Menu className="h-6 w-6 text-gray-700" />
-              </Button>
-            </SheetTrigger>
-            <SheetContent>
-              <nav className="flex flex-col space-y-4 mt-8">
-                <NavLinks />
-                <LanguageToggle />
-              </nav>
-            </SheetContent>
-          </Sheet>
+          <div className="flex items-center space-x-2">
+            <LanguageToggle />
+            <Sheet open={isOpen} onOpenChange={setIsOpen}>
+              <SheetTrigger asChild>
+                <Button 
+                  variant="ghost" 
+                  size="icon" 
+                  className="md:hidden p-0"
+                >
+                  <Menu className="h-6 w-6 text-gray-700" />
+                </Button>
+              </SheetTrigger>
+              <SheetContent>
+                <nav className="flex flex-col space-y-4 mt-8">
+                  <NavLinks />
+                </nav>
+              </SheetContent>
+            </Sheet>
+          </div>
         </div>
       </div>
     </header>
