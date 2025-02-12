@@ -8,10 +8,10 @@ export default function Hero() {
       <div 
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: 'url(/images/perlite-mine-bw.jpg)',
+          backgroundImage: 'url(/images/selene-deposit.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          filter: 'brightness(0.7) grayscale(1)',
+          filter: 'brightness(0.7)',
         }}
       />
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
