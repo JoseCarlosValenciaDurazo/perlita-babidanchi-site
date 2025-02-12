@@ -14,17 +14,17 @@ const resources = {
       hero: {
         title: "The Mineral of the Future",
         subtitle: "Perlite Babidanchi",
-        description: "Strategically located in Sonora (US-Mexico border), high-quality deposits, and guaranteed water access. A local solution for the global perlite demand.",
+        description: "Strategically located in Sonora at the US-Mexico border, with high-quality deposits and guaranteed water access A local solution for global perlite demand",
       },
       about: {
         title: "More Than a Mine, a Strategic Resource",
-        history: "Located in the heart of Sonora, our family-owned perlite mine represents a unique investment opportunity in the industrial minerals sector.",
-        mission: "To deliver the highest-quality perlite for strategic markets, responsibly and sustainably.",
-        vision: "To become North America's leading sustainable perlite provider by 2030.",
+        history: "Located in the heart of Sonora, our family-owned perlite mine represents a unique investment opportunity in the industrial minerals sector",
+        mission: "To deliver the highest-quality perlite for strategic markets, responsibly and sustainably",
+        vision: "To become North America's leading sustainable perlite provider by 2030",
       },
       product: {
-        title: "What is Perlite?",
-        description: "A versatile volcanic glass with exceptional value across multiple industries:",
+        title: "What is Perlite",
+        description: "A versatile volcanic glass with exceptional value across multiple industries",
         uses: [
           "Construction & Building Materials",
           "Horticulture & Agriculture",
@@ -36,15 +36,15 @@ const resources = {
         title: "Why Invest in Mina Babidanchi",
         deposits: {
           title: "Two Certified Deposits",
-          description: "Premium quality perlite deposits with proven reserves.",
+          description: "Premium quality perlite deposits with proven reserves",
         },
         location: {
           title: "Strategic Location",
-          description: "3 hours from the US border, enabling fast logistics and reduced costs.",
+          description: "3 hours from the US border, enabling fast logistics and reduced costs",
         },
         water: {
           title: "Guaranteed Water Access",
-          description: "The only mine in the region with a perennial river and active permits.",
+          description: "The only mine in the region with a perennial river and active permits",
         },
         market: {
           price: "Current perlite price: $85 USD/ton",
@@ -65,8 +65,8 @@ const resources = {
         company: "Company Name",
         message: "Your Message",
         submit: "Send Message",
-        success: "Message sent successfully!",
-        error: "Error sending message. Please try again.",
+        success: "Message sent successfully",
+        error: "Error sending message Please try again",
       },
     },
   },
@@ -82,17 +82,17 @@ const resources = {
       hero: {
         title: "El Mineral del Futuro",
         subtitle: "Perlita Babidanchi",
-        description: "Estratégicamente ubicada en Sonora (frontera México-EE.UU.), depósitos de alta calidad y acceso garantizado al agua. Una solución local para la demanda global de perlita.",
+        description: "Estratégicamente ubicada en Sonora en la frontera México-EE.UU, con depósitos de alta calidad y acceso garantizado al agua Una solución local para la demanda global de perlita",
       },
       about: {
         title: "Más que una Mina, un Recurso Estratégico",
-        history: "Ubicada en el corazón de Sonora, nuestra mina familiar de perlita representa una oportunidad única de inversión en el sector de minerales industriales.",
-        mission: "Entregar perlita de la más alta calidad para mercados estratégicos, de manera responsable y sostenible.",
-        vision: "Convertirnos en el principal proveedor de perlita sostenible de Norteamérica para 2030.",
+        history: "Ubicada en el corazón de Sonora, nuestra mina familiar de perlita representa una oportunidad única de inversión en el sector de minerales industriales",
+        mission: "Entregar perlita de la más alta calidad para mercados estratégicos, de manera responsable y sostenible",
+        vision: "Convertirnos en el principal proveedor de perlita sostenible de Norteamérica para 2030",
       },
       product: {
         title: "¿Qué es la Perlita?",
-        description: "Un vidrio volcánico versátil con valor excepcional en múltiples industrias:",
+        description: "Un vidrio volcánico versátil con valor excepcional en múltiples industrias",
         uses: [
           "Construcción y Materiales de Construcción",
           "Horticultura y Agricultura",
@@ -101,22 +101,22 @@ const resources = {
         ],
       },
       investment: {
-        title: "¿Por Qué Invertir en Mina Babidanchi?",
+        title: "¿Por qué Invertir en Mina Babidanchi?",
         deposits: {
           title: "Dos Depósitos Certificados",
-          description: "Depósitos de perlita de alta calidad con reservas probadas.",
+          description: "Depósitos de perlita de alta calidad con reservas probadas",
         },
         location: {
           title: "Ubicación Estratégica",
-          description: "A 3 horas de la frontera con EE. UU., lo que permite una logística rápida y costos reducidos.",
+          description: "A 3 horas de la frontera con EE.UU, permitiendo una logística rápida y costos reducidos",
         },
         water: {
           title: "Acceso Garantizado al Agua",
-          description: "La única mina en la región con un río perenne y permisos activos.",
+          description: "La única mina en la región con un río perenne y permisos activos",
         },
         market: {
           price: "Precio actual de la perlita: $85 USD/ton",
-          imports: "El 80% de la perlita de EE. UU. se importa de Grecia y Turquía",
+          imports: "El 80% de la perlita de EE.UU se importa de Grecia y Turquía",
         },
       },
       sustainability: {
@@ -133,8 +133,8 @@ const resources = {
         company: "Nombre de la Empresa",
         message: "Su Mensaje",
         submit: "Enviar Mensaje",
-        success: "¡Mensaje enviado exitosamente!",
-        error: "Error al enviar mensaje. Por favor intente nuevamente.",
+        success: "Mensaje enviado exitosamente",
+        error: "Error al enviar mensaje Intente nuevamente",
       },
     },
   },
