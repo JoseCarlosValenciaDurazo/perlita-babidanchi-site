@@ -12,9 +12,8 @@ export default function Navbar() {
 
   const navItems = [
     { href: "#about", label: t('nav.about') },
-    { href: "#deposits", label: t('nav.deposits') },
-    { href: "#product", label: t('nav.product') },
-    { href: "#invest", label: t('nav.invest') },
+    { href: "#investment", label: t('nav.investment') },
+    { href: "#sustainability", label: t('nav.sustainability') },
     { href: "#contact", label: t('nav.contact') },
   ];
 
@@ -24,7 +23,7 @@ export default function Navbar() {
         <a
           key={item.href}
           href={item.href}
-          className="text-gray-700 hover:text-primary transition-colors"
+          className="text-gray-700 hover:text-primary transition-colors text-sm font-medium"
           onClick={() => setIsOpen(false)}
         >
           {item.label}
@@ -34,11 +33,11 @@ export default function Navbar() {
   );
 
   return (
-    <header className="fixed w-full top-0 z-50 bg-white/80 backdrop-blur-sm border-b">
+    <header className="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-sm border-b border-gray-100">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="font-bold text-xl text-primary">
-            Sonora Perlite
+          <Link href="/" className="font-bold text-xl text-gray-900">
+            Mina Babidanchi
           </Link>
 
           <nav className="hidden md:flex items-center space-x-8">
