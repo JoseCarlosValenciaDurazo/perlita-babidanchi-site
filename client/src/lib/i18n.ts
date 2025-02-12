@@ -60,7 +60,7 @@ const resources = {
           solution2: "Two massive deposits (50M+ ton reserves)"
         },
         stats: {
-          title: "Key Statistics (2020-2024)",
+          title: "U.S. Key Statistics (2020-2024)",
           headers: {
             metric: "Metric",
             y2020: "2020",
@@ -187,7 +187,7 @@ const resources = {
           solution2: "Dos depósitos masivos (reservas de 50M+ toneladas)"
         },
         stats: {
-          title: "Estadísticas Clave (2020-2024)",
+          title: "Estadísticas Clave de EE.UU. (2020-2024)",
           headers: {
             metric: "Concepto",
             y2020: "2020",
