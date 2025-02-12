@@ -61,33 +61,51 @@ export default function Investment() {
             </CardContent>
           </Card>
 
-          {/* Cost Advantage Table */}
+          {/* Statistics Table */}
           <Card className="bg-white">
             <CardContent className="pt-6">
               <h3 className="text-2xl font-semibold mb-6 text-gray-900">
-                {t('investment.cost_advantage.title')}
+                {t('investment.stats.title')}
               </h3>
               <Table>
                 <TableHeader>
                   <TableRow>
-                    <TableHead>{t('investment.cost_advantage.metric')}</TableHead>
-                    <TableHead>{t('investment.cost_advantage.traditional')}</TableHead>
-                    <TableHead>{t('investment.cost_advantage.babidanchi')}</TableHead>
+                    <TableHead>{t('investment.stats.headers.metric')}</TableHead>
+                    <TableHead>{t('investment.stats.headers.y2020')}</TableHead>
+                    <TableHead>{t('investment.stats.headers.y2024')}</TableHead>
+                    <TableHead>{t('investment.stats.headers.trend')}</TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
                   <TableRow>
-                    <TableCell className="text-gray-700">{t('investment.cost_advantage.price')}</TableCell>
-                    <TableCell className="text-gray-700">{t('investment.cost_advantage.price_traditional')}</TableCell>
-                    <TableCell className="text-gray-700">{t('investment.cost_advantage.price_babidanchi')}</TableCell>
+                    <TableCell className="text-gray-700">{t('investment.stats.rows.production.label')}</TableCell>
+                    <TableCell className="text-gray-700">{t('investment.stats.rows.production.y2020')}</TableCell>
+                    <TableCell className="text-gray-700">{t('investment.stats.rows.production.y2024')}</TableCell>
+                    <TableCell className="text-gray-700">{t('investment.stats.rows.production.trend')}</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell className="text-gray-700">{t('investment.cost_advantage.delivery')}</TableCell>
-                    <TableCell className="text-gray-700">{t('investment.cost_advantage.delivery_traditional')}</TableCell>
-                    <TableCell className="text-gray-700">{t('investment.cost_advantage.delivery_babidanchi')}</TableCell>
+                    <TableCell className="text-gray-700">{t('investment.stats.rows.imports.label')}</TableCell>
+                    <TableCell className="text-gray-700">{t('investment.stats.rows.imports.y2020')}</TableCell>
+                    <TableCell className="text-gray-700">{t('investment.stats.rows.imports.y2024')}</TableCell>
+                    <TableCell className="text-gray-700">{t('investment.stats.rows.imports.trend')}</TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="text-gray-700">{t('investment.stats.rows.price.label')}</TableCell>
+                    <TableCell className="text-gray-700">{t('investment.stats.rows.price.y2020')}</TableCell>
+                    <TableCell className="text-gray-700">{t('investment.stats.rows.price.y2024')}</TableCell>
+                    <TableCell className="text-gray-700">{t('investment.stats.rows.price.trend')}</TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="text-gray-700">{t('investment.stats.rows.dependency.label')}</TableCell>
+                    <TableCell className="text-gray-700">{t('investment.stats.rows.dependency.y2020')}</TableCell>
+                    <TableCell className="text-gray-700">{t('investment.stats.rows.dependency.y2024')}</TableCell>
+                    <TableCell className="text-gray-700">{t('investment.stats.rows.dependency.trend')}</TableCell>
                   </TableRow>
                 </TableBody>
               </Table>
+              <p className="text-sm text-gray-500 mt-4">
+                {t('investment.stats.source')}
+              </p>
             </CardContent>
           </Card>
         </div>

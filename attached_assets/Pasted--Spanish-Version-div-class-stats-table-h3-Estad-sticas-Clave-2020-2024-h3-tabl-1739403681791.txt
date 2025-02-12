@@ -1,0 +1,106 @@
+<!-- Spanish Version -->
+<div class="stats-table">
+  <h3>Estadísticas Clave (2020-2024)</h3>
+  <table>
+    <tr>
+      <th>Concepto</th>
+      <th>2020</th>
+      <th>2024</th>
+      <th>Tendencia</th>
+    </tr>
+    <tr>
+      <td>Producción minera (ton)</td>
+      <td>853,000</td>
+      <td>690,000</td>
+      <td>↓ Reducción</td>
+    </tr>
+    <tr>
+      <td>Importaciones (ton)</td>
+      <td>160,000</td>
+      <td>180,000</td>
+      <td>↑ Aumento</td>
+    </tr>
+    <tr>
+      <td>Precio promedio (USD/ton)</td>
+      <td>$61</td>
+      <td>$75</td>
+      <td>↑ +23%</td>
+    </tr>
+    <tr>
+      <td>Dependencia de importaciones</td>
+      <td>21%</td>
+      <td>26%</td>
+      <td>↑ Mayor dependencia</td>
+    </tr>
+  </table>
+  <p class="source">Proveedores externos: 93% de las importaciones vienen de Grecia, 4% de China (USGS, 2024)</p>
+</div>
+
+<!-- English Version -->
+<div class="stats-table">
+  <h3>Key Statistics (2020-2024)</h3>
+  <table>
+    <tr>
+      <th>Metric</th>
+      <th>2020</th>
+      <th>2024</th>
+      <th>Trend</th>
+    </tr>
+    <tr>
+      <td>Mine production (tons)</td>
+      <td>853,000</td>
+      <td>690,000</td>
+      <td>↓ Decrease</td>
+    </tr>
+    <tr>
+      <td>Imports (tons)</td>
+      <td>160,000</td>
+      <td>180,000</td>
+      <td>↑ Increase</td>
+    </tr>
+    <tr>
+      <td>Average price (USD/ton)</td>
+      <td>$61</td>
+      <td>$75</td>
+      <td>↑ +23%</td>
+    </tr>
+    <tr>
+      <td>Import dependency</td>
+      <td>21%</td>
+      <td>26%</td>
+      <td>↑ Higher dependency</td>
+    </tr>
+  </table>
+  <p class="source">External suppliers: 93% of imports come from Greece, 4% from China (USGS, 2024)</p>
+</div>
+
+<style>
+.stats-table {
+  margin: 2rem 0;
+  overflow-x: auto;
+}
+
+.stats-table table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+.stats-table th, 
+.stats-table td {
+  padding: 0.8rem;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+.stats-table th {
+  background: #f5f5f5;
+  font-weight: 600;
+}
+
+.source {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 1rem;
+}
+</style>

@@ -50,22 +50,50 @@ const resources = {
         subtitle: "The Local Solution to America's Perlite Dependency",
         perlite_gap: {
           title: "The Growing U.S. Perlite Gap",
+          table_headers: {
+            problem: "Problem",
+            solution: "Our Solution"
+          },
           problem1: "U.S. imports 93% of perlite from distant countries (USGS, 2024)",
           solution1: "Strategic location: 3-hour delivery to Arizona vs. 30+ days from Greece",
           problem2: "U.S. production ↓15% since 2020",
           solution2: "Two massive deposits (50M+ ton reserves)"
         },
-        cost_advantage: {
-          title: "Cost Advantage",
-          metric: "Metric",
-          traditional: "Traditional Imports",
-          babidanchi: "Mina Babidanchi",
-          price: "Avg. Price/ton",
-          price_traditional: "$75 + shipping",
-          price_babidanchi: "$60 (local logistics)",
-          delivery: "Delivery Time",
-          delivery_traditional: "30-45 days",
-          delivery_babidanchi: "3 hours"
+        stats: {
+          title: "Key Statistics (2020-2024)",
+          headers: {
+            metric: "Metric",
+            y2020: "2020",
+            y2024: "2024",
+            trend: "Trend"
+          },
+          rows: {
+            production: {
+              label: "Mine production (tons)",
+              y2020: "853,000",
+              y2024: "690,000",
+              trend: "↓ Decrease"
+            },
+            imports: {
+              label: "Imports (tons)",
+              y2020: "160,000",
+              y2024: "180,000",
+              trend: "↑ Increase"
+            },
+            price: {
+              label: "Average price (USD/ton)",
+              y2020: "$61",
+              y2024: "$75",
+              trend: "↑ +23%"
+            },
+            dependency: {
+              label: "Import dependency",
+              y2020: "21%",
+              y2024: "26%",
+              trend: "↑ Higher dependency"
+            }
+          },
+          source: "External suppliers: 93% of imports come from Greece, 4% from China (USGS, 2024)"
         },
         deposits: {
           title: "Two Certified Deposits",
@@ -158,17 +186,41 @@ const resources = {
           problem2: "Producción de EE.UU. ↓15% desde 2020",
           solution2: "Dos depósitos masivos (reservas de 50M+ toneladas)"
         },
-        cost_advantage: {
-          title: "Ventaja en Costos",
-          metric: "Métrica",
-          traditional: "Importaciones Tradicionales",
-          babidanchi: "Mina Babidanchi",
-          price: "Precio Promedio/ton",
-          price_traditional: "$75 + envío",
-          price_babidanchi: "$60 (logística local)",
-          delivery: "Tiempo de Entrega",
-          delivery_traditional: "30-45 días",
-          delivery_babidanchi: "3 horas"
+        stats: {
+          title: "Estadísticas Clave (2020-2024)",
+          headers: {
+            metric: "Concepto",
+            y2020: "2020",
+            y2024: "2024",
+            trend: "Tendencia"
+          },
+          rows: {
+            production: {
+              label: "Producción minera (ton)",
+              y2020: "853,000",
+              y2024: "690,000",
+              trend: "↓ Reducción"
+            },
+            imports: {
+              label: "Importaciones (ton)",
+              y2020: "160,000",
+              y2024: "180,000",
+              trend: "↑ Aumento"
+            },
+            price: {
+              label: "Precio promedio (USD/ton)",
+              y2020: "$61",
+              y2024: "$75",
+              trend: "↑ +23%"
+            },
+            dependency: {
+              label: "Dependencia de importaciones",
+              y2020: "21%",
+              y2024: "26%",
+              trend: "↑ Mayor dependencia"
+            }
+          },
+          source: "Proveedores externos: 93% de las importaciones vienen de Grecia, 4% de China (USGS, 2024)"
         },
         deposits: {
           title: "Dos Depósitos Certificados",
