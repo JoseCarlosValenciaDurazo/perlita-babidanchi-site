@@ -149,6 +149,10 @@ const resources = {
         subtitle: "La Solución Local para la Dependencia de Perlita en América",
         perlite_gap: {
           title: "La Creciente Brecha de Perlita en EE.UU.",
+          table_headers: {
+            problem: "Problema",
+            solution: "Nuestra Solución"
+          },
           problem1: "EE.UU. importa el 93% de perlita de países lejanos (USGS, 2024)",
           solution1: "Ubicación estratégica: entrega en 3 horas a Arizona vs. 30+ días desde Grecia",
           problem2: "Producción de EE.UU. ↓15% desde 2020",

@@ -35,8 +35,8 @@ export default function Investment() {
               <Table>
                 <TableHeader>
                   <TableRow>
-                    <TableHead>Problem</TableHead>
-                    <TableHead>Our Solution</TableHead>
+                    <TableHead>{t('investment.perlite_gap.table_headers.problem')}</TableHead>
+                    <TableHead>{t('investment.perlite_gap.table_headers.solution')}</TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
