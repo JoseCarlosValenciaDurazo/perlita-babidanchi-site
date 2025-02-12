@@ -30,7 +30,7 @@ export default function Product() {
           </Card>
           <div className="flex items-center justify-center">
             <img
-              src="/images/perlite-samples.jpg"
+              src="/images/Perlita2.jpg"
               alt="Perlite Samples"
               className="rounded-lg shadow-lg w-full h-[400px] object-cover"
             />

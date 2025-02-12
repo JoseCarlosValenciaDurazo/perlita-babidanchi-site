@@ -27,7 +27,6 @@ export default function Contact() {
     defaultValues: {
       name: "",
       email: "",
-      company: "",
       message: "",
     },
   });
@@ -56,7 +55,7 @@ export default function Contact() {
         <h2 className="text-4xl font-bold mb-12 text-center text-gray-900">
           {t('contact.title')}
         </h2>
-        
+
         <Card className="max-w-2xl mx-auto">
           <CardContent className="pt-6">
             <Form {...form}>
@@ -86,20 +85,6 @@ export default function Contact() {
                       <FormLabel>{t('contact.email')}</FormLabel>
                       <FormControl>
                         <Input type="email" {...field} />
-                      </FormControl>
-                      <FormMessage />
-                    </FormItem>
-                  )}
-                />
-
-                <FormField
-                  control={form.control}
-                  name="company"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel>{t('contact.company')}</FormLabel>
-                      <FormControl>
-                        <Input {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
