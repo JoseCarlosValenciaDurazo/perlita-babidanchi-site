@@ -16,7 +16,7 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
             <img
-              src="/images/perlite-mine.jpg"
+              src="/images/Perlita.jpg"
               alt="Mining Operations"
               className="rounded-xl shadow-lg w-full h-[500px] object-cover"
             />
