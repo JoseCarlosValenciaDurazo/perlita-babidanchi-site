@@ -1,0 +1,105 @@
+<!-- Why Invest Section -->
+<section id="invest">
+    <h2>Why Invest in Mina Babidanchi?<br><span class="subtitle">The Local Solution to America’s Perlite Dependency</span></h2>
+
+    <!-- Key Data Tables -->
+    <div class="data-table">
+        <h3>The Growing U.S. Perlite Gap</h3>
+        <table>
+            <tr>
+                <th>Problem</th>
+                <th>Our Solution</th>
+            </tr>
+            <tr>
+                <td>U.S. imports 93% of perlite from distant countries (USGS, 2024)</td>
+                <td>Strategic location: 3-hour delivery to Arizona vs. 30+ days from Greece</td>
+            </tr>
+            <tr>
+                <td>U.S. production ↓15% since 2020</td>
+                <td>Two massive deposits (50M+ ton reserves)</td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="data-table">
+        <h3>Cost Advantage</h3>
+        <table>
+            <tr>
+                <th>Metric</th>
+                <th>Traditional Imports</th>
+                <th>Mina Babidanchi</th>
+            </tr>
+            <tr>
+                <td>Avg. Price/ton</td>
+                <td>$75 + shipping</td>
+                <td>$60 (local logistics)</td>
+            </tr>
+            <tr>
+                <td>Delivery Time</td>
+                <td>30-45 days</td>
+                <td>3 hours</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- Visual Placeholders (Add images later) -->
+    <div class="visual">
+        <p>📍 [MAP: Greece-to-US vs. Sonora-to-US routes]</p>
+        <p>📊 [BAR CHART: "U.S. Perlite Imports: 93% from Overseas"]</p>
+    </div>
+
+    <!-- CTA -->
+    <div class="highlight">
+        <p>"Join the shift: Supply America’s perlite demand from Mexico’s most strategic mine."</p>
+    </div>
+
+    <!-- Source -->
+    <p class="source">Data source: U.S. Geological Survey (USGS) Mineral Commodity Summaries, 2024</p>
+</section>
+
+<!-- Add this CSS -->
+<style>
+    #invest {
+        padding: 4rem 5%;
+        background: #f9f9f9;
+    }
+    .data-table {
+        margin: 2rem 0;
+        overflow-x: auto;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 1rem 0;
+    }
+    th, td {
+        padding: 1rem;
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+    th {
+        background: #6C9BCF;
+        color: white;
+    }
+    .highlight {
+        background: #fff;
+        border-left: 4px solid #6C9BCF;
+        padding: 1.5rem;
+        margin: 2rem 0;
+        font-size: 1.2rem;
+    }
+    .subtitle {
+        font-size: 1.2rem;
+        color: #666;
+    }
+    .source {
+        font-size: 0.9rem;
+        color: #888;
+        margin-top: 2rem;
+    }
+    .visual {
+        text-align: center;
+        margin: 3rem 0;
+        color: #666;
+    }
+</style>
