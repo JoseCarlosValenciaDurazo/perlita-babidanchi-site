@@ -5,36 +5,26 @@ const resources = {
   en: {
     translation: {
       nav: {
-        about: "About Us",
-        deposits: "Deposits",
-        product: "Our Product",
-        invest: "Invest",
+        home: "Home",
+        about: "About",
+        investment: "Investment",
+        sustainability: "Sustainability",
         contact: "Contact",
       },
       hero: {
-        title: "Perlite Babidanchi",
-        subtitle: "Premium Perlite Mining Investment Opportunity",
-        cta: "Learn More",
+        title: "The Mineral of the Future",
+        subtitle: "Perlite Babidanchi",
+        description: "Strategically located in Sonora (US-Mexico border), high-quality deposits, and guaranteed water access. A local solution for the global perlite demand.",
       },
       about: {
-        title: "About Us",
-        description: "Located in the heart of Sonora, Mexico, our family-owned perlite mine represents a unique investment opportunity in the industrial minerals sector. With vast reserves of high-quality perlite and strategic location, we're positioned for significant growth in the North American market.",
-      },
-      deposits: {
-        title: "Our Deposits",
-        description: "We proudly own two premium perlite deposits in our ranch:",
-        selene: {
-          title: "Selene Deposit",
-          description: "Our primary deposit showcasing high-quality perlite reserves in a pristine natural setting."
-        },
-        bendicion: {
-          title: "La Bendición Deposit",
-          description: "Our second high-quality perlite deposit, demonstrating the rich mineral resources of our ranch."
-        }
+        title: "More Than a Mine, a Strategic Resource",
+        history: "Located in the heart of Sonora, our family-owned perlite mine represents a unique investment opportunity in the industrial minerals sector.",
+        mission: "To deliver the highest-quality perlite for strategic markets, responsibly and sustainably.",
+        vision: "To become North America's leading sustainable perlite provider by 2030.",
       },
       product: {
         title: "What is Perlite?",
-        description: "Perlite is a versatile volcanic glass with exceptional value across multiple industries:",
+        description: "A versatile volcanic glass with exceptional value across multiple industries:",
         uses: [
           "Construction & Building Materials",
           "Horticulture & Agriculture",
@@ -43,18 +33,33 @@ const resources = {
         ],
       },
       investment: {
-        title: "Investment Opportunity",
-        description: "Join us in developing this promising perlite mining operation:",
+        title: "Why Invest in Mina Babidanchi",
+        deposits: {
+          title: "Two Certified Deposits",
+          description: "Premium quality perlite deposits with proven reserves.",
+        },
+        location: {
+          title: "Strategic Location",
+          description: "3 hours from the US border, enabling fast logistics and reduced costs.",
+        },
+        water: {
+          title: "Guaranteed Water Access",
+          description: "The only mine in the region with a perennial river and active permits.",
+        },
+        market: {
+          price: "Current perlite price: $85 USD/ton",
+          imports: "80% of US perlite is imported from Greece and Turkey",
+        },
+      },
+      sustainability: {
+        title: "Commitment to the Future",
         points: [
-          "Strategic Location in Sonora",
-          "Vast Mineral Reserves",
-          "Growing Market Demand",
-          "Export Potential",
+          "Low-impact extraction technology",
+          "Investment in Sonora's community development programs",
         ],
-        cta: "Contact Us for Investment Details",
       },
       contact: {
-        title: "Contact Us",
+        title: "Let's Talk Opportunities",
         name: "Full Name",
         email: "Email Address",
         company: "Company Name",
@@ -68,36 +73,26 @@ const resources = {
   es: {
     translation: {
       nav: {
+        home: "Inicio",
         about: "Nosotros",
-        deposits: "Depósitos",
-        product: "Nuestro Producto",
-        invest: "Invertir",
+        investment: "Inversión",
+        sustainability: "Sustentabilidad",
         contact: "Contacto",
       },
       hero: {
-        title: "Perlita Babidanchi",
-        subtitle: "Oportunidad de Inversión en Minería de Perlita Premium",
-        cta: "Conoce Más",
+        title: "El Mineral del Futuro",
+        subtitle: "Perlita Babidanchi",
+        description: "Estratégicamente ubicada en Sonora (frontera México-EE.UU.), depósitos de alta calidad y acceso garantizado al agua. Una solución local para la demanda global de perlita.",
       },
       about: {
-        title: "Sobre Nosotros",
-        description: "Ubicada en el corazón de Sonora, México, nuestra mina familiar de perlita representa una oportunidad única de inversión en el sector de minerales industriales. Con vastas reservas de perlita de alta calidad y ubicación estratégica, estamos posicionados para un crecimiento significativo en el mercado norteamericano.",
-      },
-      deposits: {
-        title: "Nuestros Depósitos",
-        description: "Orgullosamente contamos con dos depósitos de perlita premium en nuestro rancho:",
-        selene: {
-          title: "Depósito Selene",
-          description: "Nuestro depósito principal que muestra reservas de perlita de alta calidad en un entorno natural prístino."
-        },
-        bendicion: {
-          title: "Depósito La Bendición",
-          description: "Nuestro segundo depósito de perlita de alta calidad, que demuestra los ricos recursos minerales de nuestro rancho."
-        }
+        title: "Más que una Mina, un Recurso Estratégico",
+        history: "Ubicada en el corazón de Sonora, nuestra mina familiar de perlita representa una oportunidad única de inversión en el sector de minerales industriales.",
+        mission: "Entregar perlita de la más alta calidad para mercados estratégicos, de manera responsable y sostenible.",
+        vision: "Convertirnos en el principal proveedor de perlita sostenible de Norteamérica para 2030.",
       },
       product: {
         title: "¿Qué es la Perlita?",
-        description: "La perlita es un vidrio volcánico versátil con valor excepcional en múltiples industrias:",
+        description: "Un vidrio volcánico versátil con valor excepcional en múltiples industrias:",
         uses: [
           "Construcción y Materiales de Construcción",
           "Horticultura y Agricultura",
@@ -106,18 +101,33 @@ const resources = {
         ],
       },
       investment: {
-        title: "Oportunidad de Inversión",
-        description: "Únase a nosotros en el desarrollo de esta prometedora operación minera de perlita:",
+        title: "¿Por Qué Invertir en Mina Babidanchi?",
+        deposits: {
+          title: "Dos Depósitos Certificados",
+          description: "Depósitos de perlita de alta calidad con reservas probadas.",
+        },
+        location: {
+          title: "Ubicación Estratégica",
+          description: "A 3 horas de la frontera con EE. UU., lo que permite una logística rápida y costos reducidos.",
+        },
+        water: {
+          title: "Acceso Garantizado al Agua",
+          description: "La única mina en la región con un río perenne y permisos activos.",
+        },
+        market: {
+          price: "Precio actual de la perlita: $85 USD/ton",
+          imports: "El 80% de la perlita de EE. UU. se importa de Grecia y Turquía",
+        },
+      },
+      sustainability: {
+        title: "Compromiso con el Futuro",
         points: [
-          "Ubicación Estratégica en Sonora",
-          "Vastas Reservas Minerales",
-          "Demanda Creciente del Mercado",
-          "Potencial de Exportación",
+          "Tecnología de extracción de bajo impacto",
+          "Inversión en programas de desarrollo comunitario de Sonora",
         ],
-        cta: "Contáctenos para Detalles de Inversión",
       },
       contact: {
-        title: "Contáctenos",
+        title: "Hablemos de Oportunidades",
         name: "Nombre Completo",
         email: "Correo Electrónico",
         company: "Nombre de la Empresa",
