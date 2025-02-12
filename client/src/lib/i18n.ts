@@ -47,6 +47,26 @@ const resources = {
       },
       investment: {
         title: "Why Invest in Mina Babidanchi",
+        subtitle: "The Local Solution to America's Perlite Dependency",
+        perlite_gap: {
+          title: "The Growing U.S. Perlite Gap",
+          problem1: "U.S. imports 93% of perlite from distant countries (USGS, 2024)",
+          solution1: "Strategic location: 3-hour delivery to Arizona vs. 30+ days from Greece",
+          problem2: "U.S. production ↓15% since 2020",
+          solution2: "Two massive deposits (50M+ ton reserves)"
+        },
+        cost_advantage: {
+          title: "Cost Advantage",
+          metric: "Metric",
+          traditional: "Traditional Imports",
+          babidanchi: "Mina Babidanchi",
+          price: "Avg. Price/ton",
+          price_traditional: "$75 + shipping",
+          price_babidanchi: "$60 (local logistics)",
+          delivery: "Delivery Time",
+          delivery_traditional: "30-45 days",
+          delivery_babidanchi: "3 hours"
+        },
         deposits: {
           title: "Two Certified Deposits",
           description: "Premium quality perlite deposits with proven reserves"
@@ -59,10 +79,8 @@ const resources = {
           title: "Guaranteed Water Access",
           description: "The only mine in the region with a perennial river and active permits"
         },
-        market: {
-          price: "Current perlite price: $85 USD/ton",
-          imports: "80% of US perlite is imported from Greece and Turkey"
-        }
+        highlight: "Join the shift: Supply America's perlite demand from Mexico's most strategic mine.",
+        source: "Data source: U.S. Geological Survey (USGS) Mineral Commodity Summaries, 2024"
       },
       sustainability: {
         title: "Commitment to the Future",
@@ -128,6 +146,26 @@ const resources = {
       },
       investment: {
         title: "¿Por qué Invertir en Mina Babidanchi?",
+        subtitle: "La Solución Local para la Dependencia de Perlita en América",
+        perlite_gap: {
+          title: "La Creciente Brecha de Perlita en EE.UU.",
+          problem1: "EE.UU. importa el 93% de perlita de países lejanos (USGS, 2024)",
+          solution1: "Ubicación estratégica: entrega en 3 horas a Arizona vs. 30+ días desde Grecia",
+          problem2: "Producción de EE.UU. ↓15% desde 2020",
+          solution2: "Dos depósitos masivos (reservas de 50M+ toneladas)"
+        },
+        cost_advantage: {
+          title: "Ventaja en Costos",
+          metric: "Métrica",
+          traditional: "Importaciones Tradicionales",
+          babidanchi: "Mina Babidanchi",
+          price: "Precio Promedio/ton",
+          price_traditional: "$75 + envío",
+          price_babidanchi: "$60 (logística local)",
+          delivery: "Tiempo de Entrega",
+          delivery_traditional: "30-45 días",
+          delivery_babidanchi: "3 horas"
+        },
         deposits: {
           title: "Dos Depósitos Certificados",
           description: "Depósitos de perlita de alta calidad con reservas probadas"
@@ -140,10 +178,8 @@ const resources = {
           title: "Acceso Garantizado al Agua",
           description: "La única mina en la región con un río perenne y permisos activos"
         },
-        market: {
-          price: "Precio actual de la perlita: $85 USD/ton",
-          imports: "El 80% de la perlita de EE.UU se importa de Grecia y Turquía"
-        }
+        highlight: "Únete al cambio: Suministra la demanda de perlita de América desde la mina más estratégica de México.",
+        source: "Fuente de datos: Resumen de Productos Minerales del Servicio Geológico de EE.UU. (USGS), 2024"
       },
       sustainability: {
         title: "Compromiso con el Futuro",

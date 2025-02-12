@@ -21,7 +21,7 @@ export default function Investment() {
             {t('investment.title')}
           </h2>
           <p className="text-xl text-gray-600">
-            The Local Solution to America's Perlite Dependency
+            {t('investment.subtitle')}
           </p>
         </div>
 
@@ -30,7 +30,7 @@ export default function Investment() {
           <Card className="bg-white">
             <CardContent className="pt-6">
               <h3 className="text-2xl font-semibold mb-6 text-gray-900">
-                The Growing U.S. Perlite Gap
+                {t('investment.perlite_gap.title')}
               </h3>
               <Table>
                 <TableHeader>
@@ -42,18 +42,18 @@ export default function Investment() {
                 <TableBody>
                   <TableRow>
                     <TableCell className="text-gray-700">
-                      U.S. imports 93% of perlite from distant countries (USGS, 2024)
+                      {t('investment.perlite_gap.problem1')}
                     </TableCell>
                     <TableCell className="text-gray-700">
-                      Strategic location: 3-hour delivery to Arizona vs. 30+ days from Greece
+                      {t('investment.perlite_gap.solution1')}
                     </TableCell>
                   </TableRow>
                   <TableRow>
                     <TableCell className="text-gray-700">
-                      U.S. production ↓15% since 2020
+                      {t('investment.perlite_gap.problem2')}
                     </TableCell>
                     <TableCell className="text-gray-700">
-                      Two massive deposits (50M+ ton reserves)
+                      {t('investment.perlite_gap.solution2')}
                     </TableCell>
                   </TableRow>
                 </TableBody>
@@ -65,26 +65,26 @@ export default function Investment() {
           <Card className="bg-white">
             <CardContent className="pt-6">
               <h3 className="text-2xl font-semibold mb-6 text-gray-900">
-                Cost Advantage
+                {t('investment.cost_advantage.title')}
               </h3>
               <Table>
                 <TableHeader>
                   <TableRow>
-                    <TableHead>Metric</TableHead>
-                    <TableHead>Traditional Imports</TableHead>
-                    <TableHead>Mina Babidanchi</TableHead>
+                    <TableHead>{t('investment.cost_advantage.metric')}</TableHead>
+                    <TableHead>{t('investment.cost_advantage.traditional')}</TableHead>
+                    <TableHead>{t('investment.cost_advantage.babidanchi')}</TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
                   <TableRow>
-                    <TableCell className="text-gray-700">Avg. Price/ton</TableCell>
-                    <TableCell className="text-gray-700">$75 + shipping</TableCell>
-                    <TableCell className="text-gray-700">$60 (local logistics)</TableCell>
+                    <TableCell className="text-gray-700">{t('investment.cost_advantage.price')}</TableCell>
+                    <TableCell className="text-gray-700">{t('investment.cost_advantage.price_traditional')}</TableCell>
+                    <TableCell className="text-gray-700">{t('investment.cost_advantage.price_babidanchi')}</TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell className="text-gray-700">Delivery Time</TableCell>
-                    <TableCell className="text-gray-700">30-45 days</TableCell>
-                    <TableCell className="text-gray-700">3 hours</TableCell>
+                    <TableCell className="text-gray-700">{t('investment.cost_advantage.delivery')}</TableCell>
+                    <TableCell className="text-gray-700">{t('investment.cost_advantage.delivery_traditional')}</TableCell>
+                    <TableCell className="text-gray-700">{t('investment.cost_advantage.delivery_babidanchi')}</TableCell>
                   </TableRow>
                 </TableBody>
               </Table>
@@ -141,14 +141,14 @@ export default function Investment() {
         <Card className="bg-white/50 backdrop-blur mb-8">
           <CardContent className="pt-6">
             <p className="text-xl font-semibold text-center text-gray-900">
-              "Join the shift: Supply America's perlite demand from Mexico's most strategic mine."
+              {t('investment.highlight')}
             </p>
           </CardContent>
         </Card>
 
         {/* Source Citation */}
         <p className="text-sm text-gray-500 text-center">
-          Data source: U.S. Geological Survey (USGS) Mineral Commodity Summaries, 2024
+          {t('investment.source')}
         </p>
       </div>
     </section>
