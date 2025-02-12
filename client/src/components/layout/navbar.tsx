@@ -12,8 +12,9 @@ export default function Navbar() {
 
   const navItems = [
     { href: "#about", label: t('nav.about') },
+    { href: "#product", label: t('nav.product') },
     { href: "#investment", label: t('nav.investment') },
-    { href: "#sustainability", label: t('nav.sustainability') },
+    { href: "#deposits", label: t('nav.deposits') },
     { href: "#contact", label: t('nav.contact') },
   ];
 

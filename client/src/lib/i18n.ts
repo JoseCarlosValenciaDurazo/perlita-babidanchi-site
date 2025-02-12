@@ -7,8 +7,9 @@ const resources = {
       nav: {
         home: "Home",
         about: "About",
+        product: "Product",
         investment: "Investment",
-        sustainability: "Sustainability",
+        deposits: "Deposits",
         contact: "Contact",
         language: "en"
       },
@@ -55,7 +56,7 @@ const resources = {
             solution: "Our Solution"
           },
           problem1: "U.S. imports 93% of perlite from distant countries (USGS, 2024)",
-          solution1: "Strategic location: 3-hour delivery to Arizona vs. 30+ days from Greece",
+          solution1: "Eliminate months-long overseas shipments: Supply the U.S. market from a neighboring region.",
           problem2: "U.S. production ↓15% since 2020",
           solution2: "Two massive deposits (50M+ ton reserves)"
         },
@@ -134,8 +135,9 @@ const resources = {
       nav: {
         home: "Inicio",
         about: "Nosotros",
+        product: "Producto",
         investment: "Inversión",
-        sustainability: "Sustentabilidad",
+        deposits: "Depósitos",
         contact: "Contacto",
         language: "es"
       },
@@ -182,7 +184,7 @@ const resources = {
             solution: "Nuestra Solución"
           },
           problem1: "EE.UU. importa el 93% de perlita de países lejanos (USGS, 2024)",
-          solution1: "Ubicación estratégica: entrega en 3 horas a Arizona vs. 30+ días desde Grecia",
+          solution1: "Elimine envíos marítimos de meses: Abastezca el mercado de EE.UU. desde una región vecina.",
           problem2: "Producción de EE.UU. ↓15% desde 2020",
           solution2: "Dos depósitos masivos (reservas de 50M+ toneladas)"
         },
