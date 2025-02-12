@@ -110,6 +110,20 @@ export default function Investment() {
           </Card>
         </div>
 
+        {/* Strategic Advantage Card */}
+        <Card className="bg-white mb-12">
+          <CardContent className="pt-6">
+            <div className="text-center">
+              <h3 className="text-2xl font-semibold mb-3 text-gray-900">
+                {t('investment.strategic_advantage.title')}
+              </h3>
+              <p className="text-lg text-gray-700">
+                {t('investment.strategic_advantage.description')}
+              </p>
+            </div>
+          </CardContent>
+        </Card>
+
         {/* Key Investment Points */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           <Card className="bg-white">
