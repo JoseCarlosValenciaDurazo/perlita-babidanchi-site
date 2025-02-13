@@ -3,7 +3,6 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export default function Deposits() {
   const { t } = useTranslation();
-  console.log("Setting Selene deposit image: /images/Selene Deposit.jpg");
 
   return (
     <section id="deposits" className="py-20 bg-gray-50">
