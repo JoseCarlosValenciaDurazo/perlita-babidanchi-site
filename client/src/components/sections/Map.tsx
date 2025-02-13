@@ -1,40 +1,15 @@
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import 'leaflet/dist/leaflet.css';
-import { Icon } from 'leaflet';
-
 export default function Map() {
-  // Coordinates for Aribabi, Sonora (4WV3+WM)
-  const position: [number, number] = [30.367778, -109.183333];
-
-  // Custom icon to avoid the missing marker issue
-  const customIcon = new Icon({
-    iconUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png',
-    shadowUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png',
-    iconSize: [25, 41],
-    iconAnchor: [12, 41],
-    popupAnchor: [1, -34],
-    shadowSize: [41, 41]
-  });
-
   return (
     <div className="h-[400px] w-full rounded-lg overflow-hidden relative">
-      <MapContainer
-        center={position}
-        zoom={8}
-        style={{ height: '100%', width: '100%' }}
-        zoomControl={false}
-        attributionControl={false}
-      >
-        <TileLayer
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        />
-        <Marker position={position} icon={customIcon}>
-          <Popup>
-            Perlite Babidanchi - Aribabi, Sonora
-          </Popup>
-        </Marker>
-      </MapContainer>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3437.7753773774674!2d-109.18555192361784!3d30.367777974305837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86d20a7c3b6b6b6b%3A0x0!2zMzDCsDIyJzA0LjAiTiAxMDnCsDExJzAwLjAiVw!5e0!3m2!1sen!2sus!4v1707815400000!5m2!1sen!2sus" 
+        width="100%" 
+        height="100%"
+        style={{ border: 0 }}
+        allowFullScreen
+        loading="lazy"
+        referrerPolicy="no-referrer-when-downgrade"
+      />
     </div>
   );
 }
