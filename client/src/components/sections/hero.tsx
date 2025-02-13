@@ -8,7 +8,7 @@ export default function Hero() {
       <div 
         className="absolute inset-0 z-0"
         style={{
-          backgroundImage: 'url(/images/Selene Deposit.jpg)',
+          backgroundImage: 'url(/images/Foto Rancho desde Selene.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           filter: 'brightness(0.7)',
