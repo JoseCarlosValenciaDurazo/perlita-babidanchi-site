@@ -3,13 +3,13 @@ import 'leaflet/dist/leaflet.css';
 import { Icon } from 'leaflet';
 
 export default function Map() {
-  // Center coordinates for the Sonora-Arizona-New Mexico region
-  const position: [number, number] = [31.5, -109.5];
+  // Coordinates for Aribabi, Sonora (4WV3+WM)
+  const position: [number, number] = [30.367778, -109.183333];
 
   // Custom icon to avoid the missing marker issue
   const customIcon = new Icon({
-    iconUrl: '/marker-icon.png',
-    shadowUrl: '/marker-shadow.png',
+    iconUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-icon.png',
+    shadowUrl: 'https://unpkg.com/leaflet@1.7.1/dist/images/marker-shadow.png',
     iconSize: [25, 41],
     iconAnchor: [12, 41],
     popupAnchor: [1, -34],
@@ -20,7 +20,7 @@ export default function Map() {
     <div className="h-[400px] w-full rounded-lg overflow-hidden relative">
       <MapContainer
         center={position}
-        zoom={6}
+        zoom={8}
         style={{ height: '100%', width: '100%' }}
         zoomControl={false}
         attributionControl={false}
@@ -31,7 +31,7 @@ export default function Map() {
         />
         <Marker position={position} icon={customIcon}>
           <Popup>
-            Perlite Babidanchi
+            Perlite Babidanchi - Aribabi, Sonora
           </Popup>
         </Marker>
       </MapContainer>
