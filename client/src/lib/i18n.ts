@@ -262,7 +262,7 @@ const resources = {
         message: "Su Mensaje",
         submit: "Enviar Mensaje",
         success: "Mensaje enviado exitosamente",
-        error: "Error al enviar mensaje Intente nuevamente"
+        error: "Error al enviar mensaje. Intente nuevamente"
       }
     }
   }
