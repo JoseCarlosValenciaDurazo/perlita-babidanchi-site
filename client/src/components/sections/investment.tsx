@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/table";
 
 export default function Investment() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
 
   return (
     <section id="investment" className="py-12 bg-gray-50">
@@ -171,14 +171,14 @@ export default function Investment() {
           </Card>
         </div>
 
-        {/* Highlight Box */}
-        <Card className="bg-white/50 backdrop-blur mb-8">
-          <CardContent className="pt-6">
+        {/* New Highlight Section */}
+        <div className="mb-8">
+          <div className="bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10 rounded-lg p-8">
             <p className="text-xl font-semibold text-center text-gray-900">
               {t('investment.highlight')}
             </p>
-          </CardContent>
-        </Card>
+          </div>
+        </div>
 
         {/* Source Citation */}
         <p className="text-sm text-gray-500 text-center">
