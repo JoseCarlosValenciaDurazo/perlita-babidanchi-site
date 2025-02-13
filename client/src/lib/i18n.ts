@@ -240,7 +240,7 @@ const resources = {
           title: "Acceso Garantizado al Agua",
           description: "La única mina en la región con un río perenne y permisos activos"
         },
-        highlight: "Únete al cambio: Suministra la demanda de perlita de América desde la mina más estratégica de México.",
+        highlight: "Únete al cambio: Abastece la demanda de perlita de América desde la mina más estratégica de México.",
         source: "Fuente de datos: Resumen de Productos Minerales del Servicio Geológico de EE.UU. (USGS), 2024",
         strategic_advantage: {
           title: "Ventaja Estratégica",
