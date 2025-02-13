@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin, Droplets, Database } from "lucide-react";
+import Map from "./Map";
 import {
   Table,
   TableBody,
@@ -113,14 +114,15 @@ export default function Investment() {
         {/* Strategic Advantage Card */}
         <Card className="bg-white mb-12">
           <CardContent className="pt-6">
-            <div className="text-center">
+            <div className="text-center mb-6">
               <h3 className="text-2xl font-semibold mb-3 text-gray-900">
                 {t('investment.strategic_advantage.title')}
               </h3>
-              <p className="text-lg text-gray-700">
+              <p className="text-lg text-gray-700 mb-6">
                 {t('investment.strategic_advantage.description')}
               </p>
             </div>
+            <Map />
           </CardContent>
         </Card>
 
