@@ -56,7 +56,7 @@ const resources = {
             solution: "Our Solution"
           },
           problem1: "U.S. imports 93% of perlite from distant countries (USGS, 2024)",
-          solution1: "Eliminate months-long overseas shipments: Supply the U.S. market from a neighboring region.",
+          solution1: "We solve the distance problem: Strategic reserves + cross-border proximity = faster U.S. access",
           problem2: "U.S. production ↓15% since 2020",
           solution2: "Two massive deposits (50M+ ton reserves)"
         },
@@ -188,7 +188,7 @@ const resources = {
             solution: "Nuestra Solución"
           },
           problem1: "EE.UU. importa el 93% de perlita de países lejanos (USGS, 2024)",
-          solution1: "Elimine envíos marítimos de meses: Abastezca el mercado de EE.UU. desde una región vecina.",
+          solution1: "Resolvemos el problema de la distancia: Reservas estratégicas + proximidad fronteriza = acceso más rápido a EE.UU.",
           problem2: "Producción de EE.UU. ↓15% desde 2020",
           solution2: "Dos depósitos masivos (reservas de 50M+ toneladas)"
         },
