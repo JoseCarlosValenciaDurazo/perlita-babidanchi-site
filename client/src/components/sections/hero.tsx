@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 
 export default function Hero() {
   const { t } = useTranslation();
+  console.log("Setting hero image: /images/Foto Rancho desde Selene.jpg");
 
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">

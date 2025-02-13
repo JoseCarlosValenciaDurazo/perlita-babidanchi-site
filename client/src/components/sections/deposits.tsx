@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 
 export default function Deposits() {
   const { t } = useTranslation();
+  console.log("Setting Selene deposit image: /images/Selene Deposit.jpg");
 
   return (
     <section id="deposits" className="py-20 bg-gray-50">
@@ -18,7 +19,7 @@ export default function Deposits() {
           <Card className="overflow-hidden">
             <div className="h-64 w-full relative">
               <img
-                src="/images/Deposito Selene 2.png"
+                src="/images/Selene Deposit.jpg"
                 alt="Selene Deposit"
                 className="w-full h-full object-cover"
               />
