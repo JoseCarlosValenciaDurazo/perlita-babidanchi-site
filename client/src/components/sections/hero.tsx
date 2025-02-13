@@ -2,14 +2,13 @@ import { useTranslation } from "react-i18next";
 
 export default function Hero() {
   const { t } = useTranslation();
-  console.log("Setting hero image: /images/Foto Rancho desde Selene.jpg");
 
   return (
     <section className="relative h-screen flex items-center justify-center overflow-hidden">
       <div 
-        className="absolute inset-0 z-0"
+        className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: 'url(/images/Foto Rancho desde Selene.jpg)',
+          backgroundImage: 'url(/images/Foto\\ Rancho\\ desde\\ Selene.jpg)',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           filter: 'brightness(0.7)',
