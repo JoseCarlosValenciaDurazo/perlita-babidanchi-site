@@ -22,8 +22,8 @@ const resources = {
       about: {
         title: "More Than a Mine, a Strategic Resource",
         history: "Located in the heart of Sonora, our family-owned perlite mine represents a unique investment opportunity in the industrial minerals sector",
-        mission: "To deliver the highest-quality perlite for strategic markets, responsibly and sustainably",
-        vision: "To become North America's leading sustainable perlite provider by 2030"
+        mission: "Produce the highest-quality perlite for strategic markets, responsibly and sustainably",
+        vision: "To become a leading global supplier of premium perlite, delivering high-quality products and sustainable solutions to meet the diverse needs of our clients worldwide"
       },
       product: {
         title: "What is Perlite",
@@ -159,8 +159,8 @@ const resources = {
       about: {
         title: "Más que una Mina, un Recurso Estratégico",
         history: "Ubicada en el corazón de Sonora, nuestra mina familiar de perlita representa una oportunidad única de inversión en el sector de minerales industriales",
-        mission: "Entregar perlita de la más alta calidad para mercados estratégicos, de manera responsable y sostenible",
-        vision: "Convertirnos en el principal proveedor de perlita sostenible de Norteamérica para 2030"
+        mission: "Producir perlita de la más alta calidad para mercados estratégicos, de manera responsable y sostenible",
+        vision: "Convertirnos en un proveedor global líder de perlita premium, entregando productos de alta calidad y soluciones sostenibles para satisfacer las diversas necesidades de nuestros clientes en todo el mundo"
       },
       product: {
         title: "¿Qué es la Perlita?",
