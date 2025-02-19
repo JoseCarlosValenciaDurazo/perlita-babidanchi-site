@@ -37,7 +37,7 @@ const resources = {
       },
       deposits: {
         title: "Our Deposits",
-        description: "Premium Quality Perlite deposits with abundant reserves",
+        description: "2 Premium Quality Perlite deposits with abundant reserves",
         selene: {
           title: "Selene Deposit",
           description: "Our primary deposit with high-quality perlite reserves"
@@ -174,7 +174,7 @@ const resources = {
       },
       deposits: {
         title: "Nuestros Depósitos",
-        description: "Depósitos de perlita de primera calidad con abundantes reservas.",
+        description: "2 Depósitos de perlita de primera calidad con abundantes reservas.",
         selene: {
           title: "Depósito Selene",
           description: "Nuestro depósito principal con reservas de perlita de alta calidad"
