@@ -94,8 +94,7 @@ const resources = {
               y2024: "26%",
               trend: "↑ Higher dependency"
             }
-          },
-          source: "External suppliers: 93% of imports come from Greece, 4% from China (USGS, 2024)"
+          }
         },
         deposits: {
           title: "Two Massive, High-Quality Deposits",
@@ -124,7 +123,7 @@ const resources = {
         ]
       },
       contact: {
-        title: "Let's Talk Opportunities",
+        title: "Contact Us",
         name: "Full Name",
         email: "Email Address",
         company: "Company Name",
@@ -231,8 +230,7 @@ const resources = {
               y2024: "26%",
               trend: "↑ Mayor dependencia"
             }
-          },
-          source: "Proveedores externos: 93% de las importaciones vienen de Grecia, 4% de China (USGS, 2024)"
+          }
         },
         deposits: {
           title: "Dos Depósitos Masivos de Alta Calidad",
@@ -261,7 +259,7 @@ const resources = {
         ]
       },
       contact: {
-        title: "Hablemos de Oportunidades",
+        title: "Contáctenos",
         name: "Nombre Completo",
         email: "Correo Electrónico",
         company: "Nombre de la Empresa",
