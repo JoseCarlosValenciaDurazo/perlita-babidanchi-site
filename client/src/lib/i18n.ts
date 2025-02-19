@@ -98,7 +98,7 @@ const resources = {
           source: "External suppliers: 93% of imports come from Greece, 4% from China (USGS, 2024)"
         },
         deposits: {
-          title: "Two Certified Deposits",
+          title: "Two Massive, High-Quality Deposits",
           description: "Premium Quality Perlite deposits with abundant reserves"
         },
         location: {
@@ -235,7 +235,7 @@ const resources = {
           source: "Proveedores externos: 93% de las importaciones vienen de Grecia, 4% de China (USGS, 2024)"
         },
         deposits: {
-          title: "Dos Depósitos Certificados",
+          title: "Dos Depósitos Masivos de Alta Calidad",
           description: "Depósitos de perlita de alta calidad con reservas abundantes"
         },
         location: {
