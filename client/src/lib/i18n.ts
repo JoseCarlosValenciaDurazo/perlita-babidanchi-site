@@ -11,6 +11,7 @@ const resources = {
         investment: "Investment",
         deposits: "Deposits",
         contact: "Contact",
+        gallery: "Gallery",
         language: "en"
       },
       hero: {
@@ -131,6 +132,10 @@ const resources = {
         submit: "Send Message",
         success: "Message sent successfully",
         error: "Error sending message Please try again"
+      },
+      gallery: {
+        title: "Our Gallery",
+        description: "Explore our perlite mining operations and facilities through our image gallery"
       }
     }
   },
@@ -143,6 +148,7 @@ const resources = {
         investment: "Inversión",
         deposits: "Depósitos",
         contact: "Contacto",
+        gallery: "Galería",
         language: "es"
       },
       hero: {
@@ -263,6 +269,10 @@ const resources = {
         submit: "Enviar Mensaje",
         success: "Mensaje enviado exitosamente",
         error: "Error al enviar mensaje. Intente nuevamente"
+      },
+      gallery: {
+        title: "Nuestra Galería",
+        description: "Explore nuestras operaciones mineras de perlita e instalaciones a través de nuestra galería de imágenes"
       }
     }
   }
