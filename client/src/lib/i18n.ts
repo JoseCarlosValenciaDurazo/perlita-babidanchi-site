@@ -39,11 +39,11 @@ const resources = {
         title: "Our Deposits",
         description: "2 Premium Quality Perlite deposits with abundant reserves",
         selene: {
-          title: "Selene Deposit",
+          title: "South Deposit",
           description: "Our primary deposit with high-quality perlite reserves"
         },
         bendicion: {
-          title: "La Bendición Deposit",
+          title: "North Deposit",
           description: "Our second deposit demonstrating rich mineral resources"
         }
       },
@@ -135,7 +135,7 @@ const resources = {
       },
       gallery: {
         title: "Our Gallery",
-        description: "Discover in our image gallery the stunning perlite deposits and water sources that are part of our mine"
+        description: "Discover in our image gallery the stunning perlite deposits sources that are part of our mine"
       }
     }
   },
@@ -176,11 +176,11 @@ const resources = {
         title: "Nuestros Depósitos",
         description: "2 Depósitos de perlita de primera calidad con abundantes reservas.",
         selene: {
-          title: "Depósito Selene",
+          title: "Depósito Sur",
           description: "Nuestro depósito principal con reservas de perlita de alta calidad"
         },
         bendicion: {
-          title: "Depósito La Bendición",
+          title: "Depósito Norte",
           description: "Nuestro segundo depósito que demuestra ricos recursos minerales"
         }
       },
@@ -272,7 +272,7 @@ const resources = {
       },
       gallery: {
         title: "Nuestra Galería",
-        description: "Descubra en nuestra galería de imágenes los impresionantes depósitos de perlita y fuentes de agua que forman parte de nuestra mina"
+        description: "Descubra en nuestra galería de imágenes las impresionantes fuentes de depósitos de perlita que forman parte de nuestra mina"
       }
     }
   }
