@@ -135,7 +135,7 @@ const resources = {
       },
       gallery: {
         title: "Our Gallery",
-        description: "Explore our perlite mining operations and facilities through our image gallery"
+        description: "Discover in our image gallery the stunning perlite deposits and water sources that are part of our mine"
       }
     }
   },
@@ -272,7 +272,7 @@ const resources = {
       },
       gallery: {
         title: "Nuestra Galería",
-        description: "Explore nuestras operaciones mineras de perlita e instalaciones a través de nuestra galería de imágenes"
+        description: "Descubra en nuestra galería de imágenes los impresionantes depósitos de perlita y fuentes de agua que forman parte de nuestra mina"
       }
     }
   }
