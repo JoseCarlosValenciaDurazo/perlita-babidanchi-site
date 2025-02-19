@@ -27,98 +27,96 @@ export default function Investment() {
           </p>
         </div>
 
-        {/* Main Investment Opportunities Section */}
+        {/* US Market Analysis */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-          {/* US Market Analysis */}
-          <div className="space-y-8">
-            <Card className="bg-white shadow-lg">
-              <CardContent className="pt-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <TrendingUp className="h-6 w-6 text-primary" />
-                  <h3 className="text-2xl font-semibold text-gray-900">
-                    {t('investment.perlite_gap.title')}
-                  </h3>
-                </div>
-                <Table>
-                  <TableHeader>
-                    <TableRow>
-                      <TableHead>{t('investment.perlite_gap.table_headers.problem')}</TableHead>
-                      <TableHead>{t('investment.perlite_gap.table_headers.solution')}</TableHead>
-                    </TableRow>
-                  </TableHeader>
-                  <TableBody>
-                    <TableRow>
-                      <TableCell className="text-gray-700">
-                        {t('investment.perlite_gap.problem1')}
-                      </TableCell>
-                      <TableCell className="text-gray-700 font-medium text-primary">
-                        {t('investment.perlite_gap.solution1')}
-                      </TableCell>
-                    </TableRow>
-                    <TableRow>
-                      <TableCell className="text-gray-700">
-                        {t('investment.perlite_gap.problem2')}
-                      </TableCell>
-                      <TableCell className="text-gray-700 font-medium text-primary">
-                        {t('investment.perlite_gap.solution2')}
-                      </TableCell>
-                    </TableRow>
-                  </TableBody>
-                </Table>
-              </CardContent>
-            </Card>
-
-            {/* Market Statistics */}
-            <Card className="bg-white shadow-lg">
-              <CardContent className="pt-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <LineChart className="h-6 w-6 text-primary" />
-                  <h3 className="text-2xl font-semibold text-gray-900">
-                    {t('investment.stats.title')}
-                  </h3>
-                </div>
-                <Table>
-                  <TableHeader>
-                    <TableRow>
-                      <TableHead>{t('investment.stats.headers.metric')}</TableHead>
-                      <TableHead>{t('investment.stats.headers.y2020')}</TableHead>
-                      <TableHead>{t('investment.stats.headers.y2024')}</TableHead>
-                      <TableHead>{t('investment.stats.headers.trend')}</TableHead>
-                    </TableRow>
-                  </TableHeader>
-                  <TableBody>
-                    {Object.entries({
-                      production: 'production',
-                      imports: 'imports',
-                      price: 'price',
-                      dependency: 'dependency'
-                    }).map(([key, value]) => (
-                      <TableRow key={key}>
-                        <TableCell className="text-gray-700">
-                          {t(`investment.stats.rows.${value}.label`)}
-                        </TableCell>
-                        <TableCell className="text-gray-700">
-                          {t(`investment.stats.rows.${value}.y2020`)}
-                        </TableCell>
-                        <TableCell className="text-gray-700">
-                          {t(`investment.stats.rows.${value}.y2024`)}
-                        </TableCell>
-                        <TableCell className="text-gray-700">
-                          {t(`investment.stats.rows.${value}.trend`)}
-                        </TableCell>
-                      </TableRow>
-                    ))}
-                  </TableBody>
-                </Table>
-                <p className="text-sm text-gray-500 mt-4">
-                  {t('investment.stats.source')}
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-
-          {/* Strategic Advantage Map Section */}
           <Card className="bg-white shadow-lg">
+            <CardContent className="pt-6">
+              <div className="flex items-center gap-3 mb-4">
+                <TrendingUp className="h-6 w-6 text-primary" />
+                <h3 className="text-2xl font-semibold text-gray-900">
+                  {t('investment.perlite_gap.title')}
+                </h3>
+              </div>
+              <Table>
+                <TableHeader>
+                  <TableRow>
+                    <TableHead>{t('investment.perlite_gap.table_headers.problem')}</TableHead>
+                    <TableHead>{t('investment.perlite_gap.table_headers.solution')}</TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  <TableRow>
+                    <TableCell className="text-gray-700">
+                      {t('investment.perlite_gap.problem1')}
+                    </TableCell>
+                    <TableCell className="text-gray-700 font-medium text-primary">
+                      {t('investment.perlite_gap.solution1')}
+                    </TableCell>
+                  </TableRow>
+                  <TableRow>
+                    <TableCell className="text-gray-700">
+                      {t('investment.perlite_gap.problem2')}
+                    </TableCell>
+                    <TableCell className="text-gray-700 font-medium text-primary">
+                      {t('investment.perlite_gap.solution2')}
+                    </TableCell>
+                  </TableRow>
+                </TableBody>
+              </Table>
+            </CardContent>
+          </Card>
+
+          <Card className="bg-white shadow-lg">
+            <CardContent className="pt-6">
+              <div className="flex items-center gap-3 mb-4">
+                <LineChart className="h-6 w-6 text-primary" />
+                <h3 className="text-2xl font-semibold text-gray-900">
+                  {t('investment.stats.title')}
+                </h3>
+              </div>
+              <Table>
+                <TableHeader>
+                  <TableRow>
+                    <TableHead>{t('investment.stats.headers.metric')}</TableHead>
+                    <TableHead>{t('investment.stats.headers.y2020')}</TableHead>
+                    <TableHead>{t('investment.stats.headers.y2024')}</TableHead>
+                    <TableHead>{t('investment.stats.headers.trend')}</TableHead>
+                  </TableRow>
+                </TableHeader>
+                <TableBody>
+                  {Object.entries({
+                    production: 'production',
+                    imports: 'imports',
+                    price: 'price',
+                    dependency: 'dependency'
+                  }).map(([key, value]) => (
+                    <TableRow key={key}>
+                      <TableCell className="text-gray-700">
+                        {t(`investment.stats.rows.${value}.label`)}
+                      </TableCell>
+                      <TableCell className="text-gray-700">
+                        {t(`investment.stats.rows.${value}.y2020`)}
+                      </TableCell>
+                      <TableCell className="text-gray-700">
+                        {t(`investment.stats.rows.${value}.y2024`)}
+                      </TableCell>
+                      <TableCell className="text-gray-700">
+                        {t(`investment.stats.rows.${value}.trend`)}
+                      </TableCell>
+                    </TableRow>
+                  ))}
+                </TableBody>
+              </Table>
+              <p className="text-sm text-gray-500 mt-4">
+                {t('investment.stats.source')}
+              </p>
+            </CardContent>
+          </Card>
+        </div>
+
+        {/* Strategic Advantage Map Section - Moved to center */}
+        <div className="mb-16">
+          <Card className="bg-white shadow-lg max-w-4xl mx-auto">
             <CardContent className="pt-6">
               <div className="flex items-center gap-3 mb-4">
                 <Workflow className="h-6 w-6 text-primary" />
@@ -129,7 +127,7 @@ export default function Investment() {
               <p className="text-lg text-gray-700 mb-6">
                 {t('investment.strategic_advantage.description')}
               </p>
-              <div className="h-[400px]">
+              <div className="h-[400px] w-full">
                 <Map />
               </div>
             </CardContent>
@@ -139,8 +137,8 @@ export default function Investment() {
         {/* Key Advantages Section */}
         <div className="mb-16">
           <h3 className="text-2xl font-semibold text-center mb-8 text-gray-900">
-            {t('investment.key_advantages.title')}
-          </h3> {/* Changed title to be more general */}
+            Key Advantages of Babidanchi Perlite
+          </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="bg-white shadow-lg">
               <CardContent className="pt-6">
