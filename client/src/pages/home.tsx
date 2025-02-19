@@ -1,7 +1,6 @@
 import Hero from "@/components/sections/hero";
 import About from "@/components/sections/about";
 import Deposits from "@/components/sections/deposits";
-import Product from "@/components/sections/product";
 import Gallery from "@/components/sections/gallery";
 import Investment from "@/components/sections/investment";
 import Contact from "@/components/sections/contact";
@@ -12,7 +11,6 @@ export default function Home() {
       <Hero />
       <About />
       <Deposits />
-      <Product />
       <Gallery />
       <Investment />
       <Contact />
