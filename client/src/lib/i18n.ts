@@ -98,7 +98,7 @@ const resources = {
         },
         deposits: {
           title: "Two Certified Deposits",
-          description: "Premium quality perlite deposits with proven reserves"
+          description: "Premium Quality Perlite deposits with abundant reserves"
         },
         location: {
           title: "Strategic Location",
@@ -168,7 +168,7 @@ const resources = {
       },
       deposits: {
         title: "Nuestros Depósitos",
-        description: "Depósitos de Perlita de Primera Calidad con reservas abundantes",
+        description: "Depósitos de perlita de primera calidad con abundantes reservas.",
         selene: {
           title: "Depósito Selene",
           description: "Nuestro depósito principal con reservas de perlita de alta calidad"
@@ -230,7 +230,7 @@ const resources = {
         },
         deposits: {
           title: "Dos Depósitos Certificados",
-          description: "Depósitos de perlita de alta calidad con reservas probadas"
+          description: "Depósitos de perlita de alta calidad con reservas abundantes"
         },
         location: {
           title: "Ubicación Estratégica",
