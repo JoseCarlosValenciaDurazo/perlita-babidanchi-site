@@ -184,27 +184,6 @@ export default function Investment() {
           </div>
         </div>
 
-        {/* What is Perlite Section */}
-        <div className="mb-16">
-          <Card className="bg-white shadow-lg">
-            <CardContent className="pt-6">
-              <h3 className="text-2xl font-semibold text-center mb-6 text-gray-900">
-                {t('product.title')}
-              </h3>
-              <p className="text-lg text-gray-700 text-center mb-8">
-                {t('product.description')}
-              </p>
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                {t('product.uses', { returnObjects: true }).map((use: string, index: number) => (
-                  <div key={index} className="p-4 bg-gray-50 rounded-lg text-center">
-                    <p className="text-gray-800">{use}</p>
-                  </div>
-                ))}
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-
         {/* Call to Action */}
         <div className="text-center">
           <div className="bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10 rounded-lg p-8 mb-8">
