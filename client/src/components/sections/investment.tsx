@@ -63,6 +63,9 @@ export default function Investment() {
                   </TableRow>
                 </TableBody>
               </Table>
+              <p className="text-sm text-gray-500 mt-4">
+                External suppliers: 93% of imports come from Greece, 4% from China (USGS, 2024)
+              </p>
             </CardContent>
           </Card>
 
@@ -107,9 +110,6 @@ export default function Investment() {
                   ))}
                 </TableBody>
               </Table>
-              <p className="text-sm text-gray-500 mt-4">
-                {t('investment.stats.source')}
-              </p>
             </CardContent>
           </Card>
         </div>
