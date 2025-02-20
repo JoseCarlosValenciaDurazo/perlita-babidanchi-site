@@ -111,7 +111,7 @@ const resources = {
         source: "Data source: U.S. Geological Survey (USGS) Mineral Commodity Summaries, 2024",
         strategic_advantage: {
           title: "Strategic Delivery Channels",
-          description: "Near the U.S. border | Rapid deliveries | No ocean freight delays"
+          description: "Near the U.S. border | No ocean freight delays"
         }
       },
       sustainability: {
@@ -246,7 +246,7 @@ const resources = {
         source: "Fuente de datos: Resumen de Productos Minerales del Servicio Geológico de EE.UU. (USGS), 2024",
         strategic_advantage: {
           title: "Canales de Entrega Estratégicos",
-          description: "Cerca de la frontera EE.UU. | Entregas rápidas | Sin retrasos de flete marítimo"
+          description: "Cerca de la frontera EE.UU. | Sin retrasos de flete marítimo"
         }
       },
       sustainability: {
