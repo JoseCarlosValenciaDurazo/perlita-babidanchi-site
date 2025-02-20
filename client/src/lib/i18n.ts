@@ -51,10 +51,6 @@ const resources = {
           }
         }
       },
-      main_section: {
-        title: "PERLITE",
-        subtitle: "THE MINERAL OF THE FUTURE"
-      },
       about: {
         title: "More Than a Mine: A Strategic Resource",
         who_we_are: {
@@ -248,10 +244,6 @@ const resources = {
             description: "Aplicaciones emergentes en tecnologías sostenibles y materiales de construcción ecológicos."
           }
         }
-      },
-      main_section: {
-        title: "PERLITA",
-        subtitle: "EL MINERAL DEL FUTURO"
       },
       about: {
         title: "Más que una Mina: Un Recurso Estratégico",
