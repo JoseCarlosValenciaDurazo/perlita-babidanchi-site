@@ -8,23 +8,23 @@ export default function MineralFuture() {
   const features = [
     {
       icon: <Sparkles className="h-8 w-8 text-primary" />,
-      title: "Versatile Applications",
-      description: "From construction to agriculture, perlite's unique properties make it invaluable across industries."
+      title: t('mineral_future.versatile.title'),
+      description: t('mineral_future.versatile.description')
     },
     {
       icon: <Leaf className="h-8 w-8 text-primary" />,
-      title: "Sustainable Solution",
-      description: "Natural, environmentally friendly material that supports green building and sustainable agriculture."
+      title: t('mineral_future.sustainable.title'),
+      description: t('mineral_future.sustainable.description')
     },
     {
       icon: <Factory className="h-8 w-8 text-primary" />,
-      title: "Growing Demand",
-      description: "Increasing industrial applications and construction needs drive strong market growth."
+      title: t('mineral_future.demand.title'),
+      description: t('mineral_future.demand.description')
     },
     {
       icon: <Shield className="h-8 w-8 text-primary" />,
-      title: "Strategic Resource",
-      description: "Essential mineral for North American industrial independence and security."
+      title: t('mineral_future.strategic.title'),
+      description: t('mineral_future.strategic.description')
     }
   ];
 
@@ -36,7 +36,7 @@ export default function MineralFuture() {
             {t('hero.title')}
           </h2>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-            The growing importance of perlite in modern industry and sustainable development
+            {t('mineral_future.description')}
           </p>
         </div>
 

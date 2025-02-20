@@ -17,13 +17,32 @@ const resources = {
       hero: {
         title: "The Mineral of the Future",
         subtitle: "Perlite Babidanchi",
-        description: "Strategically located in Sonora at the US-Mexico border, with high-quality deposits and guaranteed water access A local solution for global perlite demand"
+        description: "Strategically located in Sonora at the US-Mexico border, with high-quality deposits and guaranteed water access. A local solution for global perlite demand"
       },
       about: {
         title: "More Than a Mine, a Strategic Resource",
         history: "Located in the heart of Sonora, our family-owned perlite mine represents a unique investment opportunity in the industrial minerals sector",
         mission: "Produce the highest-quality perlite for strategic markets, responsibly and sustainably",
         vision: "To become a leading global supplier of premium perlite, delivering high-quality products and sustainable solutions to meet the diverse needs of our clients worldwide"
+      },
+      mineral_future: {
+        description: "The growing importance of perlite in modern industry and sustainable development",
+        versatile: {
+          title: "Versatile Applications",
+          description: "From construction to agriculture, perlite's unique properties make it invaluable across industries"
+        },
+        sustainable: {
+          title: "Sustainable Solution",
+          description: "Natural, environmentally friendly material that supports green building and sustainable agriculture"
+        },
+        demand: {
+          title: "Growing Demand",
+          description: "Increasing industrial applications and construction needs drive strong market growth"
+        },
+        strategic: {
+          title: "Strategic Resource",
+          description: "Essential mineral for North American industrial independence and security"
+        }
       },
       product: {
         title: "What is Perlite",
@@ -114,13 +133,6 @@ const resources = {
           description: "Near the U.S. border | No ocean freight delays"
         }
       },
-      sustainability: {
-        title: "Commitment to the Future",
-        points: [
-          "Low-impact extraction technology",
-          "Investment in Sonora's community development programs"
-        ]
-      },
       contact: {
         title: "Contact Us",
         name: "Full Name",
@@ -129,7 +141,7 @@ const resources = {
         message: "Your Message",
         submit: "Send Message",
         success: "Message sent successfully",
-        error: "Error sending message Please try again"
+        error: "Error sending message. Please try again"
       },
       gallery: {
         title: "Our Gallery",
@@ -152,13 +164,32 @@ const resources = {
       hero: {
         title: "El Mineral del Futuro",
         subtitle: "Perlita Babidanchi",
-        description: "Estratégicamente ubicada en Sonora en la frontera México-EE.UU, con depósitos de alta calidad y acceso garantizado al agua Una solución local para la demanda global de perlita"
+        description: "Estratégicamente ubicada en Sonora en la frontera México-EE.UU., con depósitos de alta calidad y acceso garantizado al agua. Una solución local para la demanda global de perlita"
       },
       about: {
         title: "Más que una Mina, un Recurso Estratégico",
         history: "Ubicada en el corazón de Sonora, nuestra mina familiar de perlita representa una oportunidad única de inversión en el sector de minerales industriales",
         mission: "Producir perlita de la más alta calidad para mercados estratégicos, de manera responsable y sostenible",
         vision: "Convertirnos en un proveedor global líder de perlita premium, entregando productos de alta calidad y soluciones sostenibles para satisfacer las diversas necesidades de nuestros clientes en todo el mundo"
+      },
+      mineral_future: {
+        description: "La creciente importancia de la perlita en la industria moderna y el desarrollo sostenible",
+        versatile: {
+          title: "Aplicaciones Versátiles",
+          description: "Desde la construcción hasta la agricultura, las propiedades únicas de la perlita la hacen invaluable en múltiples industrias"
+        },
+        sustainable: {
+          title: "Solución Sostenible",
+          description: "Material natural y ecológico que apoya la construcción verde y la agricultura sostenible"
+        },
+        demand: {
+          title: "Demanda Creciente",
+          description: "El aumento de aplicaciones industriales y necesidades de construcción impulsan un fuerte crecimiento del mercado"
+        },
+        strategic: {
+          title: "Recurso Estratégico",
+          description: "Mineral esencial para la independencia industrial y la seguridad de América del Norte"
+        }
       },
       product: {
         title: "¿Qué es la Perlita?",
@@ -172,7 +203,7 @@ const resources = {
       },
       deposits: {
         title: "Nuestros Depósitos",
-        description: "2 Depósitos de perlita de primera calidad con abundantes reservas.",
+        description: "2 Depósitos de perlita de primera calidad con abundantes reservas",
         selene: {
           title: "Depósito Sur",
           description: "Nuestro depósito principal con reservas de perlita de alta calidad"
@@ -237,7 +268,7 @@ const resources = {
         },
         location: {
           title: "Ubicación Estratégica",
-          description: "A 3 horas de la frontera con EE.UU, permitiendo una logística rápida y costos reducidos"
+          description: "A 3 horas de la frontera con EE.UU., permitiendo una logística rápida y costos reducidos"
         },
         water: {
           title: "Acceso Garantizado al Agua",
@@ -248,13 +279,6 @@ const resources = {
           title: "Canales de Entrega Estratégicos",
           description: "Cerca de la frontera EE.UU. | Sin retrasos de flete marítimo"
         }
-      },
-      sustainability: {
-        title: "Compromiso con el Futuro",
-        points: [
-          "Tecnología de extracción de bajo impacto",
-          "Inversión en programas de desarrollo comunitario de Sonora"
-        ]
       },
       contact: {
         title: "Contáctenos",
