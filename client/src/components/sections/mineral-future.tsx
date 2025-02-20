@@ -33,7 +33,7 @@ export default function MineralFuture() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-6 text-gray-900">
-            {t('hero.title')}
+            {t('mineral_future.title')}
           </h2>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
             {t('mineral_future.description')}

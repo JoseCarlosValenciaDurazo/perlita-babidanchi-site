@@ -127,6 +127,26 @@ const resources = {
         },
         key_advantages: {
           title: "Key Advantages of Babidanchi Perlite"
+        },
+        mineral_future: {
+          title: "The Mineral of the Future",
+          description: "The growing importance of perlite in modern industry and sustainable development",
+          versatile: {
+            title: "Versatile Applications",
+            description: "From construction to agriculture, perlite's unique properties make it invaluable across industries"
+          },
+          sustainable: {
+            title: "Sustainable Solution",
+            description: "Natural, environmentally friendly material that supports green building and sustainable agriculture"
+          },
+          demand: {
+            title: "Growing Demand",
+            description: "Increasing industrial applications and construction needs drive strong market growth"
+          },
+          strategic: {
+            title: "Strategic Resource",
+            description: "Essential mineral for North American industrial independence and security"
+          }
         }
       },
       contact: {
@@ -269,6 +289,26 @@ const resources = {
         },
         key_advantages: {
           title: "Ventajas Clave de Perlita Babidanchi"
+        },
+        mineral_future: {
+          title: "El Mineral del Futuro",
+          description: "La creciente importancia de la perlita en la industria moderna y el desarrollo sostenible",
+          versatile: {
+            title: "Aplicaciones Versátiles",
+            description: "Desde la construcción hasta la agricultura, las propiedades únicas de la perlita la hacen invaluable en múltiples industrias"
+          },
+          sustainable: {
+            title: "Solución Sostenible",
+            description: "Material natural y ecológico que apoya la construcción verde y la agricultura sostenible"
+          },
+          demand: {
+            title: "Demanda Creciente",
+            description: "El aumento de aplicaciones industriales y necesidades de construcción impulsan un fuerte crecimiento del mercado"
+          },
+          strategic: {
+            title: "Recurso Estratégico",
+            description: "Mineral esencial para la independencia industrial y la seguridad de América del Norte"
+          }
         }
       },
       contact: {
