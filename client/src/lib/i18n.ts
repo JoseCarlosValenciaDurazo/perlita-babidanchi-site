@@ -108,7 +108,6 @@ const resources = {
           title: "Guaranteed Water Access",
           description: "The only mine in the region with a perennial river and active permits"
         },
-        highlight: "Be part of the change: supply the world demand working from the Babidanchi Perlite mine",
         source: "Data source: U.S. Geological Survey (USGS) Mineral Commodity Summaries, 2024",
         strategic_advantage: {
           title: "Strategic Advantage",
@@ -244,7 +243,6 @@ const resources = {
           title: "Acceso Garantizado al Agua",
           description: "La única mina en la región con un río perenne y permisos activos"
         },
-        highlight: "Sé parte del cambio: abastece la demanda mundial trabajando desde la mina de Perlita Babidanchi",
         source: "Fuente de datos: Resumen de Productos Minerales del Servicio Geológico de EE.UU. (USGS), 2024",
         strategic_advantage: {
           title: "Ventaja Estratégica",

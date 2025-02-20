@@ -186,11 +186,6 @@ export default function Investment() {
 
         {/* Call to Action */}
         <div className="text-center">
-          <div className="bg-gradient-to-r from-primary/10 via-primary/5 to-primary/10 rounded-lg p-8 mb-8">
-            <p className="text-xl font-semibold text-gray-900">
-              {t('investment.highlight')}
-            </p>
-          </div>
           <p className="text-sm text-gray-500">
             {t('investment.source')}
           </p>
