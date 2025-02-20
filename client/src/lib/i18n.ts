@@ -67,7 +67,7 @@ const resources = {
           problem1: "U.S. imports 93% of perlite from distant countries (USGS, 2024)",
           solution1: "We solve the distance problem: Strategic reserves + cross-border proximity = faster U.S. access",
           problem2: "U.S. production ↓15% since 2020",
-          solution2: "2 Massive deposits (50M+ ton reserves)"
+          solution2: "2 Massive deposits (more than 50M ton reserves)"
         },
         stats: {
           title: "U.S. Key Statistics (2020-2024)",
@@ -105,7 +105,7 @@ const resources = {
           }
         },
         deposits: {
-          title: "Two Massive, High-Quality Deposits",
+          title: "2 Massive, High-Quality Deposits",
           description: "Premium Quality Perlite deposits with abundant reserves"
         },
         location: {
@@ -182,7 +182,7 @@ const resources = {
         description: "Estratégicamente ubicada en Sonora en la frontera México-EE.UU., con depósitos de alta calidad y acceso garantizado al agua. Una solución local para la demanda global de perlita"
       },
       about: {
-        title: "Más que una Mina, un Recurso Estratégico",
+        title: "Más que una Mina: Un Recurso Estratégico",
         who_we_are: {
           title: "Quiénes Somos",
           description: "Somos una empresa sonorense que surgió al identificar una oportunidad de negocio para nuestra familia, propietaria y operadora del Rancho Babidanchi. Esta tierra alberga dos importantes depósitos de perlita de alta calidad, ubicados cerca uno del otro, con un enorme potencial de recursos para convertirse en líder en América del Norte."

@@ -15,34 +15,34 @@ export default function MainUses() {
   const uses = [
     {
       icon: <Building2 className="h-8 w-8" />,
-      title: "Construction",
-      description: "Used in lightweight construction materials, insulation, and plasters for improved thermal efficiency."
+      title: t('mineral_future.versatile.title'),
+      description: t('mineral_future.versatile.description')
     },
     {
       icon: <Sprout className="h-8 w-8" />,
-      title: "Agriculture",
-      description: "Enhances soil aeration and water retention in horticultural applications."
+      title: t('mineral_future.sustainable.title'),
+      description: t('mineral_future.sustainable.description')
     },
     {
       icon: <Beaker className="h-8 w-8" />,
-      title: "Filtration",
-      description: "Essential in industrial filtration processes for beverages and pharmaceuticals."
+      title: t('mineral_future.demand.title'),
+      description: t('mineral_future.demand.description')
     },
     {
       icon: <Shield className="h-8 w-8" />,
-      title: "Insulation",
-      description: "Provides excellent thermal and acoustic insulation properties."
-    },
-    {
-      icon: <Factory className="h-8 w-8" />,
-      title: "Industrial",
-      description: "Used in various industrial applications including foundry and cryogenic systems."
-    },
-    {
-      icon: <Lightbulb className="h-8 w-8" />,
-      title: "Innovation",
-      description: "Emerging applications in sustainable technologies and green building materials."
+      title: t('mineral_future.strategic.title'),
+      description: t('mineral_future.strategic.description')
     }
+    // {
+    //   icon: <Factory className="h-8 w-8" />,
+    //   title: t('mineral_future.industrial.title'),
+    //   description: t('mineral_future.industrial.description')
+    // },
+    // {
+    //   icon: <Lightbulb className="h-8 w-8" />,
+    //   title: t('mineral_future.innovation.title'),
+    //   description: t('mineral_future.innovation.description')
+    // }
   ];
 
   return (
@@ -50,14 +50,14 @@ export default function MainUses() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
-            PERLITE
+            {t('mineral_future.title')}
           </h2>
-          <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
-            THE MINERAL OF THE FUTURE
-          </h3>
+          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
+            {t('mineral_future.description')}
+          </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {uses.map((use, index) => (
             <Card key={index} className="bg-white shadow-lg">
               <CardContent className="pt-6">
