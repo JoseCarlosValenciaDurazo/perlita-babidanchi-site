@@ -113,6 +113,9 @@ export default function Investment() {
             </CardContent>
           </Card>
         </div>
+        <p className="text-sm text-gray-500 text-center mb-16">
+          {t('investment.source')}
+        </p>
 
         {/* Strategic Advantage Map Section */}
         <div className="mb-16">
@@ -185,11 +188,7 @@ export default function Investment() {
         </div>
 
         {/* Call to Action */}
-        <div className="text-center">
-          <p className="text-sm text-gray-500">
-            {t('investment.source')}
-          </p>
-        </div>
+        
       </div>
     </section>
   );
