@@ -50,10 +50,10 @@ export default function MainUses() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
-            {t('main_uses.perlite')}
+            {t('main_uses.header.title')}
           </h2>
           <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
-            {t('main_uses.tagline')}
+            {t('main_uses.header.subtitle')}
           </h3>
         </div>
 

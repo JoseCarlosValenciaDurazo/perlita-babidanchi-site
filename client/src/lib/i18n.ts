@@ -20,8 +20,10 @@ const resources = {
         description: "Strategically located in Sonora at the US-Mexico border, with high-quality deposits and guaranteed water access. A local solution for global perlite demand"
       },
       main_uses: {
-        perlite: "PERLITE",
-        tagline: "THE MINERAL OF THE FUTURE",
+        header: {
+          title: "PERLITE",
+          subtitle: "THE MINERAL OF THE FUTURE"
+        },
         uses: {
           construction: {
             title: "Construction",
@@ -216,8 +218,10 @@ const resources = {
         description: "Estratégicamente ubicada en Sonora en la frontera México-EE.UU., con depósitos de alta calidad y acceso garantizado al agua. Una solución local para la demanda global de perlita"
       },
       main_uses: {
-        perlite: "PERLITA",
-        tagline: "EL MINERAL DEL FUTURO",
+        header: {
+          title: "PERLITA",
+          subtitle: "EL MINERAL DEL FUTURO"
+        },
         uses: {
           construction: {
             title: "Construcción",
