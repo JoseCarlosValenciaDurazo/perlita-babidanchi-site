@@ -135,7 +135,7 @@ export default function Investment() {
           </Card>
         </div>
 
-        {/* Mission and Vision Section - "More Than a Mine" - Moved here */}
+        {/* Mission and Vision Section - "More Than a Mine" */}
         <div className="mb-16 bg-white py-12">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold mb-12 text-center text-gray-900">
