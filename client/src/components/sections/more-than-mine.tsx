@@ -7,9 +7,12 @@ export default function MoreThanMine() {
   return (
     <section className="py-20 bg-white">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold mb-12 text-center text-gray-900">
-          More Than a Mine, a Strategic Resource
+        <h2 className="text-4xl font-bold mb-6 text-center text-gray-900">
+          {t('about.who_we_are.title')}
         </h2>
+        <p className="text-xl text-gray-700 text-center mb-12 max-w-4xl mx-auto">
+          {t('about.who_we_are.description')}
+        </p>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           <div className="grid grid-cols-1 gap-8">
             <Card className="bg-white shadow-lg">

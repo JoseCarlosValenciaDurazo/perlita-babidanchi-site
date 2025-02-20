@@ -26,9 +26,11 @@ export default function Investment() {
           </p>
         </div>
 
-        {/* US Market Analysis Section Title */}
+        {/* Market Analysis Section Title */}
         <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold text-gray-900">Market Analysis</h2>
+          <h2 className="text-3xl font-bold text-gray-900">
+            {t('investment.market_analysis.title')}
+          </h2>
         </div>
 
         {/* US Market Analysis */}
@@ -68,7 +70,7 @@ export default function Investment() {
                 </TableBody>
               </Table>
               <p className="text-sm text-gray-500 mt-4">
-                External suppliers: 93% of imports come from Greece, 4% from China (USGS, 2024)
+                {t('investment.market_analysis.external_suppliers')}
               </p>
             </CardContent>
           </Card>
@@ -117,14 +119,11 @@ export default function Investment() {
             </CardContent>
           </Card>
         </div>
-        <p className="text-sm text-gray-500 text-center mb-16">
-          {t('investment.source')}
-        </p>
 
         {/* Key Advantages Section */}
         <div className="mb-16">
           <h3 className="text-2xl font-semibold text-center mb-8 text-gray-900">
-            Key Advantages of Babidanchi Perlite
+            {t('investment.key_advantages.title')}
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <Card className="bg-white shadow-lg">

@@ -1,10 +1,14 @@
+import { useTranslation } from "react-i18next";
+
 export default function Map({ showTitle = true }) {
+  const { t } = useTranslation();
+
   return (
     <section className="py-8">
       <div className="container mx-auto px-4">
         {showTitle && (
           <h2 className="text-4xl font-bold mb-6 text-center">
-            Our Location
+            {t('location.title')}
           </h2>
         )}
         <div className="mx-auto h-[400px] max-w-3xl rounded-lg overflow-hidden">

@@ -20,10 +20,18 @@ const resources = {
         description: "Strategically located in Sonora at the US-Mexico border, with high-quality deposits and guaranteed water access. A local solution for global perlite demand"
       },
       about: {
+        who_we_are: {
+          title: "Who We Are",
+          description: "We are a Sonoran-based company that emerged from identifying a business opportunity for our family, who owns and operates Rancho Babidanchi. This land is home to two significant perlite deposits of high quality, located close to each other, with enormous resource potential to become a leader in North America."
+        },
         title: "More Than a Mine, a Strategic Resource",
         history: "Located in the heart of Sonora, our family-owned perlite mine represents a unique investment opportunity in the industrial minerals sector",
         mission: "Produce the highest-quality perlite for strategic markets, responsibly and sustainably",
         vision: "To become a leading global supplier of premium perlite, delivering high-quality products and sustainable solutions to meet the diverse needs of our clients worldwide"
+      },
+      location: {
+        title: "Our Location",
+        description: "Strategically positioned for efficient distribution"
       },
       mineral_future: {
         description: "The growing importance of perlite in modern industry and sustainable development",
@@ -131,6 +139,13 @@ const resources = {
         strategic_advantage: {
           title: "Strategic Delivery Channels",
           description: "Near the U.S. border | No ocean freight delays"
+        },
+        market_analysis: {
+          title: "Market Analysis",
+          external_suppliers: "External suppliers: 93% of imports come from Greece, 4% from China (USGS, 2024)"
+        },
+        key_advantages: {
+          title: "Key Advantages of Babidanchi Perlite"
         }
       },
       contact: {
@@ -167,10 +182,18 @@ const resources = {
         description: "Estratégicamente ubicada en Sonora en la frontera México-EE.UU., con depósitos de alta calidad y acceso garantizado al agua. Una solución local para la demanda global de perlita"
       },
       about: {
+        who_we_are: {
+          title: "Quiénes Somos",
+          description: "Somos una empresa sonorense que surgió al identificar una oportunidad de negocio para nuestra familia, propietaria y operadora del Rancho Babidanchi. Esta tierra alberga dos importantes depósitos de perlita de alta calidad, ubicados cerca uno del otro, con un enorme potencial de recursos para convertirse en líder en América del Norte."
+        },
         title: "Más que una Mina, un Recurso Estratégico",
         history: "Ubicada en el corazón de Sonora, nuestra mina familiar de perlita representa una oportunidad única de inversión en el sector de minerales industriales",
         mission: "Producir perlita de la más alta calidad para mercados estratégicos, de manera responsable y sostenible",
         vision: "Convertirnos en un proveedor global líder de perlita premium, entregando productos de alta calidad y soluciones sostenibles para satisfacer las diversas necesidades de nuestros clientes en todo el mundo"
+      },
+      location: {
+        title: "Nuestra Ubicación",
+        description: "Posicionamiento estratégico para una distribución eficiente"
       },
       mineral_future: {
         description: "La creciente importancia de la perlita en la industria moderna y el desarrollo sostenible",
@@ -278,6 +301,13 @@ const resources = {
         strategic_advantage: {
           title: "Canales de Entrega Estratégicos",
           description: "Cerca de la frontera EE.UU. | Sin retrasos de flete marítimo"
+        },
+        market_analysis: {
+          title: "Análisis de Mercado",
+          external_suppliers: "Proveedores externos: 93% de las importaciones provienen de Grecia, 4% de China (USGS, 2024)"
+        },
+        key_advantages: {
+          title: "Ventajas Clave de Perlita Babidanchi"
         }
       },
       contact: {
