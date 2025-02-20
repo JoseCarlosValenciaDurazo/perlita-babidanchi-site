@@ -37,10 +37,10 @@ export default function MoreThanMine() {
               </CardContent>
             </Card>
           </div>
-          <div className="relative h-full min-h-[400px] rounded-lg overflow-hidden">
+          <div className="relative h-full min-h-[400px] rounded-lg overflow-hidden shadow-lg">
             <img
               src="/images/Perlita.jpg"
-              alt="Perlite Mining"
+              alt="Perlite Mining Operations"
               className="absolute inset-0 w-full h-full object-cover rounded-lg"
             />
           </div>
