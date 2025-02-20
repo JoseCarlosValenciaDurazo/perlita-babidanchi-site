@@ -131,7 +131,7 @@ export default function Investment() {
                 {t('investment.strategic_advantage.description')}
               </p>
               <div className="h-[400px] w-full">
-                <Map />
+                <Map showTitle={false} />
               </div>
             </CardContent>
           </Card>
