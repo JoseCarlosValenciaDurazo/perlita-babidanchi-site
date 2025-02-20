@@ -13,47 +13,42 @@ export default function About() {
           </h2>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-          <div>
-            <img
-              src="/images/Perlita.jpg"
-              alt="Mining Operations"
-              className="rounded-xl shadow-lg w-full h-[500px] object-cover"
-            />
-          </div>
-          <div className="space-y-10">
-            <Card className="border-0 shadow-sm">
-              <CardContent className="pt-8">
-                <p className="text-lg text-gray-700 leading-relaxed">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <Card className="border-0 shadow-sm">
+            <CardContent className="pt-8">
+              <div className="text-center">
+                <p className="text-gray-700 leading-relaxed">
                   {t('about.history')}
                 </p>
-              </CardContent>
-            </Card>
+              </div>
+            </CardContent>
+          </Card>
 
-            <div className="grid grid-cols-1 gap-8">
-              <Card className="border-0 shadow-sm">
-                <CardContent className="pt-8">
-                  <h3 className="text-2xl font-semibold mb-4 text-gray-900">
-                    {t('nav.language') === 'es' ? 'Misión' : 'Mission'}
-                  </h3>
-                  <p className="text-gray-700 leading-relaxed">
-                    {t('about.mission')}
-                  </p>
-                </CardContent>
-              </Card>
+          <Card className="border-0 shadow-sm">
+            <CardContent className="pt-8">
+              <div className="text-center">
+                <h3 className="text-2xl font-semibold mb-4 text-gray-900">
+                  {t('nav.language') === 'es' ? 'Misión' : 'Mission'}
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  {t('about.mission')}
+                </p>
+              </div>
+            </CardContent>
+          </Card>
 
-              <Card className="border-0 shadow-sm">
-                <CardContent className="pt-8">
-                  <h3 className="text-2xl font-semibold mb-4 text-gray-900">
-                    {t('nav.language') === 'es' ? 'Visión' : 'Vision'}
-                  </h3>
-                  <p className="text-gray-700 leading-relaxed">
-                    {t('about.vision')}
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
+          <Card className="border-0 shadow-sm">
+            <CardContent className="pt-8">
+              <div className="text-center">
+                <h3 className="text-2xl font-semibold mb-4 text-gray-900">
+                  {t('nav.language') === 'es' ? 'Visión' : 'Vision'}
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  {t('about.vision')}
+                </p>
+              </div>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>
