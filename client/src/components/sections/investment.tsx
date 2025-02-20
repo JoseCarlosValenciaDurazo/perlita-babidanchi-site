@@ -119,7 +119,7 @@ export default function Investment() {
 
         {/* Strategic Advantage Map Section */}
         <div className="mb-16">
-          <Card className="bg-white shadow-lg max-w-4xl mx-auto">
+          <Card className="bg-white shadow-lg max-w-3xl mx-auto">
             <CardContent className="pt-6">
               <div className="flex items-center gap-3 mb-4">
                 <Workflow className="h-6 w-6 text-primary" />
@@ -188,7 +188,7 @@ export default function Investment() {
         </div>
 
         {/* Call to Action */}
-        
+
       </div>
     </section>
   );
