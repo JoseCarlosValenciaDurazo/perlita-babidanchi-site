@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Card, CardContent } from "@/components/ui/card";
-import { MapPin, Droplets, Database, TrendingUp, LineChart, Workflow, CheckCircle } from "lucide-react";
+import { MapPin, Droplets, Database, TrendingUp, LineChart, Workflow } from "lucide-react";
 import Map from "./Map";
 import {
   Table,
@@ -114,7 +114,7 @@ export default function Investment() {
           </Card>
         </div>
 
-        {/* Strategic Advantage Map Section - Moved to center */}
+        {/* Strategic Advantage Map Section */}
         <div className="mb-16">
           <Card className="bg-white shadow-lg max-w-4xl mx-auto">
             <CardContent className="pt-6">
@@ -133,40 +133,6 @@ export default function Investment() {
             </CardContent>
           </Card>
         </div>
-
-        {/* What is Perlite Section */}
-        <div className="mb-16">
-          <Card className="bg-white shadow-lg">
-            <CardContent className="pt-6">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <div>
-                  <h3 className="text-2xl font-semibold mb-6 text-gray-900">
-                    {t('product.title')}
-                  </h3>
-                  <p className="text-lg text-gray-700 mb-6">
-                    {t('product.description')}
-                  </p>
-                  <ul className="space-y-4">
-                    {t('product.uses', { returnObjects: true }).map((use: string, index: number) => (
-                      <li key={index} className="flex items-center text-gray-700">
-                        <CheckCircle className="h-5 w-5 text-primary mr-2" />
-                        {use}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                <div className="flex items-center justify-center">
-                  <img
-                    src="/images/Perlita2.jpg"
-                    alt="Perlite Samples"
-                    className="rounded-lg shadow-lg w-full h-[400px] object-cover"
-                  />
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-
 
         {/* Key Advantages Section */}
         <div className="mb-16">
