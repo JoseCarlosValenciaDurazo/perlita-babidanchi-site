@@ -135,7 +135,7 @@ export default function Investment() {
           </Card>
         </div>
 
-        {/* Mission and Vision Section - "More Than a Mine" */}
+        {/* Mission and Vision Section - "More Than a Mine" - Now after map section */}
         <div className="mb-16 bg-white py-12">
           <div className="container mx-auto px-4">
             <h2 className="text-4xl font-bold mb-12 text-center text-gray-900">
@@ -176,7 +176,7 @@ export default function Investment() {
           </div>
         </div>
 
-        {/* Key Advantages Section - Moved to bottom */}
+        {/* Key Advantages Section - Now at the bottom */}
         <div className="mb-16">
           <h3 className="text-2xl font-semibold text-center mb-8 text-gray-900">
             Key Advantages of Babidanchi Perlite
