@@ -19,6 +19,23 @@ export default function Navbar() {
     { href: "#contact", label: t('nav.contact') },
   ];
 
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const targetId = href.replace('#', '');
+    const element = document.getElementById(targetId);
+    if (element) {
+      const offset = 80; // Account for fixed header
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+      });
+      setIsOpen(false);
+    }
+  };
+
   const NavLinks = () => (
     <>
       {navItems.map((item) => (
@@ -26,7 +43,7 @@ export default function Navbar() {
           key={item.href}
           href={item.href}
           className="text-gray-700 hover:text-primary transition-colors text-sm font-medium"
-          onClick={() => setIsOpen(false)}
+          onClick={(e) => handleScroll(e, item.href)}
         >
           {item.label}
         </a>
