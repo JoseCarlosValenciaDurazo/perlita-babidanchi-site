@@ -1,3 +1,4 @@
+
 import Hero from "@/components/sections/hero";
 import Map from "@/components/sections/Map";
 import Product from "@/components/sections/product";
@@ -11,9 +12,9 @@ export default function Home() {
     <div className="w-full">
       <Hero />
       <Map />
+      <Investment />
       <Product />
       <MainUses />
-      <Investment />
       <Gallery />
       <Contact />
     </div>
