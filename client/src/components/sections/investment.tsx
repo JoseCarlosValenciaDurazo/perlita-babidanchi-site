@@ -117,6 +117,33 @@ export default function Investment() {
           {t('investment.source')}
         </p>
 
+        {/* Mission and Vision Section */}
+        <div className="mb-16">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <Card className="bg-white shadow-lg">
+              <CardContent className="pt-6">
+                <h3 className="text-2xl font-semibold mb-4 text-gray-900">
+                  {t('nav.language') === 'es' ? 'Misión' : 'Mission'}
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  {t('about.mission')}
+                </p>
+              </CardContent>
+            </Card>
+
+            <Card className="bg-white shadow-lg">
+              <CardContent className="pt-6">
+                <h3 className="text-2xl font-semibold mb-4 text-gray-900">
+                  {t('nav.language') === 'es' ? 'Visión' : 'Vision'}
+                </h3>
+                <p className="text-gray-700 leading-relaxed">
+                  {t('about.vision')}
+                </p>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+
         {/* Strategic Advantage Map Section */}
         <div className="mb-16">
           <Card className="bg-white shadow-lg max-w-3xl mx-auto">
