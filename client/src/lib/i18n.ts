@@ -20,11 +20,11 @@ const resources = {
         description: "Strategically located in Sonora at the US-Mexico border, with high-quality deposits and guaranteed water access. A local solution for global perlite demand"
       },
       about: {
+        title: "More Than a Mine, a Strategic Resource",
         who_we_are: {
           title: "Who We Are",
           description: "We are a Sonoran-based company that emerged from identifying a business opportunity for our family, who owns and operates Rancho Babidanchi. This land is home to two significant perlite deposits of high quality, located close to each other, with enormous resource potential to become a leader in North America."
         },
-        title: "More Than a Mine, a Strategic Resource",
         history: "Located in the heart of Sonora, our family-owned perlite mine represents a unique investment opportunity in the industrial minerals sector",
         mission: "Produce the highest-quality perlite for strategic markets, responsibly and sustainably",
         vision: "To become a leading global supplier of premium perlite, delivering high-quality products and sustainable solutions to meet the diverse needs of our clients worldwide"
@@ -32,25 +32,6 @@ const resources = {
       location: {
         title: "Our Location",
         description: "Strategically positioned for efficient distribution"
-      },
-      mineral_future: {
-        description: "The growing importance of perlite in modern industry and sustainable development",
-        versatile: {
-          title: "Versatile Applications",
-          description: "From construction to agriculture, perlite's unique properties make it invaluable across industries"
-        },
-        sustainable: {
-          title: "Sustainable Solution",
-          description: "Natural, environmentally friendly material that supports green building and sustainable agriculture"
-        },
-        demand: {
-          title: "Growing Demand",
-          description: "Increasing industrial applications and construction needs drive strong market growth"
-        },
-        strategic: {
-          title: "Strategic Resource",
-          description: "Essential mineral for North American industrial independence and security"
-        }
       },
       product: {
         title: "What is Perlite",
@@ -152,7 +133,6 @@ const resources = {
         title: "Contact Us",
         name: "Full Name",
         email: "Email Address",
-        company: "Company Name",
         message: "Your Message",
         submit: "Send Message",
         success: "Message sent successfully",
@@ -182,11 +162,11 @@ const resources = {
         description: "Estratégicamente ubicada en Sonora en la frontera México-EE.UU., con depósitos de alta calidad y acceso garantizado al agua. Una solución local para la demanda global de perlita"
       },
       about: {
+        title: "Más que una Mina, un Recurso Estratégico",
         who_we_are: {
           title: "Quiénes Somos",
           description: "Somos una empresa sonorense que surgió al identificar una oportunidad de negocio para nuestra familia, propietaria y operadora del Rancho Babidanchi. Esta tierra alberga dos importantes depósitos de perlita de alta calidad, ubicados cerca uno del otro, con un enorme potencial de recursos para convertirse en líder en América del Norte."
         },
-        title: "Más que una Mina, un Recurso Estratégico",
         history: "Ubicada en el corazón de Sonora, nuestra mina familiar de perlita representa una oportunidad única de inversión en el sector de minerales industriales",
         mission: "Producir perlita de la más alta calidad para mercados estratégicos, de manera responsable y sostenible",
         vision: "Convertirnos en un proveedor global líder de perlita premium, entregando productos de alta calidad y soluciones sostenibles para satisfacer las diversas necesidades de nuestros clientes en todo el mundo"
@@ -194,25 +174,6 @@ const resources = {
       location: {
         title: "Nuestra Ubicación",
         description: "Posicionamiento estratégico para una distribución eficiente"
-      },
-      mineral_future: {
-        description: "La creciente importancia de la perlita en la industria moderna y el desarrollo sostenible",
-        versatile: {
-          title: "Aplicaciones Versátiles",
-          description: "Desde la construcción hasta la agricultura, las propiedades únicas de la perlita la hacen invaluable en múltiples industrias"
-        },
-        sustainable: {
-          title: "Solución Sostenible",
-          description: "Material natural y ecológico que apoya la construcción verde y la agricultura sostenible"
-        },
-        demand: {
-          title: "Demanda Creciente",
-          description: "El aumento de aplicaciones industriales y necesidades de construcción impulsan un fuerte crecimiento del mercado"
-        },
-        strategic: {
-          title: "Recurso Estratégico",
-          description: "Mineral esencial para la independencia industrial y la seguridad de América del Norte"
-        }
       },
       product: {
         title: "¿Qué es la Perlita?",
@@ -314,7 +275,6 @@ const resources = {
         title: "Contáctenos",
         name: "Nombre Completo",
         email: "Correo Electrónico",
-        company: "Nombre de la Empresa",
         message: "Su Mensaje",
         submit: "Enviar Mensaje",
         success: "Mensaje enviado exitosamente",
