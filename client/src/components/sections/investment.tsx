@@ -117,24 +117,6 @@ export default function Investment() {
           {t('investment.source')}
         </p>
 
-        {/* Strategic Advantage Map Section */}
-        <div className="mb-16">
-          <Card className="bg-white shadow-lg max-w-3xl mx-auto">
-            <CardContent className="pt-6">
-              <div className="flex items-center gap-3 mb-4">
-                <Workflow className="h-6 w-6 text-primary" />
-                <h3 className="text-2xl font-semibold text-gray-900">
-                  {t('investment.strategic_advantage.title')}
-                </h3>
-              </div>
-              <p className="text-lg text-gray-700 mb-6">
-                {t('investment.strategic_advantage.description')}
-              </p>
-              <Map showTitle={false} />
-            </CardContent>
-          </Card>
-        </div>
-
         {/* Mission and Vision Section */}
         <div className="mb-16 bg-white py-12">
           <div className="container mx-auto px-4">
@@ -174,6 +156,24 @@ export default function Investment() {
               </div>
             </div>
           </div>
+        </div>
+
+        {/* Strategic Advantage Map Section */}
+        <div className="mb-16">
+          <Card className="bg-white shadow-lg max-w-3xl mx-auto">
+            <CardContent className="pt-6">
+              <div className="flex items-center gap-3 mb-4">
+                <Workflow className="h-6 w-6 text-primary" />
+                <h3 className="text-2xl font-semibold text-gray-900">
+                  {t('investment.strategic_advantage.title')}
+                </h3>
+              </div>
+              <p className="text-lg text-gray-700 mb-6">
+                {t('investment.strategic_advantage.description')}
+              </p>
+              <Map showTitle={false} />
+            </CardContent>
+          </Card>
         </div>
 
         {/* Key Advantages Section */}
