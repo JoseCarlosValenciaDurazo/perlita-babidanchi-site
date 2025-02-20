@@ -11,9 +11,6 @@ export default function MoreThanMine() {
           <h2 className="text-4xl font-bold mb-6 text-gray-900">
             {t('about.title')}
           </h2>
-          <p className="text-xl text-gray-700 max-w-4xl mx-auto">
-            {t('about.who_we_are.description')}
-          </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">

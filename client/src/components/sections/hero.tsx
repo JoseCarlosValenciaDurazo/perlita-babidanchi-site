@@ -9,17 +9,17 @@ export default function Hero() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-gray-900">
-            Who We Are
+            {t('about.who_we_are.title')}
           </h1>
           <h2 className="text-2xl md:text-3xl mb-8 text-gray-700">
-            PERLITA BABIDANCHI, SA. DE CV.
+            {t('hero.subtitle')}
           </h2>
         </div>
 
         <Card className="max-w-4xl mx-auto bg-white shadow-lg">
           <CardContent className="pt-6">
             <p className="text-xl text-gray-700 leading-relaxed">
-              We are a Sonoran-based company that emerged from identifying a business opportunity for our family, who owns and operates Rancho Babidanchi. This land is home to two significant perlite deposits of high quality, located close to each other, with enormous resource potential to become a leader in North America.
+              {t('about.who_we_are.description')}
             </p>
           </CardContent>
         </Card>
