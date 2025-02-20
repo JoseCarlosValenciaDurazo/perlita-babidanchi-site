@@ -19,6 +19,10 @@ const resources = {
         subtitle: "Perlite Babidanchi",
         description: "Strategically located in Sonora at the US-Mexico border, with high-quality deposits and guaranteed water access. A local solution for global perlite demand"
       },
+      main_section: {
+        title: "PERLITE",
+        subtitle: "THE MINERAL OF THE FUTURE"
+      },
       about: {
         title: "More Than a Mine: A Strategic Resource",
         who_we_are: {
@@ -210,6 +214,10 @@ const resources = {
         title: "El Mineral del Futuro",
         subtitle: "Perlita Babidanchi",
         description: "Estratégicamente ubicada en Sonora en la frontera México-EE.UU., con depósitos de alta calidad y acceso garantizado al agua. Una solución local para la demanda global de perlita"
+      },
+      main_section: {
+        title: "PERLITA",
+        subtitle: "EL MINERAL DEL FUTURO"
       },
       about: {
         title: "Más que una Mina: Un Recurso Estratégico",
