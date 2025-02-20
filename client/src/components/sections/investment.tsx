@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Card, CardContent } from "@/components/ui/card";
-import { Database, MapPin, Droplets, TrendingUp, LineChart, Workflow } from "lucide-react";
-import Map from "./Map";
+import { Database, MapPin, Droplets, TrendingUp, LineChart } from "lucide-react";
 import {
   Table,
   TableBody,
@@ -170,23 +169,6 @@ export default function Investment() {
               </CardContent>
             </Card>
           </div>
-        </div>
-        {/* Strategic Advantage Map Section */}
-        <div className="mb-16">
-          <Card className="bg-white shadow-lg max-w-3xl mx-auto">
-            <CardContent className="pt-6">
-              <div className="flex items-center gap-3 mb-4">
-                <Workflow className="h-6 w-6 text-primary" />
-                <h3 className="text-2xl font-semibold text-gray-900">
-                  {t('investment.strategic_advantage.title')}
-                </h3>
-              </div>
-              <p className="text-lg text-gray-700 mb-6">
-                {t('investment.strategic_advantage.description')}
-              </p>
-              <Map showTitle={false} />
-            </CardContent>
-          </Card>
         </div>
       </div>
     </section>
