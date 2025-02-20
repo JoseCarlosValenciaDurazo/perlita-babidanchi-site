@@ -33,8 +33,8 @@ export default function Investment() {
           </h2>
         </div>
 
-        {/* US Market Analysis */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+        {/* U.S. Market Analysis */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-4">
           <Card className="bg-white shadow-lg">
             <CardContent className="pt-6">
               <div className="flex items-center gap-3 mb-4">
@@ -119,6 +119,11 @@ export default function Investment() {
             </CardContent>
           </Card>
         </div>
+
+        {/* Source Citation */}
+        <p className="text-sm text-gray-500 text-center italic mb-16">
+          {t('investment.source')}
+        </p>
 
         {/* Key Advantages Section */}
         <div className="mb-16">
