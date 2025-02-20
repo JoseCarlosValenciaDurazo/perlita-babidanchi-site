@@ -56,7 +56,7 @@ export default function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="font-bold text-xl text-foreground">
-            Mina Babidanchi
+            Perlita Babidanchi, S.A. de C.V.
           </Link>
 
           <nav className="hidden md:flex items-center space-x-8">
