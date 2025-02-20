@@ -49,11 +49,11 @@ export default function MainUses() {
     <section id="main-uses" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-            PERLITE, THE MINERAL OF THE FUTURE
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+            PERLITE
           </h2>
-          <h3 className="text-3xl font-bold text-gray-900">
-            Main Uses
+          <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
+            THE MINERAL OF THE FUTURE
           </h3>
         </div>
 
