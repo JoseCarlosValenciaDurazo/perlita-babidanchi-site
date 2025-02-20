@@ -1,6 +1,11 @@
 import { useTranslation } from "react-i18next";
 import { Card, CardContent } from "@/components/ui/card";
-import { Sparkles, Leaf, Factory, Shield } from "lucide-react";
+import { 
+  Building2, 
+  Sprout, 
+  Beaker, 
+  Shield,
+} from "lucide-react";
 
 export default function MineralFuture() {
   const { t } = useTranslation();
@@ -13,7 +18,7 @@ export default function MineralFuture() {
             PERLITE
           </h2>
           <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
-            {t('mineral_future.title')}
+            THE MINERAL OF THE FUTURE
           </h3>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
             {t('mineral_future.description')}
@@ -24,12 +29,12 @@ export default function MineralFuture() {
           <Card className="bg-white shadow-lg">
             <CardContent className="pt-6">
               <div className="flex flex-col items-center text-center">
-                <Sparkles className="h-8 w-8 text-primary mb-4" />
+                <Building2 className="h-8 w-8 text-primary mb-4" />
                 <h4 className="text-xl font-semibold mb-3 text-gray-900">
-                  {t('mineral_future.versatile.title')}
+                  Construction
                 </h4>
                 <p className="text-gray-700">
-                  {t('mineral_future.versatile.description')}
+                  Used in lightweight construction materials, insulation, and plasters for improved thermal efficiency.
                 </p>
               </div>
             </CardContent>
@@ -38,12 +43,12 @@ export default function MineralFuture() {
           <Card className="bg-white shadow-lg">
             <CardContent className="pt-6">
               <div className="flex flex-col items-center text-center">
-                <Leaf className="h-8 w-8 text-primary mb-4" />
+                <Sprout className="h-8 w-8 text-primary mb-4" />
                 <h4 className="text-xl font-semibold mb-3 text-gray-900">
-                  {t('mineral_future.sustainable.title')}
+                  Agriculture
                 </h4>
                 <p className="text-gray-700">
-                  {t('mineral_future.sustainable.description')}
+                  Enhances soil aeration and water retention in horticultural applications.
                 </p>
               </div>
             </CardContent>
@@ -52,12 +57,12 @@ export default function MineralFuture() {
           <Card className="bg-white shadow-lg">
             <CardContent className="pt-6">
               <div className="flex flex-col items-center text-center">
-                <Factory className="h-8 w-8 text-primary mb-4" />
+                <Beaker className="h-8 w-8 text-primary mb-4" />
                 <h4 className="text-xl font-semibold mb-3 text-gray-900">
-                  {t('mineral_future.demand.title')}
+                  Filtration
                 </h4>
                 <p className="text-gray-700">
-                  {t('mineral_future.demand.description')}
+                  Essential in industrial filtration processes for beverages and pharmaceuticals.
                 </p>
               </div>
             </CardContent>
@@ -68,10 +73,10 @@ export default function MineralFuture() {
               <div className="flex flex-col items-center text-center">
                 <Shield className="h-8 w-8 text-primary mb-4" />
                 <h4 className="text-xl font-semibold mb-3 text-gray-900">
-                  {t('mineral_future.strategic.title')}
+                  Insulation
                 </h4>
                 <p className="text-gray-700">
-                  {t('mineral_future.strategic.description')}
+                  Provides excellent thermal and acoustic insulation properties.
                 </p>
               </div>
             </CardContent>
