@@ -15,33 +15,33 @@ export default function MainUses() {
   const uses = [
     {
       icon: <Building2 className="h-8 w-8" />,
-      title: "Construction",
-      description: "Used in lightweight construction materials, insulation, and plasters for improved thermal efficiency."
+      title: t('main_uses.uses.construction.title'),
+      description: t('main_uses.uses.construction.description')
     },
     {
       icon: <Sprout className="h-8 w-8" />,
-      title: "Agriculture",
-      description: "Enhances soil aeration and water retention in horticultural applications."
+      title: t('main_uses.uses.agriculture.title'),
+      description: t('main_uses.uses.agriculture.description')
     },
     {
       icon: <Beaker className="h-8 w-8" />,
-      title: "Filtration",
-      description: "Essential in industrial filtration processes for beverages and pharmaceuticals."
+      title: t('main_uses.uses.filtration.title'),
+      description: t('main_uses.uses.filtration.description')
     },
     {
       icon: <Shield className="h-8 w-8" />,
-      title: "Insulation",
-      description: "Provides excellent thermal and acoustic insulation properties."
+      title: t('main_uses.uses.insulation.title'),
+      description: t('main_uses.uses.insulation.description')
     },
     {
       icon: <Factory className="h-8 w-8" />,
-      title: "Industrial",
-      description: "Used in various industrial applications including foundry and cryogenic systems."
+      title: t('main_uses.uses.industrial.title'),
+      description: t('main_uses.uses.industrial.description')
     },
     {
       icon: <Lightbulb className="h-8 w-8" />,
-      title: "Innovation",
-      description: "Emerging applications in sustainable technologies and green building materials."
+      title: t('main_uses.uses.innovation.title'),
+      description: t('main_uses.uses.innovation.description')
     }
   ];
 
@@ -50,10 +50,10 @@ export default function MainUses() {
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
-            PERLITE
+            {t('main_uses.perlite')}
           </h2>
           <h3 className="text-2xl md:text-3xl font-bold text-gray-900">
-            THE MINERAL OF THE FUTURE
+            {t('main_uses.tagline')}
           </h3>
         </div>
 

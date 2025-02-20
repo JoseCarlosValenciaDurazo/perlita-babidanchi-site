@@ -161,6 +161,36 @@ const resources = {
       gallery: {
         title: "Our Gallery",
         description: "Discover in our image gallery the stunning perlite deposits sources that are part of our mine"
+      },
+      main_uses: {
+        perlite: "PERLITE",
+        tagline: "THE MINERAL OF THE FUTURE",
+        uses: {
+          construction: {
+            title: "Construction",
+            description: "Used in lightweight construction materials, insulation, and plasters for improved thermal efficiency."
+          },
+          agriculture: {
+            title: "Agriculture",
+            description: "Enhances soil aeration and water retention in horticultural applications."
+          },
+          filtration: {
+            title: "Filtration",
+            description: "Essential in industrial filtration processes for beverages and pharmaceuticals."
+          },
+          insulation: {
+            title: "Insulation",
+            description: "Provides excellent thermal and acoustic insulation properties."
+          },
+          industrial: {
+            title: "Industrial",
+            description: "Used in various industrial applications including foundry and cryogenic systems."
+          },
+          innovation: {
+            title: "Innovation",
+            description: "Emerging applications in sustainable technologies and green building materials."
+          }
+        }
       }
     }
   },
@@ -323,6 +353,36 @@ const resources = {
       gallery: {
         title: "Nuestra Galería",
         description: "Descubra en nuestra galería de imágenes las impresionantes fuentes de depósitos de perlita que forman parte de nuestra mina"
+      },
+      main_uses: {
+        perlite: "PERLITA",
+        tagline: "EL MINERAL DEL FUTURO",
+        uses: {
+          construction: {
+            title: "Construcción",
+            description: "Utilizado en materiales de construcción ligeros, aislamiento y yesos para mejorar la eficiencia térmica."
+          },
+          agriculture: {
+            title: "Agricultura",
+            description: "Mejora la aireación del suelo y la retención de agua en aplicaciones hortícolas."
+          },
+          filtration: {
+            title: "Filtración",
+            description: "Esencial en procesos de filtración industrial para bebidas y productos farmacéuticos."
+          },
+          insulation: {
+            title: "Aislamiento",
+            description: "Proporciona excelentes propiedades de aislamiento térmico y acústico."
+          },
+          industrial: {
+            title: "Industrial",
+            description: "Utilizado en diversas aplicaciones industriales, incluyendo fundición y sistemas criogénicos."
+          },
+          innovation: {
+            title: "Innovación",
+            description: "Aplicaciones emergentes en tecnologías sostenibles y materiales de construcción ecológicos."
+          }
+        }
       }
     }
   }
