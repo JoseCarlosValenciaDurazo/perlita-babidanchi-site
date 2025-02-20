@@ -3,6 +3,9 @@ export default function Map() {
     <div className="py-16 bg-white">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-8 text-gray-900">
+            Location Map
+          </h2>
           <div className="h-[400px] w-full rounded-lg overflow-hidden relative">
             <iframe 
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3524288.476282714!2d-112.18555192361784!3d32.367777974305837!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x86d20a7c3b6b6b6b%3A0x0!2zMzDCsDIyJzA0LjAiTiAxMDnCsDExJzAwLjAiVw!5e0!3m2!1sen!2sus!4v1707815400000!5m2!1sen!2sus" 
