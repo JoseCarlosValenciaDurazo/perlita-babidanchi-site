@@ -1,5 +1,6 @@
 import Hero from "@/components/sections/hero";
 import Map from "@/components/sections/Map";
+import Product from "@/components/sections/product";
 import MainUses from "@/components/sections/main-uses";
 import Investment from "@/components/sections/investment";
 import Gallery from "@/components/sections/gallery";
@@ -10,6 +11,7 @@ export default function Home() {
     <div className="w-full">
       <Hero />
       <Map />
+      <Product />
       <MainUses />
       <Investment />
       <Gallery />
