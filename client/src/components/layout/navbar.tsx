@@ -34,20 +34,6 @@ export default function Navbar() {
     setIsOpen(false);
   };
 
-  const NavLinks = () => (
-    <>
-      {navItems.map((item) => (
-        <a
-          key={item.href}
-          href={item.href}
-          className="text-gray-700 hover:text-primary transition-colors text-sm font-medium"
-          onClick={(e) => handleScroll(e, item.href)}
-        >
-          {item.label}
-        </a>
-      ))}
-    </>
-  );
 
   return (
     <header className="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-sm border-b">
@@ -57,8 +43,28 @@ export default function Navbar() {
             Perlita Babidanchi
           </Link>
 
-          <nav className="hidden md:flex items-center space-x-8">
-            <NavLinks />
+          <nav className="hidden md:flex items-center">
+            <Sheet open={isOpen} onOpenChange={setIsOpen}>
+              <SheetTrigger asChild>
+                <Button variant="outline" size="sm">
+                  Menu
+                </Button>
+              </SheetTrigger>
+              <SheetContent>
+                <div className="flex flex-col space-y-2 mt-4">
+                  {navItems.map((item) => (
+                    <a
+                      key={item.href}
+                      href={item.href}
+                      className="text-sm font-medium px-3 py-2 hover:bg-accent rounded-md"
+                      onClick={(e) => handleScroll(e, item.href)}
+                    >
+                      {item.label}
+                    </a>
+                  ))}
+                </div>
+              </SheetContent>
+            </Sheet>
           </nav>
 
           <div className="flex items-center space-x-2">
@@ -75,7 +81,16 @@ export default function Navbar() {
               </SheetTrigger>
               <SheetContent>
                 <nav className="flex flex-col space-y-4 mt-8">
-                  <NavLinks />
+                  {navItems.map((item) => (
+                    <a
+                      key={item.href}
+                      href={item.href}
+                      className="text-gray-700 hover:text-primary transition-colors text-sm font-medium"
+                      onClick={(e) => handleScroll(e, item.href)}
+                    >
+                      {item.label}
+                    </a>
+                  ))}
                 </nav>
               </SheetContent>
             </Sheet>
