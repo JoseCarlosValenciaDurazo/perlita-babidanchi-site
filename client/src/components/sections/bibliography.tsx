@@ -1,28 +1,43 @@
+import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Card, CardContent } from "@/components/ui/card";
 import { FileText, Link as LinkIcon } from "lucide-react";
 import { Separator } from "@/components/ui/separator";
+import PDFPreviewModal from "./pdf-preview-modal";
+
+interface Reference {
+  title: string;
+  description: string;
+  link: string;
+  pdfUrl?: string;
+  pdfDescription?: string;
+}
 
 export default function Bibliography() {
   const { t } = useTranslation();
+  const [selectedPdf, setSelectedPdf] = useState<Reference | null>(null);
 
-  const references = [
+  const references: Reference[] = [
     {
       title: "U.S. Geological Survey",
       description: "Mineral Commodity Summaries 2024: Perlite",
       link: "https://www.usgs.gov/",
-      // pdfUrl: "", // For future PDF attachments
-      // pdfDescription: "", // For future PDF descriptions
+      pdfUrl: "/pdfs/usgs-perlite-2024.pdf", // Example PDF URL
+      pdfDescription: "USGS Mineral Commodity Summaries 2024 - Perlite Section"
     },
     {
       title: "Perlite Institute",
       description: "Technical data and industry standards for perlite applications",
       link: "https://www.perlite.org/",
+      pdfUrl: "/pdfs/perlite-technical-data.pdf", // Example PDF URL
+      pdfDescription: "Perlite Technical Standards and Applications Guide"
     },
     {
       title: "Mexican Geological Survey",
       description: "Geological studies and mineral resources of Sonora",
       link: "https://www.gob.mx/sgm",
+      pdfUrl: "/pdfs/sonora-geological-report.pdf", // Example PDF URL
+      pdfDescription: "Sonora Region Geological Survey Report"
     }
   ];
 
@@ -58,23 +73,18 @@ export default function Bibliography() {
                           Visit Source
                           <LinkIcon className="h-4 w-4" />
                         </a>
-                        {/* Placeholder for future PDF link */}
-                        {/*
                         {ref.pdfUrl && (
                           <>
                             <Separator orientation="vertical" className="h-4" />
-                            <a
-                              href={ref.pdfUrl}
-                              target="_blank"
-                              rel="noopener noreferrer"
+                            <button
+                              onClick={() => setSelectedPdf(ref)}
                               className="text-primary hover:text-primary/80 font-medium flex items-center gap-2"
                             >
                               View PDF
                               <FileText className="h-4 w-4" />
-                            </a>
+                            </button>
                           </>
                         )}
-                        */}
                       </div>
                     </div>
                   </div>
@@ -84,6 +94,16 @@ export default function Bibliography() {
           ))}
         </div>
       </div>
+
+      {selectedPdf && (
+        <PDFPreviewModal
+          isOpen={true}
+          onClose={() => setSelectedPdf(null)}
+          pdfUrl={selectedPdf.pdfUrl!}
+          title={selectedPdf.title}
+          description={selectedPdf.pdfDescription}
+        />
+      )}
     </section>
   );
 }
