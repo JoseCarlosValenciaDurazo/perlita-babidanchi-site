@@ -50,14 +50,14 @@ export default function Bibliography() {
         <div className="max-w-4xl mx-auto">
           {references.map((ref, index) => (
             <div key={index} className="mb-6">
-              <Card className="hover:shadow-lg transition-shadow">
+              <Card className="transform transition-all duration-300 hover:scale-[1.02] hover:shadow-lg">
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
                     <div className="flex-shrink-0 mt-1">
                       <LinkIcon className="h-5 w-5 text-primary" />
                     </div>
                     <div className="flex-grow">
-                      <h3 className="text-xl font-semibold text-gray-900 mb-2">
+                      <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-primary transition-colors">
                         {ref.title}
                       </h3>
                       <p className="text-gray-600 mb-4">
@@ -68,7 +68,7 @@ export default function Bibliography() {
                           href={ref.link}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="text-primary hover:text-primary/80 font-medium flex items-center gap-2"
+                          className="text-primary hover:text-primary/80 font-medium flex items-center gap-2 transition-colors duration-200 hover:underline"
                         >
                           Visit Source
                           <LinkIcon className="h-4 w-4" />
@@ -78,7 +78,7 @@ export default function Bibliography() {
                             <Separator orientation="vertical" className="h-4" />
                             <button
                               onClick={() => setSelectedPdf(ref)}
-                              className="text-primary hover:text-primary/80 font-medium flex items-center gap-2"
+                              className="text-primary hover:text-primary/80 font-medium flex items-center gap-2 transition-colors duration-200 hover:underline"
                             >
                               View PDF
                               <FileText className="h-4 w-4" />
