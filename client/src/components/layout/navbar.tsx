@@ -5,10 +5,12 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import LanguageToggle from "./language-toggle";
+import { useSmoothScroll } from "@/hooks/use-smooth-scroll";
 
 export default function Navbar() {
   const { t } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
+  const scrollToElement = useSmoothScroll();
 
   const navItems = [
     { href: "#hero", label: t('nav.who_we_are') },
@@ -28,18 +30,8 @@ export default function Navbar() {
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
     const targetId = href.replace('#', '');
-    const element = document.getElementById(targetId);
-    if (element) {
-      const offset = 80; // Account for fixed header
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - offset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth"
-      });
-      setIsOpen(false);
-    }
+    scrollToElement(targetId);
+    setIsOpen(false);
   };
 
   const NavLinks = () => (
