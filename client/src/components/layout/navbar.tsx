@@ -5,7 +5,6 @@ import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import LanguageToggle from "./language-toggle";
-import ThemeToggle from "./theme-toggle";
 
 export default function Navbar() {
   const { t } = useTranslation();
@@ -52,10 +51,10 @@ export default function Navbar() {
   );
 
   return (
-    <header className="fixed w-full top-0 z-50 bg-background/90 backdrop-blur-sm border-b">
+    <header className="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-sm border-b">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="font-bold text-xl text-foreground">
+          <Link href="/" className="font-bold text-xl text-gray-900">
             Perlita Babidanchi, S.A. de C.V.
           </Link>
 
@@ -65,7 +64,6 @@ export default function Navbar() {
 
           <div className="flex items-center space-x-2">
             <LanguageToggle />
-            <ThemeToggle />
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
                 <Button 
