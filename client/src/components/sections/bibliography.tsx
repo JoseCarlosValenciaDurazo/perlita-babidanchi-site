@@ -42,25 +42,25 @@ export default function Bibliography() {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold mb-12 text-center text-gray-900">
+        <h2 className="text-4xl font-bold mb-12 text-center text-foreground">
           Bibliography
         </h2>
         <div className="max-w-4xl mx-auto">
           {references.map((ref, index) => (
             <div key={index} className="mb-6">
-              <Card className="transform transition-all duration-300 hover:scale-[1.02] hover:shadow-lg">
+              <Card className="transform transition-all duration-300 hover:scale-[1.02] hover:shadow-lg bg-card">
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
                     <div className="flex-shrink-0 mt-1">
                       <LinkIcon className="h-5 w-5 text-primary" />
                     </div>
                     <div className="flex-grow">
-                      <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+                      <h3 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">
                         {ref.title}
                       </h3>
-                      <p className="text-gray-600 mb-4">
+                      <p className="text-muted-foreground mb-4">
                         {ref.description}
                       </p>
                       <div className="flex items-center gap-4">
