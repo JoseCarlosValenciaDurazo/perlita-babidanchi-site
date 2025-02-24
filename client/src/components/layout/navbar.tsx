@@ -39,47 +39,19 @@ export default function Navbar() {
     <header className="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-sm border-b">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          <Link href="/" className="font-bold text-xl text-gray-900">
+          <Link href="/" className="text-xl font-semibold text-gray-900">
             Perlita Babidanchi
           </Link>
 
-          <nav className="hidden md:flex items-center">
-            <Sheet open={isOpen} onOpenChange={setIsOpen}>
-              <SheetTrigger asChild>
-                <Button variant="outline" size="sm">
-                  Menu
-                </Button>
-              </SheetTrigger>
-              <SheetContent>
-                <div className="flex flex-col space-y-2 mt-4">
-                  {navItems.map((item) => (
-                    <a
-                      key={item.href}
-                      href={item.href}
-                      className="text-sm font-medium px-3 py-2 hover:bg-accent rounded-md"
-                      onClick={(e) => handleScroll(e, item.href)}
-                    >
-                      {item.label}
-                    </a>
-                  ))}
-                </div>
-              </SheetContent>
-            </Sheet>
-          </nav>
-
-          <div className="flex items-center space-x-2">
+          <div className="flex items-center space-x-4">
             <LanguageToggle />
             <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
-                <Button 
-                  variant="ghost" 
-                  size="icon" 
-                  className="md:hidden p-0"
-                >
-                  <Menu className="h-6 w-6" />
+                <Button variant="ghost" size="icon">
+                  <Menu className="h-5 w-5" />
                 </Button>
               </SheetTrigger>
-              <SheetContent>
+              <SheetContent side="right">
                 <nav className="flex flex-col space-y-4 mt-8">
                   {navItems.map((item) => (
                     <a
