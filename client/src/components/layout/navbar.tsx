@@ -11,11 +11,18 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { href: "#about", label: t('nav.about') },
-    { href: "#product", label: t('nav.product') },
+    { href: "#hero", label: t('nav.who_we_are') },
+    { href: "#location", label: t('nav.location') },
+    { href: "#about", label: t('nav.strategic_resource') },
+    { href: "#what-is-perlite", label: t('nav.what_is_perlite') },
+    { href: "#mineral-future", label: t('nav.mineral_future') },
     { href: "#investment", label: t('nav.investment') },
+    { href: "#key-advantages", label: t('nav.key_advantages') },
+    { href: "#strategic-delivery", label: t('nav.strategic_delivery') },
     { href: "#deposits", label: t('nav.deposits') },
-    { href: "#contact", label: t('nav.contact') },
+    { href: "#bibliography", label: t('nav.bibliography') },
+    { href: "#gallery", label: t('nav.gallery') },
+    { href: "#contact", label: t('nav.contact') }
   ];
 
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -55,7 +62,7 @@ export default function Navbar() {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <Link href="/" className="font-bold text-xl text-gray-900">
-            Perlita Babidanchi, S.A. de C.V.
+            Perlita Babidanchi
           </Link>
 
           <nav className="hidden md:flex items-center space-x-8">
