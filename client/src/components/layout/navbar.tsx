@@ -60,14 +60,14 @@ export default function Navbar() {
                   <Menu className="h-6 w-6" />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-[300px] sm:w-[400px] p-0">
-                <nav className="grid gap-2 p-4">
+              <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-white p-0">
+                <nav className="grid gap-1 p-4">
                   {navItems.map((item) => (
                     <a
                       key={item.href}
                       href={item.href}
                       onClick={(e) => handleScroll(e, item.href)}
-                      className="block px-4 py-3 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-colors"
+                      className="block px-4 py-2.5 text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50/80 rounded-lg transition-colors"
                     >
                       {item.label}
                     </a>
