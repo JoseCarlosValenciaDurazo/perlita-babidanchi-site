@@ -46,34 +46,38 @@ export default function Navbar() {
           </Link>
 
           {/* Right section with language toggle and menu */}
-          <div className="flex items-center gap-4">
-            <LanguageToggle />
+          <div className="flex items-center space-x-4">
+            <div className="flex items-center justify-center">
+              <LanguageToggle />
+            </div>
 
             {/* Navigation Menu */}
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <Button 
-                  variant="outline" 
-                  size="icon"
-                  className="border-2"
-                >
-                  <Menu className="h-5 w-5" />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" className="w-64">
-                {navItems.map((item) => (
-                  <DropdownMenuItem key={item.href} asChild>
-                    <a
-                      href={item.href}
-                      className="w-full px-2 py-1.5"
-                      onClick={(e) => handleScroll(e, item.href)}
-                    >
-                      {item.label}
-                    </a>
-                  </DropdownMenuItem>
-                ))}
-              </DropdownMenuContent>
-            </DropdownMenu>
+            <div className="flex items-center justify-center">
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button 
+                    variant="outline" 
+                    size="icon"
+                    className="border-2"
+                  >
+                    <Menu className="h-5 w-5" />
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end" className="w-64 mt-2">
+                  {navItems.map((item) => (
+                    <DropdownMenuItem key={item.href} asChild>
+                      <a
+                        href={item.href}
+                        className="w-full px-2 py-1.5"
+                        onClick={(e) => handleScroll(e, item.href)}
+                      >
+                        {item.label}
+                      </a>
+                    </DropdownMenuItem>
+                  ))}
+                </DropdownMenuContent>
+              </DropdownMenu>
+            </div>
           </div>
         </div>
       </div>
