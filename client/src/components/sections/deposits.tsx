@@ -15,7 +15,7 @@ export default function Deposits() {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          <Card className="overflow-hidden">
+          <Card className="overflow-hidden bg-white">
             <div className="h-64 w-full relative">
               <img
                 src="/images/selene-deposit.jpg"
@@ -33,7 +33,7 @@ export default function Deposits() {
             </CardContent>
           </Card>
 
-          <Card className="overflow-hidden">
+          <Card className="overflow-hidden bg-white">
             <div className="h-64 w-full relative">
               <img
                 src="/images/bendicion-deposit.jpg"

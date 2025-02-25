@@ -56,7 +56,7 @@ export default function Contact() {
           {t('contact.title')}
         </h2>
 
-        <Card className="max-w-2xl mx-auto">
+        <Card className="max-w-2xl mx-auto bg-white shadow-lg">
           <CardContent className="pt-6">
             <Form {...form}>
               <form
@@ -70,7 +70,7 @@ export default function Contact() {
                     <FormItem>
                       <FormLabel>{t('contact.name')}</FormLabel>
                       <FormControl>
-                        <Input {...field} />
+                        <Input {...field} className="bg-white" />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -84,7 +84,7 @@ export default function Contact() {
                     <FormItem>
                       <FormLabel>{t('contact.email')}</FormLabel>
                       <FormControl>
-                        <Input type="email" {...field} />
+                        <Input type="email" {...field} className="bg-white" />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
@@ -98,7 +98,7 @@ export default function Contact() {
                     <FormItem>
                       <FormLabel>{t('contact.message')}</FormLabel>
                       <FormControl>
-                        <Textarea {...field} />
+                        <Textarea {...field} className="bg-white" />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
