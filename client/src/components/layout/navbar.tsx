@@ -45,51 +45,35 @@ export default function Navbar() {
             Perlita Babidanchi
           </Link>
 
-          {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-4 flex-1 justify-center">
-            {navItems.map((item) => (
-              <a
-                key={item.href}
-                href={item.href}
-                className="text-sm text-gray-700 hover:text-primary transition-colors whitespace-nowrap"
-                onClick={(e) => handleScroll(e, item.href)}
-              >
-                {item.label}
-              </a>
-            ))}
-          </nav>
-
-          {/* Right section with language toggle and mobile menu */}
+          {/* Right section with language toggle and menu */}
           <div className="flex items-center gap-4">
             <LanguageToggle />
 
-            {/* Mobile Navigation */}
-            <div className="md:hidden">
-              <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <Button 
-                    variant="outline" 
-                    size="icon"
-                    className="border-2"
-                  >
-                    <Menu className="h-5 w-5" />
-                  </Button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent align="end" className="w-56">
-                  {navItems.map((item) => (
-                    <DropdownMenuItem key={item.href} asChild>
-                      <a
-                        href={item.href}
-                        className="w-full px-2 py-1.5"
-                        onClick={(e) => handleScroll(e, item.href)}
-                      >
-                        {item.label}
-                      </a>
-                    </DropdownMenuItem>
-                  ))}
-                </DropdownMenuContent>
-              </DropdownMenu>
-            </div>
+            {/* Navigation Menu */}
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button 
+                  variant="outline" 
+                  size="icon"
+                  className="border-2"
+                >
+                  <Menu className="h-5 w-5" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end" className="w-64">
+                {navItems.map((item) => (
+                  <DropdownMenuItem key={item.href} asChild>
+                    <a
+                      href={item.href}
+                      className="w-full px-2 py-1.5"
+                      onClick={(e) => handleScroll(e, item.href)}
+                    >
+                      {item.label}
+                    </a>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
         </div>
       </div>
