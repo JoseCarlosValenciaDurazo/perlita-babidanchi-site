@@ -63,9 +63,11 @@ export default function Navbar() {
               </DropdownMenuTrigger>
               <DropdownMenuContent 
                 align="end" 
-                className="w-64 mt-2 bg-white shadow-lg rounded-lg border"
+                className="w-64 bg-white shadow-lg rounded-lg border"
                 sideOffset={8}
                 alignOffset={0}
+                forceMount
+                style={{ position: 'fixed', top: '4rem', right: '1rem' }}
               >
                 {navItems.map((item) => (
                   <DropdownMenuItem 
