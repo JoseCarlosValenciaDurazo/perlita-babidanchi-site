@@ -56,7 +56,7 @@ export default function Navbar() {
                 <Button 
                   variant="ghost" 
                   size="icon"
-                  className="h-10 w-10 hover:bg-gray-100 text-gray-700 hover:text-gray-900"
+                  className="h-10 w-10 text-gray-700 hover:text-gray-900"
                 >
                   <Menu className="h-6 w-6" />
                 </Button>
@@ -64,10 +64,7 @@ export default function Navbar() {
               <DropdownMenuContent 
                 align="end" 
                 className="w-64 bg-white shadow-lg rounded-lg border"
-                sideOffset={8}
-                alignOffset={0}
-                forceMount
-                style={{ position: 'fixed', top: '4rem', right: '1rem' }}
+                sideOffset={4}
               >
                 {navItems.map((item) => (
                   <DropdownMenuItem 
