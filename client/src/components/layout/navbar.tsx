@@ -40,44 +40,47 @@ export default function Navbar() {
     <header className="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-sm border-b">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
+          {/* Company Name */}
           <Link href="/" className="text-xl font-semibold text-gray-900">
-            Perlita Babidanchi
+            Perlita Babidanchi, S.A. de C.V.
           </Link>
 
           {/* Right section with language toggle and menu */}
-          <div className="flex items-center space-x-4">
-            <div className="flex items-center justify-center">
-              <LanguageToggle />
-            </div>
+          <div className="flex items-center space-x-6">
+            {/* Language Toggle */}
+            <LanguageToggle />
 
-            {/* Navigation Menu */}
-            <div className="flex items-center justify-center">
-              <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                  <Button 
-                    variant="outline" 
-                    size="icon"
-                    className="border-2"
+            {/* Hamburger Menu */}
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button 
+                  variant="ghost" 
+                  size="icon"
+                  className="h-10 w-10 hover:bg-gray-100"
+                >
+                  <Menu className="h-6 w-6" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent 
+                align="end" 
+                className="w-64 mt-2 bg-white shadow-lg rounded-lg border"
+              >
+                {navItems.map((item) => (
+                  <DropdownMenuItem 
+                    key={item.href} 
+                    className="focus:bg-gray-100"
                   >
-                    <Menu className="h-5 w-5" />
-                  </Button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent align="end" className="w-64 mt-2">
-                  {navItems.map((item) => (
-                    <DropdownMenuItem key={item.href} asChild>
-                      <a
-                        href={item.href}
-                        className="w-full px-2 py-1.5"
-                        onClick={(e) => handleScroll(e, item.href)}
-                      >
-                        {item.label}
-                      </a>
-                    </DropdownMenuItem>
-                  ))}
-                </DropdownMenuContent>
-              </DropdownMenu>
-            </div>
+                    <a
+                      href={item.href}
+                      className="w-full py-2 text-gray-700 hover:text-gray-900"
+                      onClick={(e) => handleScroll(e, item.href)}
+                    >
+                      {item.label}
+                    </a>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
         </div>
       </div>
