@@ -1,6 +1,5 @@
-import { useState } from "react";
-import { useTranslation } from "react-i18next";
 import { Link } from "wouter";
+import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import {
@@ -41,12 +40,13 @@ export default function Navbar() {
     <header className="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-sm border-b">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
+          {/* Logo */}
           <Link href="/" className="text-xl font-semibold text-gray-900">
             Perlita Babidanchi
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-6">
+          <nav className="hidden lg:flex items-center space-x-4">
             {navItems.map((item) => (
               <a
                 key={item.href}
@@ -59,34 +59,36 @@ export default function Navbar() {
             ))}
           </nav>
 
+          {/* Mobile Navigation */}
           <div className="flex items-center gap-4">
             <LanguageToggle />
 
-            {/* Hamburger Menu */}
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild className="lg:hidden">
-                <Button 
-                  variant="outline"
-                  size="icon"
-                  className="border-2 border-gray-300"
-                >
-                  <Menu className="h-6 w-6" />
-                </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent align="end" className="w-[200px]">
-                {navItems.map((item) => (
-                  <DropdownMenuItem key={item.href}>
-                    <a
-                      href={item.href}
-                      className="w-full text-gray-700"
-                      onClick={(e) => handleScroll(e, item.href)}
-                    >
-                      {item.label}
-                    </a>
-                  </DropdownMenuItem>
-                ))}
-              </DropdownMenuContent>
-            </DropdownMenu>
+            <div className="block lg:hidden">
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Button 
+                    variant="outline" 
+                    size="icon"
+                    className="border-2"
+                  >
+                    <Menu className="h-5 w-5" />
+                  </Button>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent align="end" className="w-56">
+                  {navItems.map((item) => (
+                    <DropdownMenuItem key={item.href} asChild>
+                      <a
+                        href={item.href}
+                        className="w-full px-2 py-1.5"
+                        onClick={(e) => handleScroll(e, item.href)}
+                      >
+                        {item.label}
+                      </a>
+                    </DropdownMenuItem>
+                  ))}
+                </DropdownMenuContent>
+              </DropdownMenu>
+            </div>
           </div>
         </div>
       </div>
