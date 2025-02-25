@@ -46,12 +46,12 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center space-x-4">
+          <nav className="hidden md:flex items-center space-x-4 flex-1 justify-center">
             {navItems.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
-                className="text-sm text-gray-700 hover:text-primary transition-colors"
+                className="text-sm text-gray-700 hover:text-primary transition-colors whitespace-nowrap"
                 onClick={(e) => handleScroll(e, item.href)}
               >
                 {item.label}
@@ -59,11 +59,12 @@ export default function Navbar() {
             ))}
           </nav>
 
-          {/* Mobile Navigation */}
+          {/* Right section with language toggle and mobile menu */}
           <div className="flex items-center gap-4">
             <LanguageToggle />
 
-            <div className="block lg:hidden">
+            {/* Mobile Navigation */}
+            <div className="md:hidden">
               <DropdownMenu>
                 <DropdownMenuTrigger asChild>
                   <Button 
