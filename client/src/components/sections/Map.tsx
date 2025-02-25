@@ -7,9 +7,14 @@ export default function Map({ showTitle = true }) {
     <section className="py-8 bg-white">
       <div className="container mx-auto px-4">
         {showTitle && (
-          <h2 className="text-4xl font-bold mb-6 text-center">
-            {t('location.title')}
-          </h2>
+          <>
+            <h2 className="text-4xl font-bold mb-4 text-center text-gray-900">
+              {t('location.title')}
+            </h2>
+            <p className="text-xl mb-8 text-center text-gray-900 max-w-3xl mx-auto">
+              {t('location.description')}
+            </p>
+          </>
         )}
         <div className="mx-auto h-[400px] max-w-3xl rounded-lg overflow-hidden shadow-lg">
           <iframe 
