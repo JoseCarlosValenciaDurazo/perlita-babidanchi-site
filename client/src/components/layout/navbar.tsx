@@ -43,7 +43,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex items-center space-x-6">
+          <nav className="hidden lg:flex items-center space-x-6">
             {navItems.map((item) => (
               <a
                 key={item.href}
@@ -58,21 +58,26 @@ export default function Navbar() {
 
           <div className="flex items-center space-x-4">
             <LanguageToggle />
-            {/* Mobile Menu Button */}
-            <div className="md:hidden">
+
+            {/* Mobile Menu Button - Always visible on mobile/tablet */}
+            <div className="lg:hidden">
               <Sheet open={isOpen} onOpenChange={setIsOpen}>
                 <SheetTrigger asChild>
-                  <Button variant="ghost" size="icon">
-                    <Menu className="h-5 w-5" />
+                  <Button 
+                    variant="outline" 
+                    size="icon"
+                    className="border-2 hover:bg-gray-100"
+                  >
+                    <Menu className="h-6 w-6" />
                   </Button>
                 </SheetTrigger>
-                <SheetContent side="right">
+                <SheetContent side="right" className="w-[300px] sm:w-[400px]">
                   <nav className="flex flex-col space-y-4 mt-8">
                     {navItems.map((item) => (
                       <a
                         key={item.href}
                         href={item.href}
-                        className="text-gray-700 hover:text-primary transition-colors text-sm font-medium"
+                        className="px-4 py-2 text-lg text-gray-700 hover:text-primary hover:bg-gray-100 rounded-md transition-colors"
                         onClick={(e) => handleScroll(e, item.href)}
                       >
                         {item.label}
