@@ -2,14 +2,18 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 import LanguageToggle from "./language-toggle";
 import { useSmoothScroll } from "@/hooks/use-smooth-scroll";
 
 export default function Navbar() {
   const { t } = useTranslation();
-  const [isOpen, setIsOpen] = useState(false);
   const scrollToElement = useSmoothScroll();
 
   const navItems = [
@@ -31,7 +35,6 @@ export default function Navbar() {
     e.preventDefault();
     const targetId = href.replace('#', '');
     scrollToElement(targetId);
-    setIsOpen(false);
   };
 
   return (
@@ -59,32 +62,31 @@ export default function Navbar() {
           <div className="flex items-center gap-4">
             <LanguageToggle />
 
-            {/* Mobile Menu Button */}
-            <Sheet open={isOpen} onOpenChange={setIsOpen}>
-              <SheetTrigger asChild>
+            {/* Hamburger Menu */}
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild className="lg:hidden">
                 <Button 
-                  variant="ghost"
+                  variant="outline"
                   size="icon"
-                  className="lg:hidden border-2 border-gray-200 hover:bg-gray-100"
+                  className="border-2 border-gray-300"
                 >
                   <Menu className="h-6 w-6" />
                 </Button>
-              </SheetTrigger>
-              <SheetContent side="right" className="w-[280px] sm:w-[350px]">
-                <div className="mt-6 flex flex-col gap-3">
-                  {navItems.map((item) => (
+              </DropdownMenuTrigger>
+              <DropdownMenuContent align="end" className="w-[200px]">
+                {navItems.map((item) => (
+                  <DropdownMenuItem key={item.href}>
                     <a
-                      key={item.href}
                       href={item.href}
-                      className="px-4 py-2.5 text-base text-gray-700 hover:text-primary hover:bg-gray-100 rounded-lg transition-colors"
+                      className="w-full text-gray-700"
                       onClick={(e) => handleScroll(e, item.href)}
                     >
                       {item.label}
                     </a>
-                  ))}
-                </div>
-              </SheetContent>
-            </Sheet>
+                  </DropdownMenuItem>
+                ))}
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
         </div>
       </div>
