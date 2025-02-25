@@ -3,11 +3,10 @@ import { useTranslation } from "react-i18next";
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+} from "@/components/ui/sheet";
 import LanguageToggle from "./language-toggle";
 import { useSmoothScroll } from "@/hooks/use-smooth-scroll";
 
@@ -50,9 +49,9 @@ export default function Navbar() {
             {/* Language Toggle */}
             <LanguageToggle />
 
-            {/* Hamburger Menu */}
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
+            {/* Menu Button */}
+            <Sheet>
+              <SheetTrigger asChild>
                 <Button 
                   variant="ghost" 
                   size="icon"
@@ -60,28 +59,22 @@ export default function Navbar() {
                 >
                   <Menu className="h-6 w-6" />
                 </Button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent 
-                align="end" 
-                className="w-64 bg-white shadow-lg rounded-lg border"
-                sideOffset={4}
-              >
-                {navItems.map((item) => (
-                  <DropdownMenuItem 
-                    key={item.href} 
-                    className="focus:bg-gray-100"
-                  >
+              </SheetTrigger>
+              <SheetContent side="right" className="w-[300px] sm:w-[400px] p-0">
+                <nav className="grid gap-2 p-4">
+                  {navItems.map((item) => (
                     <a
+                      key={item.href}
                       href={item.href}
-                      className="w-full py-2 text-gray-700 hover:text-gray-900 font-medium"
                       onClick={(e) => handleScroll(e, item.href)}
+                      className="block px-4 py-3 text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-colors"
                     >
                       {item.label}
                     </a>
-                  </DropdownMenuItem>
-                ))}
-              </DropdownMenuContent>
-            </DropdownMenu>
+                  ))}
+                </nav>
+              </SheetContent>
+            </Sheet>
           </div>
         </div>
       </div>
