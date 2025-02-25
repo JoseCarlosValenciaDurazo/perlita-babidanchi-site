@@ -56,33 +56,33 @@ export default function Navbar() {
             ))}
           </nav>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-4">
             <LanguageToggle />
 
             {/* Mobile Menu Button */}
-            <Sheet>
+            <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
                 <Button 
-                  variant="outline" 
+                  variant="ghost"
                   size="icon"
-                  className="lg:hidden"
+                  className="lg:hidden border-2 border-gray-200 hover:bg-gray-100"
                 >
                   <Menu className="h-6 w-6" />
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="w-[280px] sm:w-[350px]">
-                <nav className="flex flex-col mt-8">
+                <div className="mt-6 flex flex-col gap-3">
                   {navItems.map((item) => (
                     <a
                       key={item.href}
                       href={item.href}
-                      className="px-4 py-3 text-base text-gray-700 hover:text-primary hover:bg-gray-100 rounded-md transition-colors"
+                      className="px-4 py-2.5 text-base text-gray-700 hover:text-primary hover:bg-gray-100 rounded-lg transition-colors"
                       onClick={(e) => handleScroll(e, item.href)}
                     >
                       {item.label}
                     </a>
                   ))}
-                </nav>
+                </div>
               </SheetContent>
             </Sheet>
           </div>
