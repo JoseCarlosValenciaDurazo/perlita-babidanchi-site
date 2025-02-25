@@ -5,7 +5,7 @@ export default function Deposits() {
   const { t } = useTranslation();
 
   return (
-    <section id="deposits" className="py-20 bg-gray-50">
+    <section id="deposits" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold mb-6 text-center text-gray-900">
           {t('deposits.title')}

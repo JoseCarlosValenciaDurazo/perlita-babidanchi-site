@@ -50,7 +50,7 @@ export default function Contact() {
   });
 
   return (
-    <section id="contact" className="py-20 bg-gray-50">
+    <section id="contact" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold mb-12 text-center text-gray-900">
           {t('contact.title')}
