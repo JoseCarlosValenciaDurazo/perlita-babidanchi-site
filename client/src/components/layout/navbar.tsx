@@ -56,7 +56,7 @@ export default function Navbar() {
                 <Button 
                   variant="ghost" 
                   size="icon"
-                  className="h-10 w-10 hover:bg-gray-100"
+                  className="h-10 w-10 hover:bg-gray-100 text-gray-700 hover:text-gray-900"
                 >
                   <Menu className="h-6 w-6" />
                 </Button>
@@ -64,6 +64,8 @@ export default function Navbar() {
               <DropdownMenuContent 
                 align="end" 
                 className="w-64 mt-2 bg-white shadow-lg rounded-lg border"
+                sideOffset={8}
+                alignOffset={0}
               >
                 {navItems.map((item) => (
                   <DropdownMenuItem 
@@ -72,7 +74,7 @@ export default function Navbar() {
                   >
                     <a
                       href={item.href}
-                      className="w-full py-2 text-gray-700 hover:text-gray-900"
+                      className="w-full py-2 text-gray-700 hover:text-gray-900 font-medium"
                       onClick={(e) => handleScroll(e, item.href)}
                     >
                       {item.label}

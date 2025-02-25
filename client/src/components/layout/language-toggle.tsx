@@ -16,7 +16,7 @@ export default function LanguageToggle() {
       variant="ghost"
       size="sm"
       onClick={toggleLanguage}
-      className="flex items-center gap-2 relative overflow-hidden"
+      className="flex items-center gap-2 relative overflow-hidden text-gray-700 hover:text-gray-900"
     >
       <motion.div
         initial={{ rotate: 0 }}
@@ -33,7 +33,7 @@ export default function LanguageToggle() {
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: -20, opacity: 0 }}
           transition={{ duration: 0.3, ease: "easeInOut" }}
-          className="inline-block"
+          className="inline-block font-medium"
         >
           {i18n.language.toUpperCase()}
         </motion.span>
