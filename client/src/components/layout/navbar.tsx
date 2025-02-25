@@ -34,7 +34,6 @@ export default function Navbar() {
     setIsOpen(false);
   };
 
-
   return (
     <header className="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-sm border-b">
       <div className="container mx-auto px-4">
@@ -43,29 +42,46 @@ export default function Navbar() {
             Perlita Babidanchi
           </Link>
 
+          {/* Desktop Navigation */}
+          <nav className="hidden md:flex items-center space-x-6">
+            {navItems.map((item) => (
+              <a
+                key={item.href}
+                href={item.href}
+                className="text-sm text-gray-700 hover:text-primary transition-colors"
+                onClick={(e) => handleScroll(e, item.href)}
+              >
+                {item.label}
+              </a>
+            ))}
+          </nav>
+
           <div className="flex items-center space-x-4">
             <LanguageToggle />
-            <Sheet open={isOpen} onOpenChange={setIsOpen}>
-              <SheetTrigger asChild>
-                <Button variant="ghost" size="icon">
-                  <Menu className="h-5 w-5" />
-                </Button>
-              </SheetTrigger>
-              <SheetContent side="right">
-                <nav className="flex flex-col space-y-4 mt-8">
-                  {navItems.map((item) => (
-                    <a
-                      key={item.href}
-                      href={item.href}
-                      className="text-gray-700 hover:text-primary transition-colors text-sm font-medium"
-                      onClick={(e) => handleScroll(e, item.href)}
-                    >
-                      {item.label}
-                    </a>
-                  ))}
-                </nav>
-              </SheetContent>
-            </Sheet>
+            {/* Mobile Menu Button */}
+            <div className="md:hidden">
+              <Sheet open={isOpen} onOpenChange={setIsOpen}>
+                <SheetTrigger asChild>
+                  <Button variant="ghost" size="icon">
+                    <Menu className="h-5 w-5" />
+                  </Button>
+                </SheetTrigger>
+                <SheetContent side="right">
+                  <nav className="flex flex-col space-y-4 mt-8">
+                    {navItems.map((item) => (
+                      <a
+                        key={item.href}
+                        href={item.href}
+                        className="text-gray-700 hover:text-primary transition-colors text-sm font-medium"
+                        onClick={(e) => handleScroll(e, item.href)}
+                      >
+                        {item.label}
+                      </a>
+                    ))}
+                  </nav>
+                </SheetContent>
+              </Sheet>
+            </div>
           </div>
         </div>
       </div>
