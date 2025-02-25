@@ -56,37 +56,35 @@ export default function Navbar() {
             ))}
           </nav>
 
-          <div className="flex items-center space-x-4">
+          <div className="flex items-center gap-2">
             <LanguageToggle />
 
-            {/* Mobile Menu Button - Always visible on mobile/tablet */}
-            <div className="lg:hidden">
-              <Sheet open={isOpen} onOpenChange={setIsOpen}>
-                <SheetTrigger asChild>
-                  <Button 
-                    variant="outline" 
-                    size="icon"
-                    className="border-2 hover:bg-gray-100"
-                  >
-                    <Menu className="h-6 w-6" />
-                  </Button>
-                </SheetTrigger>
-                <SheetContent side="right" className="w-[300px] sm:w-[400px]">
-                  <nav className="flex flex-col space-y-4 mt-8">
-                    {navItems.map((item) => (
-                      <a
-                        key={item.href}
-                        href={item.href}
-                        className="px-4 py-2 text-lg text-gray-700 hover:text-primary hover:bg-gray-100 rounded-md transition-colors"
-                        onClick={(e) => handleScroll(e, item.href)}
-                      >
-                        {item.label}
-                      </a>
-                    ))}
-                  </nav>
-                </SheetContent>
-              </Sheet>
-            </div>
+            {/* Mobile Menu Button */}
+            <Sheet>
+              <SheetTrigger asChild>
+                <Button 
+                  variant="outline" 
+                  size="icon"
+                  className="lg:hidden"
+                >
+                  <Menu className="h-6 w-6" />
+                </Button>
+              </SheetTrigger>
+              <SheetContent side="right" className="w-[280px] sm:w-[350px]">
+                <nav className="flex flex-col mt-8">
+                  {navItems.map((item) => (
+                    <a
+                      key={item.href}
+                      href={item.href}
+                      className="px-4 py-3 text-base text-gray-700 hover:text-primary hover:bg-gray-100 rounded-md transition-colors"
+                      onClick={(e) => handleScroll(e, item.href)}
+                    >
+                      {item.label}
+                    </a>
+                  ))}
+                </nav>
+              </SheetContent>
+            </Sheet>
           </div>
         </div>
       </div>
