@@ -36,7 +36,7 @@ export default function Navbar() {
   };
 
   return (
-    <header className="fixed w-full top-0 z-50 bg-white/90 backdrop-blur-sm border-b">
+    <header className="fixed w-full top-0 z-50 bg-white border-b">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           {/* Company Name */}
@@ -60,7 +60,7 @@ export default function Navbar() {
                   <Menu className="h-6 w-6" />
                 </Button>
               </SheetTrigger>
-              <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-white p-0">
+              <SheetContent side="right" className="w-[300px] sm:w-[400px] bg-white p-0 text-gray-700">
                 <nav className="grid gap-1 p-4">
                   {navItems.map((item) => (
                     <a
