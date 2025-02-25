@@ -68,11 +68,11 @@ export default function Contact() {
                   name="name"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>{t('contact.name')}</FormLabel>
+                      <FormLabel className="text-gray-900">{t('contact.name')}</FormLabel>
                       <FormControl>
-                        <Input {...field} className="bg-white" />
+                        <Input {...field} className="bg-white text-gray-900" />
                       </FormControl>
-                      <FormMessage />
+                      <FormMessage className="text-gray-900" />
                     </FormItem>
                   )}
                 />
@@ -82,11 +82,11 @@ export default function Contact() {
                   name="email"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>{t('contact.email')}</FormLabel>
+                      <FormLabel className="text-gray-900">{t('contact.email')}</FormLabel>
                       <FormControl>
-                        <Input type="email" {...field} className="bg-white" />
+                        <Input type="email" {...field} className="bg-white text-gray-900" />
                       </FormControl>
-                      <FormMessage />
+                      <FormMessage className="text-gray-900" />
                     </FormItem>
                   )}
                 />
@@ -96,11 +96,11 @@ export default function Contact() {
                   name="message"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>{t('contact.message')}</FormLabel>
+                      <FormLabel className="text-gray-900">{t('contact.message')}</FormLabel>
                       <FormControl>
-                        <Textarea {...field} className="bg-white" />
+                        <Textarea {...field} className="bg-white text-gray-900" />
                       </FormControl>
-                      <FormMessage />
+                      <FormMessage className="text-gray-900" />
                     </FormItem>
                   )}
                 />

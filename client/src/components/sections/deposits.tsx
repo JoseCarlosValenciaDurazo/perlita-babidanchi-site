@@ -10,7 +10,7 @@ export default function Deposits() {
         <h2 className="text-4xl font-bold mb-6 text-center text-gray-900">
           {t('deposits.title')}
         </h2>
-        <p className="text-xl text-gray-700 text-center mb-12 max-w-3xl mx-auto">
+        <p className="text-xl text-gray-900 text-center mb-12 max-w-3xl mx-auto">
           {t('deposits.description')}
         </p>
 
@@ -24,10 +24,10 @@ export default function Deposits() {
               />
             </div>
             <CardContent className="pt-6">
-              <h3 className="text-2xl font-semibold mb-4">
+              <h3 className="text-2xl font-semibold mb-4 text-gray-900">
                 {t('deposits.selene.title')}
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-900">
                 {t('deposits.selene.description')}
               </p>
             </CardContent>
@@ -42,10 +42,10 @@ export default function Deposits() {
               />
             </div>
             <CardContent className="pt-6">
-              <h3 className="text-2xl font-semibold mb-4">
+              <h3 className="text-2xl font-semibold mb-4 text-gray-900">
                 {t('deposits.bendicion.title')}
               </h3>
-              <p className="text-gray-700">
+              <p className="text-gray-900">
                 {t('deposits.bendicion.description')}
               </p>
             </CardContent>
