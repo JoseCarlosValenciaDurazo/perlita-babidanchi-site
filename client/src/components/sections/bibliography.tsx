@@ -28,16 +28,12 @@ export default function Bibliography() {
     {
       title: "Perlite Institute",
       description: "Technical data and industry standards for perlite applications",
-      link: "https://www.perlite.org/",
-      pdfUrl: "/pdfs/perlite-technical-data.pdf",
-      pdfDescription: "Perlite Technical Standards and Applications Guide"
+      link: "https://www.perlite.org/"
     },
     {
       title: "Mexican Geological Survey",
       description: "Geological studies and mineral resources of Sonora",
-      link: "https://www.gob.mx/sgm",
-      pdfUrl: "/pdfs/sonora-geological-report.pdf",
-      pdfDescription: "Sonora Region Geological Survey Report"
+      link: "https://www.gob.mx/sgm"
     }
   ];
 
@@ -57,7 +53,7 @@ export default function Bibliography() {
                       <LinkIcon className="h-5 w-5 text-primary" />
                     </div>
                     <div className="flex-grow">
-                      <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-primary transition-colors">
+                      <h3 className="text-xl font-semibold text-gray-900 mb-2">
                         {ref.title}
                       </h3>
                       <p className="text-gray-900 mb-4">
