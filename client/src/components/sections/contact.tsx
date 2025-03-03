@@ -1,119 +1,51 @@
 import { useTranslation } from "react-i18next";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
-import { useMutation } from "@tanstack/react-query";
-import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import {
-  Form,
-  FormControl,
-  FormField,
-  FormItem,
-  FormLabel,
-  FormMessage,
-} from "@/components/ui/form";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
-import { useToast } from "@/hooks/use-toast";
-import { insertContactSchema, type InsertContact } from "@shared/schema";
-import { apiRequest } from "@/lib/queryClient";
 
 export default function Contact() {
   const { t } = useTranslation();
-  const { toast } = useToast();
-
-  const form = useForm<InsertContact>({
-    resolver: zodResolver(insertContactSchema),
-    defaultValues: {
-      name: "",
-      email: "",
-      message: "",
-    },
-  });
-
-  const mutation = useMutation({
-    mutationFn: async (data: InsertContact) => {
-      await apiRequest("POST", "/api/contact", data);
-    },
-    onSuccess: () => {
-      toast({
-        title: t('contact.success'),
-      });
-      form.reset();
-    },
-    onError: () => {
-      toast({
-        title: t('contact.error'),
-        variant: "destructive",
-      });
-    },
-  });
 
   return (
     <section id="contact" className="py-20 bg-white">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold mb-12 text-center text-gray-900">
-          {t('contact.title')}
+          Contact us:
         </h2>
 
         <Card className="max-w-2xl mx-auto bg-white shadow-lg">
           <CardContent className="pt-6">
-            <Form {...form}>
-              <form
-                onSubmit={form.handleSubmit((data) => mutation.mutate(data))}
-                className="space-y-6"
-              >
-                <FormField
-                  control={form.control}
-                  name="name"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel className="text-gray-900">{t('contact.name')}</FormLabel>
-                      <FormControl>
-                        <Input {...field} className="bg-white text-gray-900" />
-                      </FormControl>
-                      <FormMessage className="text-gray-900" />
-                    </FormItem>
-                  )}
-                />
+            <ul className="space-y-6 text-gray-900">
+              <li className="flex flex-col space-y-1">
+                <span className="font-semibold">Email:</span>
+                <a href="mailto:josecarlosvalencia.contacto@gmail.com" 
+                   className="hover:text-primary transition-colors">
+                  josecarlosvalencia.contacto@gmail.com
+                </a>
+              </li>
 
-                <FormField
-                  control={form.control}
-                  name="email"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel className="text-gray-900">{t('contact.email')}</FormLabel>
-                      <FormControl>
-                        <Input type="email" {...field} className="bg-white text-gray-900" />
-                      </FormControl>
-                      <FormMessage className="text-gray-900" />
-                    </FormItem>
-                  )}
-                />
+              <li className="flex flex-col space-y-1">
+                <span className="font-semibold">Phone:</span>
+                <a href="tel:+526623776968" 
+                   className="hover:text-primary transition-colors">
+                  (+52) 662 377 6968
+                </a>
+              </li>
 
-                <FormField
-                  control={form.control}
-                  name="message"
-                  render={({ field }) => (
-                    <FormItem>
-                      <FormLabel className="text-gray-900">{t('contact.message')}</FormLabel>
-                      <FormControl>
-                        <Textarea {...field} className="bg-white text-gray-900" />
-                      </FormControl>
-                      <FormMessage className="text-gray-900" />
-                    </FormItem>
-                  )}
-                />
+              <li className="flex flex-col space-y-1">
+                <span className="font-semibold">Email:</span>
+                <a href="mailto:carlosjavier.valencia@gmail.com" 
+                   className="hover:text-primary transition-colors">
+                  carlosjavier.valencia@gmail.com
+                </a>
+              </li>
 
-                <Button
-                  type="submit"
-                  className="w-full"
-                  disabled={mutation.isPending}
-                >
-                  {t('contact.submit')}
-                </Button>
-              </form>
-            </Form>
+              <li className="flex flex-col space-y-1">
+                <span className="font-semibold">Phone:</span>
+                <a href="tel:+526622562933" 
+                   className="hover:text-primary transition-colors">
+                  (+52) 662 256 2933
+                </a>
+              </li>
+            </ul>
           </CardContent>
         </Card>
       </div>
