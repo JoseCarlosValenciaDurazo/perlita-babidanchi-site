@@ -15,7 +15,11 @@ interface Reference {
 
 export default function Bibliography() {
   const { t } = useTranslation();
-  const [selectedPdf, setSelectedPdf] = useState<Reference | null>(null);
+  const [pdfPreviewUrl, setPdfPreviewUrl] = useState<string | null>(null);
+
+  const handleOpenPdf = (pdfUrl: string) => {
+    setPdfPreviewUrl(pdfUrl);
+  };
 
   const references: Reference[] = [
     {
@@ -40,9 +44,28 @@ export default function Bibliography() {
   return (
     <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold mb-12 text-center text-gray-900">
-          Bibliography
+        <h2 className="text-3xl font-bold text-center mb-12">
+          {t('nav.bibliography')}
         </h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+          <Card className="bg-white shadow-lg hover:shadow-xl transition-shadow">
+            <CardContent className="pt-6">
+              <div className="flex items-start gap-4">
+                <FileText className="h-8 w-8 text-primary flex-shrink-0" />
+                <div>
+                  <h3 className="text-xl font-semibold mb-2 text-gray-900">U.S. Geological Survey 2024</h3>
+                  <p className="text-gray-700 mb-4">Mineral Commodity Summaries - Perlite</p>
+                  <button
+                    onClick={() => handleOpenPdf("/attached_assets/USGS 2024 Perlite .pdf")}
+                    className="flex items-center gap-2 text-primary hover:text-primary/80 font-medium"
+                  >
+                    <FileText className="h-4 w-4" /> View PDF
+                  </button>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+        </div>
         <div className="max-w-4xl mx-auto">
           {references.map((ref, index) => (
             <div key={index} className="mb-6">
@@ -73,7 +96,7 @@ export default function Bibliography() {
                           <>
                             <Separator orientation="vertical" className="h-4" />
                             <button
-                              onClick={() => setSelectedPdf(ref)}
+                              onClick={() => handleOpenPdf(ref.pdfUrl)}
                               className="text-primary hover:text-primary/80 font-medium flex items-center gap-2 transition-colors duration-200 hover:underline"
                             >
                               View PDF
@@ -91,13 +114,10 @@ export default function Bibliography() {
         </div>
       </div>
 
-      {selectedPdf && (
+      {pdfPreviewUrl && (
         <PDFPreviewModal
-          isOpen={true}
-          onClose={() => setSelectedPdf(null)}
-          pdfUrl={selectedPdf.pdfUrl!}
-          title={selectedPdf.title}
-          description={selectedPdf.pdfDescription}
+          url={pdfPreviewUrl}
+          onClose={() => setPdfPreviewUrl(null)}
         />
       )}
     </section>

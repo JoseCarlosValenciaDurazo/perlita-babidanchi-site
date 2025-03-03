@@ -42,3 +42,30 @@ export default function PDFPreviewModal({
     </Dialog>
   );
 }
+import React from 'react';
+import { X } from 'lucide-react';
+
+interface PDFPreviewModalProps {
+  url: string;
+  onClose: () => void;
+}
+
+export default function PDFPreviewModal({ url, onClose }: PDFPreviewModalProps) {
+  return (
+    <div className="fixed inset-0 z-50 bg-black/50 flex items-center justify-center p-4">
+      <div className="relative bg-white w-full max-w-6xl h-[85vh] rounded-lg shadow-lg overflow-hidden">
+        <button 
+          onClick={onClose}
+          className="absolute top-2 right-2 z-10 p-2 bg-white/90 rounded-full hover:bg-gray-100"
+        >
+          <X className="h-6 w-6" />
+        </button>
+        <iframe
+          src={url}
+          className="w-full h-full"
+          title="PDF Preview"
+        />
+      </div>
+    </div>
+  );
+}
