@@ -22,21 +22,21 @@ export default function Bibliography() {
       title: "U.S. Geological Survey",
       description: "Mineral Commodity Summaries 2024: Perlite",
       link: "https://www.usgs.gov/",
-      pdfUrl: "/pdfs/usgs-perlite-2024.pdf", // Example PDF URL
+      pdfUrl: "/pdfs/USGS 2024 Perlite .pdf",
       pdfDescription: "USGS Mineral Commodity Summaries 2024 - Perlite Section"
     },
     {
       title: "Perlite Institute",
       description: "Technical data and industry standards for perlite applications",
       link: "https://www.perlite.org/",
-      pdfUrl: "/pdfs/perlite-technical-data.pdf", // Example PDF URL
+      pdfUrl: "/pdfs/perlite-technical-data.pdf",
       pdfDescription: "Perlite Technical Standards and Applications Guide"
     },
     {
       title: "Mexican Geological Survey",
       description: "Geological studies and mineral resources of Sonora",
       link: "https://www.gob.mx/sgm",
-      pdfUrl: "/pdfs/sonora-geological-report.pdf", // Example PDF URL
+      pdfUrl: "/pdfs/sonora-geological-report.pdf",
       pdfDescription: "Sonora Region Geological Survey Report"
     }
   ];
@@ -60,7 +60,7 @@ export default function Bibliography() {
                       <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-primary transition-colors">
                         {ref.title}
                       </h3>
-                      <p className="text-gray-700 mb-4">
+                      <p className="text-gray-900 mb-4"> {/* Changed to text-gray-900 */}
                         {ref.description}
                       </p>
                       <div className="flex items-center gap-4">
