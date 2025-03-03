@@ -22,7 +22,7 @@ export default function Bibliography() {
       title: "U.S. Geological Survey",
       description: "Mineral Commodity Summaries 2024: Perlite",
       link: "https://www.usgs.gov/",
-      pdfUrl: "/pdfs/USGS 2024 Perlite .pdf",
+      pdfUrl: "/attached_assets/USGS-2024-Perlite.pdf",
       pdfDescription: "USGS Mineral Commodity Summaries 2024 - Perlite Section"
     },
     {
@@ -60,7 +60,7 @@ export default function Bibliography() {
                       <h3 className="text-xl font-semibold text-gray-900 mb-2 group-hover:text-primary transition-colors">
                         {ref.title}
                       </h3>
-                      <p className="text-gray-900 mb-4"> {/* Changed to text-gray-900 */}
+                      <p className="text-gray-900 mb-4">
                         {ref.description}
                       </p>
                       <div className="flex items-center gap-4">
