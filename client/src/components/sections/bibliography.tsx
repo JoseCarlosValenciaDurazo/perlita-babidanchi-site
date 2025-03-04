@@ -20,19 +20,19 @@ export default function Bibliography() {
   const references: Reference[] = [
     {
       title: "U.S. Geological Survey",
-      description: "Mineral Commodity Summaries 2024: Perlite",
+      description: "The USGS is a scientific agency dedicated to researching and providing data on natural resources, including minerals like perlite, to support informed decision-making and sustainable development.",
       link: "https://www.usgs.gov/",
       pdfUrl: "/pdfs/USGS-2024-Perlite.pdf",
       pdfDescription: "USGS Mineral Commodity Summaries 2024 - Perlite Section"
     },
     {
       title: "Perlite Institute",
-      description: "Technical data and industry standards for perlite applications",
+      description: "The Perlite Institute is an organization dedicated to the research, promotion, and development of perlite applications, a volcanic mineral widely used in industries such as construction, agriculture, and filtration.",
       link: "https://www.perlite.org/"
     },
     {
       title: "Babidachi Pearlite Studies",
-      description: "Geological studies and mineral resources of Sonora",
+      description: "The following studies were conducted by Perlita Babidanchi:",
       link: "https://www.gob.mx/sgm"
     }
   ];
