@@ -38,7 +38,7 @@ export default function Bibliography() {
   ];
 
   return (
-    <section className="py-20 bg-gray-50">
+    <section id="bibliography" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold mb-12 text-center text-gray-900">
           {t('nav.bibliography')}
@@ -46,7 +46,7 @@ export default function Bibliography() {
         <div className="max-w-4xl mx-auto">
           {references.map((ref, index) => (
             <div key={index} className="mb-6">
-              <Card className="transform transition-all duration-300 hover:scale-[1.02] hover:shadow-lg bg-white">
+              <Card className="bg-white shadow-lg">
                 <CardContent className="p-6">
                   <div className="flex items-start gap-4">
                     <div className="flex-shrink-0 mt-1">
