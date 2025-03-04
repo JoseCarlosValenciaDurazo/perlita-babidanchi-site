@@ -31,7 +31,7 @@ export default function Bibliography() {
       link: "https://www.perlite.org/"
     },
     {
-      title: "Mexican Geological Survey",
+      title: "Babidachi Pearlite Studies",
       description: "Geological studies and mineral resources of Sonora",
       link: "https://www.gob.mx/sgm"
     }
