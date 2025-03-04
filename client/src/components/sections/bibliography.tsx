@@ -22,7 +22,7 @@ export default function Bibliography() {
       title: "U.S. Geological Survey",
       description: "Mineral Commodity Summaries 2024: Perlite",
       link: "https://www.usgs.gov/",
-      pdfUrl: "attached_assets/USGS 2024 Perlite .pdf",
+      pdfUrl: "/pdfs/USGS-2024-Perlite.pdf",
       pdfDescription: "USGS Mineral Commodity Summaries 2024 - Perlite Section"
     },
     {
