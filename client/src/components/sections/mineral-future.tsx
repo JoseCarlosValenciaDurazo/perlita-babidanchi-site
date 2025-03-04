@@ -1,4 +1,3 @@
-
 import { useTranslation } from "react-i18next";
 import { Card, CardContent } from "@/components/ui/card";
 import { 
@@ -26,62 +25,66 @@ export default function MineralFuture() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          <Card className="bg-white shadow-lg">
-            <CardContent className="pt-6">
-              <div className="flex flex-col items-center text-center">
-                <Building2 className="h-8 w-8 text-primary mb-4" />
-                <h4 className="text-xl font-semibold mb-3 text-gray-900">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+          {/* Left column - Image */}
+          <div className="relative aspect-square">
+            <img
+              src="/attached_assets/Captura de pantalla 2025-03-03 a la(s) 12.22.31 p.m..png"
+              alt="Perlite mineral sample"
+              className="rounded-lg object-cover w-full h-full shadow-lg"
+            />
+          </div>
+
+          {/* Right column - Features */}
+          <div className="space-y-6">
+            <div className="flex items-start gap-4">
+              <Building2 className="h-8 w-8 text-primary mt-1 flex-shrink-0" />
+              <div>
+                <h4 className="text-xl font-semibold mb-2 text-gray-900">
                   {t('main_uses.uses.construction.title')}
                 </h4>
                 <p className="text-gray-700">
                   {t('main_uses.uses.construction.description')}
                 </p>
               </div>
-            </CardContent>
-          </Card>
+            </div>
 
-          <Card className="bg-white shadow-lg">
-            <CardContent className="pt-6">
-              <div className="flex flex-col items-center text-center">
-                <Sprout className="h-8 w-8 text-primary mb-4" />
-                <h4 className="text-xl font-semibold mb-3 text-gray-900">
+            <div className="flex items-start gap-4">
+              <Sprout className="h-8 w-8 text-primary mt-1 flex-shrink-0" />
+              <div>
+                <h4 className="text-xl font-semibold mb-2 text-gray-900">
                   {t('main_uses.uses.agriculture.title')}
                 </h4>
                 <p className="text-gray-700">
                   {t('main_uses.uses.agriculture.description')}
                 </p>
               </div>
-            </CardContent>
-          </Card>
+            </div>
 
-          <Card className="bg-white shadow-lg">
-            <CardContent className="pt-6">
-              <div className="flex flex-col items-center text-center">
-                <Beaker className="h-8 w-8 text-primary mb-4" />
-                <h4 className="text-xl font-semibold mb-3 text-gray-900">
+            <div className="flex items-start gap-4">
+              <Beaker className="h-8 w-8 text-primary mt-1 flex-shrink-0" />
+              <div>
+                <h4 className="text-xl font-semibold mb-2 text-gray-900">
                   {t('main_uses.uses.filtration.title')}
                 </h4>
                 <p className="text-gray-700">
                   {t('main_uses.uses.filtration.description')}
                 </p>
               </div>
-            </CardContent>
-          </Card>
+            </div>
 
-          <Card className="bg-white shadow-lg">
-            <CardContent className="pt-6">
-              <div className="flex flex-col items-center text-center">
-                <Shield className="h-8 w-8 text-primary mb-4" />
-                <h4 className="text-xl font-semibold mb-3 text-gray-900">
+            <div className="flex items-start gap-4">
+              <Shield className="h-8 w-8 text-primary mt-1 flex-shrink-0" />
+              <div>
+                <h4 className="text-xl font-semibold mb-2 text-gray-900">
                   {t('main_uses.uses.insulation.title')}
                 </h4>
                 <p className="text-gray-700">
                   {t('main_uses.uses.insulation.description')}
                 </p>
               </div>
-            </CardContent>
-          </Card>
+            </div>
+          </div>
         </div>
       </div>
     </section>
