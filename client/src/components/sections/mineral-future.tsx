@@ -21,7 +21,7 @@ export default function MineralFuture() {
             {t('main_uses.header.subtitle')}
           </h3>
           <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-            {t('')}
+            {t('main_uses.header.description')}
           </p>
         </div>
 
