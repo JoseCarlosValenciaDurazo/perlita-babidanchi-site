@@ -27,9 +27,9 @@ export default function MineralFuture() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
           {/* Left column - Image */}
-          <div className="relative aspect-square">
+          <div className="relative w-full h-[400px] lg:h-[500px]">
             <img
-              src="/attached_assets/Captura de pantalla 2025-03-03 a la(s) 12.22.31 p.m..png"
+              src="Captura de pantalla 2025-03-03 a la(s) 12.22.31 p.m..png"
               alt="Perlite mineral sample"
               className="rounded-lg object-cover w-full h-full shadow-lg"
             />
