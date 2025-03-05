@@ -18,27 +18,16 @@ log("Starting Express application...");
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-// Serve files from attached_assets directory with a file mapping
-const fileMapping = {
-  'huachinera-deposit-study.pdf': 'Geología de los depósitos de perlita de Huachinera, Sonora, México.pdf'
-};
-
+// Add logging middleware for asset requests
 app.use('/assets', (req, res, next) => {
   // Log the incoming request
   log(`Asset request: ${req.path}`);
-
-  // Check if we need to map the requested file to its actual name
-  const requestedFile = req.path.substring(1); // Remove leading slash
-  const actualFileName = fileMapping[requestedFile] || requestedFile;
-
-  // Log the file mapping
-  log(`Mapping ${requestedFile} to ${actualFileName}`);
-
-  // Set the actual file path
-  req.url = '/' + actualFileName;
+  log(`Full URL: ${req.url}`);
+  log(`Original URL: ${req.originalUrl}`);
   next();
 });
 
+// Serve files from attached_assets directory
 app.use('/assets', express.static(path.resolve(__dirname, '..', 'attached_assets'), {
   setHeaders: (res, filePath) => {
     // Set appropriate headers for PDF and DOCX files
@@ -47,6 +36,8 @@ app.use('/assets', express.static(path.resolve(__dirname, '..', 'attached_assets
     } else if (filePath.endsWith('.docx')) {
       res.setHeader('Content-Type', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document');
     }
+    // Log the file being served
+    log(`Serving file: ${filePath}`);
   }
 }));
 
