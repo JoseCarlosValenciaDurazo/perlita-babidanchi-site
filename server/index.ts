@@ -71,6 +71,8 @@ const startServer = async (): Promise<void> => {
       // Kill any process using port 5000
       await execAsync('npx fkill :5000 --force');
       log('Cleared port 5000');
+      // Add a delay to ensure the port is fully released
+      await new Promise(resolve => setTimeout(resolve, 1000));
     } catch (error) {
       // If no process was using the port, fkill will throw an error, which we can ignore
       log('Port 5000 was already free');
