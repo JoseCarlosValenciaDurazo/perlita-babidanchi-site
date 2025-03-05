@@ -17,13 +17,14 @@ interface Reference {
 export default function Bibliography() {
   const { t } = useTranslation();
   const [selectedPdf, setSelectedPdf] = useState<string | null>(null);
+  const [pdfError, setPdfError] = useState<string | null>(null);
 
   const references: Reference[] = [
     {
       title: "U.S. Geological Survey",
       description: t('The U.S. Geological Survey (USGS) is a scientific agency dedicated to researching and providing data on natural resources, including minerals like perlite, to support informed decision-making and sustainable development.'),
       link: "https://www.usgs.gov/",
-      pdfUrl: "/assets/USGS 2024 Perlite .pdf",
+      pdfUrl: "/attached_assets/USGS 2024 Perlite .pdf",
       pdfDescription: t('bibliography.usgs.pdf_description')
     },
     {
@@ -38,35 +39,40 @@ export default function Bibliography() {
       references: [
         {
           title: "Geología de los depósitos de perlita de Huachinera, Sonora, México",
-          pdfUrl: "/attached_assets/Geología de los depósitos de perlita de Huachinera, Sonora, México.pdf"
+          pdfUrl: "attached_assets/Geología de los depósitos de perlita de Huachinera, Sonora, México.pdf"
         },
         {
           title: "Geology of the Selene perlite deposit Sonora, Mexico",
-          pdfUrl: "/attached_assets/Geology of the Selene perlite deposit Sonora, Mexico.pdf"
+          pdfUrl: "attached_assets/Geology of the Selene perlite deposit Sonora, Mexico.pdf"
         },
         {
           title: "Informe proyecto Perlita Babidanchi 2016",
-          pdfUrl: "/attached_assets/Informe proyecto Perlita Babidanchi 2016.pdf"
+          pdfUrl: "attached_assets/Informe proyecto Perlita Babidanchi 2016.pdf"
         },
         {
           title: "Ratificación de firmas y contenidos de tesis",
-          pdfUrl: "/attached_assets/Ratificación de firmas y contenidos de tesis.pdf"
+          pdfUrl: "attached_assets/Ratificación de firmas y contenidos de tesis.pdf"
         },
         {
           title: "Tesis Lic. Geol. Emmanuel Melgarejo Joris",
-          pdfUrl: "/attached_assets/Tesis Lic. Geol. Emmanuel Melgarejo Joris.pdf"
+          pdfUrl: "attached_assets/Tesis Lic. Geol. Emmanuel Melgarejo Joris.pdf"
         }
       ].sort((a, b) => a.title.localeCompare(b.title))
     }
   ];
 
   const handlePdfClick = (pdfUrl: string) => {
-    if (pdfUrl) {
-      console.log('Opening file:', pdfUrl); // Debug log
-      // Encode the URL to handle special characters
-      const encodedUrl = encodeURI(pdfUrl);
-      console.log('Encoded URL:', encodedUrl); // Debug log
+    try {
+      setPdfError(null);
+      // Remove leading slash if present
+      const cleanUrl = pdfUrl.startsWith('/') ? pdfUrl.slice(1) : pdfUrl;
+      // Encode the URL components while preserving the path structure
+      const encodedUrl = cleanUrl.split('/').map(part => encodeURIComponent(part)).join('/');
+      console.log('Opening PDF:', encodedUrl);
       setSelectedPdf(encodedUrl);
+    } catch (error) {
+      console.error('Error handling PDF:', error);
+      setPdfError(t('bibliography.pdf_error') || 'Error loading PDF');
     }
   };
 
@@ -76,6 +82,11 @@ export default function Bibliography() {
         <h2 className="text-4xl font-bold mb-12 text-center text-gray-900">
           {t('nav.bibliography')}
         </h2>
+        {pdfError && (
+          <div className="max-w-4xl mx-auto mb-6 p-4 bg-red-100 text-red-700 rounded-md">
+            {pdfError}
+          </div>
+        )}
         <div className="max-w-4xl mx-auto">
           {references.map((ref, index) => (
             <div key={index} className="mb-6">
@@ -143,8 +154,12 @@ export default function Bibliography() {
 
       <PDFPreviewModal
         isOpen={!!selectedPdf}
-        onClose={() => setSelectedPdf(null)}
+        onClose={() => {
+          setSelectedPdf(null);
+          setPdfError(null);
+        }}
         url={selectedPdf || ''}
+        error={pdfError}
       />
     </section>
   );
