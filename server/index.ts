@@ -26,6 +26,7 @@ app.use('/assets', (req, res, next) => {
 
 // Serve files from attached_assets directory
 app.use('/assets', express.static(path.resolve(__dirname, '..', 'attached_assets'), {
+  dotfiles: 'allow',
   setHeaders: (res, filePath) => {
     if (filePath.endsWith('.pdf')) {
       res.setHeader('Content-Type', 'application/pdf');
@@ -34,6 +35,7 @@ app.use('/assets', express.static(path.resolve(__dirname, '..', 'attached_assets
       res.setHeader('Content-Type', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document');
     }
     res.setHeader('Access-Control-Allow-Origin', '*');
+    res.setHeader('Cache-Control', 'no-cache');
     log(`Serving file: ${filePath}`);
   }
 }));

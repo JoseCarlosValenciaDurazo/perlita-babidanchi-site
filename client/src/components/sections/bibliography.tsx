@@ -50,7 +50,7 @@ export default function Bibliography() {
         },
         {
           title: "Ratificación de firmas y contenidos de tesis",
-          pdfUrl: "/assets/thesis-signatures.pdf"
+          pdfUrl: "/assets/Ratificación de firmas y contenidos de tesis.pdf"
         },
         {
           title: "Tesis Lic. Geol. Emmanuel Melgarejo Joris",
@@ -63,7 +63,10 @@ export default function Bibliography() {
   const handlePdfClick = (pdfUrl: string) => {
     if (pdfUrl) {
       console.log('Opening file:', pdfUrl); // Debug log
-      setSelectedPdf(pdfUrl);
+      // Encode the URL to handle special characters
+      const encodedUrl = encodeURI(pdfUrl);
+      console.log('Encoded URL:', encodedUrl); // Debug log
+      setSelectedPdf(encodedUrl);
     }
   };
 
