@@ -14,7 +14,7 @@ export default function Investment() {
   const { t } = useTranslation();
 
   return (
-    <section id="investment" className="py-12 bg-gray-50">
+    <section id="investment" className="py-12 bg-white">
       <div className="container mx-auto px-4">
         {/* Main Title */}
         <div className="text-center mb-12">

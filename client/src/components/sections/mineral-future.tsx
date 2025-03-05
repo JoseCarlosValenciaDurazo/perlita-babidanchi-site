@@ -11,7 +11,7 @@ export default function MineralFuture() {
   const { t } = useTranslation();
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
@@ -23,7 +23,6 @@ export default function MineralFuture() {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
-          {/* Left column - Image */}
           <div className="relative w-full h-[400px] lg:h-[500px]">
             <img
               src="/images/perlite-example.png"
@@ -32,7 +31,6 @@ export default function MineralFuture() {
             />
           </div>
 
-          {/* Right column - Features */}
           <div className="space-y-6">
             <div className="flex items-start gap-4">
               <Building2 className="h-8 w-8 text-primary mt-1 flex-shrink-0" />
