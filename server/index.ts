@@ -1,6 +1,10 @@
 import express, { type Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
+import { exec } from 'child_process';
+import { promisify } from 'util';
+
+const execAsync = promisify(exec);
 
 const app = express();
 log("Starting Express application...");
@@ -62,6 +66,15 @@ const startServer = async (): Promise<void> => {
     }
 
     const PORT = 5000;
+
+    try {
+      // Kill any process using port 5000
+      await execAsync('npx fkill :5000 --force');
+      log('Cleared port 5000');
+    } catch (error) {
+      // If no process was using the port, fkill will throw an error, which we can ignore
+      log('Port 5000 was already free');
+    }
 
     return new Promise((resolve, reject) => {
       server.listen(PORT, "0.0.0.0")
