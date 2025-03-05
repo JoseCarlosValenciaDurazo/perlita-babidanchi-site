@@ -16,34 +16,30 @@ export default function Contact() {
             <ul className="space-y-6 text-gray-900">
               <li className="flex flex-col space-y-1">
                 <span className="font-semibold">Email:</span>
-                <a href="mailto:josecarlosvalencia.contacto@gmail.com" 
-                   className="hover:text-primary transition-colors">
+                <span className="hover:text-primary transition-colors text-gray-700">
                   josecarlosvalencia.contacto@gmail.com
-                </a>
+                </span>
               </li>
 
               <li className="flex flex-col space-y-1">
                 <span className="font-semibold">Phone:</span>
-                <a href="tel:+526623776968" 
-                   className="hover:text-primary transition-colors">
+                <span className="hover:text-primary transition-colors text-gray-700">
                   (+52) 662 377 6968
-                </a>
+                </span>
               </li>
 
               <li className="flex flex-col space-y-1">
                 <span className="font-semibold">Email:</span>
-                <a href="mailto:carlosjavier.valencia@gmail.com" 
-                   className="hover:text-primary transition-colors">
+                <span className="hover:text-primary transition-colors text-gray-700">
                   carlosjavier.valencia@gmail.com
-                </a>
+                </span>
               </li>
 
               <li className="flex flex-col space-y-1">
                 <span className="font-semibold">Phone:</span>
-                <a href="tel:+526622562933" 
-                   className="hover:text-primary transition-colors">
+                <span className="hover:text-primary transition-colors text-gray-700">
                   (+52) 662 256 2933
-                </a>
+                </span>
               </li>
             </ul>
           </CardContent>
