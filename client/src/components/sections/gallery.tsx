@@ -14,14 +14,7 @@ export default function Gallery() {
 
   const galleryImages = [
     // Original perlite samples and deposits
-    {
-      src: "/assets/Perlite example.png",
-      alt: "Perlite Sample"
-    },
-    {
-      src: "/assets/Perlite example 2.png",
-      alt: "Raw Perlite Material"
-    },
+   
     {
       src: "/assets/Bendicion Deposit.jpg",
       alt: "La Bendición Deposit"
@@ -62,10 +55,6 @@ export default function Gallery() {
     {
       src: "/assets/2016-07-09_08-16-33_o.jpg",
       alt: "Mining Operations 1"
-    },
-    {
-      src: "/assets/2016-07-09_08-17-26_o.jpg",
-      alt: "Mining Operations 2"
     },
     {
       src: "/assets/2016-07-09_08-50-11_o.jpg",

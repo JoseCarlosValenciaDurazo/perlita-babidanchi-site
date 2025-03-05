@@ -110,7 +110,7 @@ export default function Bibliography() {
                           rel="noopener noreferrer"
                           className="text-primary hover:text-primary/80 font-medium flex items-center gap-2 transition-colors duration-200 hover:underline"
                         >
-                          {t('bibliography.visit_source')}
+                          {t('www.usgs.gov')}
                           <LinkIcon className="h-4 w-4" />
                         </a>
                         {ref.pdfUrl && (
@@ -120,7 +120,7 @@ export default function Bibliography() {
                               onClick={() => handlePdfClick(ref.pdfUrl!)}
                               className="text-primary hover:text-primary/80 font-medium flex items-center gap-2 transition-colors duration-200 hover:underline"
                             >
-                              {t('bibliography.view_pdf')}
+                              {t('USGS 2024 Perlite')}
                               <FileText className="h-4 w-4" />
                             </button>
                           </>
