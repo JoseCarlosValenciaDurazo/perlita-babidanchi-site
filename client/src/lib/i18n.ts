@@ -68,7 +68,7 @@ const resources = {
       },
       location: {
         title: "Our Location",
-        description: "Strategically positioned for efficient distribution"
+        description: "Perlita Babidanchi is conveniently situated just 10 kilometers from Aribabi, a municipality in the state of Sonora, Mexico."
       },
       product: {
         title: "What is Perlite",
