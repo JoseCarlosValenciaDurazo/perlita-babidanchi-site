@@ -38,7 +38,7 @@ export default function Bibliography() {
       references: [
         {
           title: "Geología de los depósitos de perlita de Huachinera, Sonora, México",
-          pdfUrl: "/assets/Geolog%C3%ADa%20de%20los%20dep%C3%B3sitos%20de%20perlita%20de%20Huachinera%2C%20Sonora%2C%20M%C3%A9xico.pdf"
+          pdfUrl: "/assets/huachinera-deposit-study.pdf"
         },
         {
           title: "Geology of the Selene perlite deposit Sonora, Mexico",
@@ -46,11 +46,11 @@ export default function Bibliography() {
         },
         {
           title: "Informe proyecto Perlita Babidanchi agosto 2016",
-          pdfUrl: "/assets/Informe%20proyecto%20Perlita%20Babidanchi%20agosto%202016.docx"
+          pdfUrl: "/assets/informe-babidanchi-2016.docx"
         },
         {
           title: "Ratificación de firmas y contenidos de tesis",
-          pdfUrl: "/assets/Ratificaci%C3%B3n%20de%20firmas%20y%20contenidos%20de%20tesis.pdf"
+          pdfUrl: "/assets/thesis-signatures.pdf"
         },
         {
           title: "Tesis Lic. Geol. Emmanuel Melgarejo Joris",

@@ -18,7 +18,26 @@ log("Starting Express application...");
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-// Serve files from attached_assets directory
+// Serve files from attached_assets directory with a file mapping
+const fileMapping = {
+  'huachinera-deposit-study.pdf': 'Geología de los depósitos de perlita de Huachinera, Sonora, México.pdf',
+  'informe-babidanchi-2016.docx': 'Informe proyecto Perlita Babidanchi agosto 2016.docx',
+  'thesis-signatures.pdf': 'Ratificación de firmas y contenidos de tesis.pdf'
+};
+
+app.use('/assets', (req, res, next) => {
+  // Log the incoming request
+  log(`Asset request: ${req.path}`);
+
+  // Check if we need to map the requested file to its actual name
+  const requestedFile = req.path.substring(1); // Remove leading slash
+  const actualFileName = fileMapping[requestedFile] || requestedFile;
+
+  // Set the actual file path
+  req.url = '/' + actualFileName;
+  next();
+});
+
 app.use('/assets', express.static(path.resolve(__dirname, '..', 'attached_assets'), {
   setHeaders: (res, filePath) => {
     // Set appropriate headers for PDF and DOCX files
@@ -29,12 +48,6 @@ app.use('/assets', express.static(path.resolve(__dirname, '..', 'attached_assets
     }
   }
 }));
-
-// Add logging middleware for asset requests
-app.use('/assets', (req, res, next) => {
-  log(`Asset request: ${req.path}`);
-  next();
-});
 
 // Simplified request logging middleware for development
 if (process.env.NODE_ENV !== "production") {
