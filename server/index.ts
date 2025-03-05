@@ -29,9 +29,11 @@ app.use('/assets', express.static(path.resolve(__dirname, '..', 'attached_assets
   setHeaders: (res, filePath) => {
     if (filePath.endsWith('.pdf')) {
       res.setHeader('Content-Type', 'application/pdf');
+      res.setHeader('Content-Disposition', 'inline');
     } else if (filePath.endsWith('.docx')) {
       res.setHeader('Content-Type', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document');
     }
+    res.setHeader('Access-Control-Allow-Origin', '*');
     log(`Serving file: ${filePath}`);
   }
 }));

@@ -21,14 +21,14 @@ export default function Bibliography() {
   const references: Reference[] = [
     {
       title: "U.S. Geological Survey",
-      description: t('bibliography.usgs.description'),
+      description: t('The U.S. Geological Survey (USGS) is a scientific agency dedicated to researching and providing data on natural resources, including minerals like perlite, to support informed decision-making and sustainable development.'),
       link: "https://www.usgs.gov/",
       pdfUrl: "/assets/USGS 2024 Perlite .pdf",
       pdfDescription: t('bibliography.usgs.pdf_description')
     },
     {
       title: "Perlite Institute",
-      description: t('bibliography.perlite_institute.description'),
+      description: t('The Perlite Institute is an organization dedicated to the research, promotion, and development of perlite applications, a volcanic mineral widely used in industries such as construction, agriculture, and filtration.'),
       link: "https://www.perlite.org/"
     },
     {
@@ -38,7 +38,7 @@ export default function Bibliography() {
       references: [
         {
           title: "Geología de los depósitos de perlita de Huachinera, Sonora, México",
-          pdfUrl: `/assets/${encodeURIComponent("Geología de los depósitos de perlita de Huachinera, Sonora, México.pdf")}`
+          pdfUrl: "/assets/Geolog%C3%ADa%20de%20los%20dep%C3%B3sitos%20de%20perlita%20de%20Huachinera%2C%20Sonora%2C%20M%C3%A9xico.pdf"
         },
         {
           title: "Geology of the Selene perlite deposit Sonora, Mexico",
@@ -63,13 +63,6 @@ export default function Bibliography() {
   const handlePdfClick = (pdfUrl: string) => {
     if (pdfUrl) {
       console.log('Opening file:', pdfUrl); // Debug log
-
-      // Handle DOCX files differently - download instead of preview
-      if (pdfUrl.toLowerCase().endsWith('.docx')) {
-        window.open(pdfUrl, '_blank');
-        return;
-      }
-
       setSelectedPdf(pdfUrl);
     }
   };
@@ -119,7 +112,6 @@ export default function Bibliography() {
                           </>
                         )}
                       </div>
-                      {/* Render nested references for Babidanchi studies */}
                       {ref.references && (
                         <div className="mt-6 pl-4 border-l-2 border-gray-200">
                           {ref.references.map((study, studyIndex) => (
@@ -146,7 +138,6 @@ export default function Bibliography() {
         </div>
       </div>
 
-      {/* PDF Preview Modal */}
       <PDFPreviewModal
         isOpen={!!selectedPdf}
         onClose={() => setSelectedPdf(null)}
