@@ -51,7 +51,7 @@ export default function Bibliography() {
         },
         {
           title: "Ratificación de firmas y contenidos de tesis",
-          pdfUrl: "/assets/Ratificación de firmas y contenidos de tesis.pdf"
+          pdfUrl: "/assets/Ratificacion de firmas y contenidos de tesis.pdf"
         },
         {
           title: "Tesis Lic. Geol. Emmanuel Melgarejo Joris",
