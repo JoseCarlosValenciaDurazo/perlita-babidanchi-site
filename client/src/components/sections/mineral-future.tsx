@@ -20,9 +20,6 @@ export default function MineralFuture() {
           <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-6">
             {t('main_uses.header.subtitle')}
           </h3>
-          <p className="text-xl text-gray-700 max-w-3xl mx-auto">
-            {t('')}
-          </p>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
