@@ -21,47 +21,48 @@ export default function Bibliography() {
   const references: Reference[] = [
     {
       title: "U.S. Geological Survey",
-      description: "The USGS is a scientific agency dedicated to researching and providing data on natural resources, including minerals like perlite, to support informed decision-making and sustainable development.",
+      description: t('bibliography.usgs.description'),
       link: "https://www.usgs.gov/",
       pdfUrl: "/pdfs/USGS-2024-Perlite.pdf",
-      pdfDescription: "USGS Mineral Commodity Summaries 2024 - Perlite Section"
+      pdfDescription: t('bibliography.usgs.pdf_description')
     },
     {
       title: "Perlite Institute",
-      description: "The Perlite Institute is an organization dedicated to the research, promotion, and development of perlite applications, a volcanic mineral widely used in industries such as construction, agriculture, and filtration.",
+      description: t('bibliography.perlite_institute.description'),
       link: "https://www.perlite.org/"
     },
     {
       title: "Babidanchi Perlite Studies",
-      description: "The following scientific studies and reports were conducted on the Babidanchi Perlite deposits:",
+      description: t('bibliography.babidanchi.description'),
       link: "https://www.gob.mx/sgm",
       references: [
         {
           title: "Geología de los depósitos de perlita de Huachinera, Sonora, México",
-          pdfUrl: "/attached_assets/Geología de los depósitos de perlita de Huachinera, Sonora, México.pdf"
+          pdfUrl: "/assets/Geología de los depósitos de perlita de Huachinera, Sonora, México.pdf"
         },
         {
           title: "Geology of the Selene perlite deposit Sonora, Mexico",
-          pdfUrl: "/attached_assets/Geology of the Selene perlite deposit Sonora, Mexico.pdf"
+          pdfUrl: "/assets/Geology of the Selene perlite deposit Sonora, Mexico.pdf"
         },
         {
           title: "Informe proyecto Perlita Babidanchi agosto 2016",
-          pdfUrl: "/attached_assets/Informe proyecto Perlita Babidanchi agosto 2016.docx"
+          pdfUrl: "/assets/Informe proyecto Perlita Babidanchi agosto 2016.docx"
         },
         {
           title: "Ratificación de firmas y contenidos de tesis",
-          pdfUrl: "/attached_assets/Ratificación de firmas y contenidos de tesis.pdf"
+          pdfUrl: "/assets/Ratificación de firmas y contenidos de tesis.pdf"
         },
         {
           title: "Tesis Lic. Geol. Emmanuel Melgarejo Joris",
-          pdfUrl: "/attached_assets/Tesis Lic. Geol. Emmanuel Melgarejo Joris.pdf"
+          pdfUrl: "/assets/Tesis Lic. Geol. Emmanuel Melgarejo Joris.pdf"
         }
-      ]
+      ].sort((a, b) => a.title.localeCompare(b.title)) // Sort alphabetically
     }
   ];
 
   const handlePdfClick = (pdfUrl: string) => {
     if (pdfUrl) {
+      console.log('Opening PDF:', pdfUrl); // Debug log
       setSelectedPdf(pdfUrl);
     }
   };
@@ -85,7 +86,7 @@ export default function Bibliography() {
                       <h3 className="text-xl font-semibold text-gray-900 mb-2">
                         {ref.title}
                       </h3>
-                      <p className="text-gray-900 mb-4">
+                      <p className="text-gray-700 mb-4">
                         {ref.description}
                       </p>
                       <div className="flex items-center gap-4">
@@ -95,7 +96,7 @@ export default function Bibliography() {
                           rel="noopener noreferrer"
                           className="text-primary hover:text-primary/80 font-medium flex items-center gap-2 transition-colors duration-200 hover:underline"
                         >
-                          Visit Source
+                          {t('bibliography.visit_source')}
                           <LinkIcon className="h-4 w-4" />
                         </a>
                         {ref.pdfUrl && (
@@ -105,7 +106,7 @@ export default function Bibliography() {
                               onClick={() => handlePdfClick(ref.pdfUrl!)}
                               className="text-primary hover:text-primary/80 font-medium flex items-center gap-2 transition-colors duration-200 hover:underline"
                             >
-                              View PDF
+                              {t('bibliography.view_pdf')}
                               <FileText className="h-4 w-4" />
                             </button>
                           </>
@@ -138,6 +139,7 @@ export default function Bibliography() {
         </div>
       </div>
 
+      {/* PDF Preview Modal */}
       <PDFPreviewModal
         isOpen={!!selectedPdf}
         onClose={() => setSelectedPdf(null)}

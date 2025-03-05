@@ -3,6 +3,11 @@ import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
 import { exec } from 'child_process';
 import { promisify } from 'util';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const execAsync = promisify(exec);
 const PORT = 5000;
@@ -12,6 +17,9 @@ log("Starting Express application...");
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+
+// Serve files from attached_assets directory
+app.use('/assets', express.static(path.resolve(__dirname, '..', 'attached_assets')));
 
 // Simplified request logging middleware for development
 if (process.env.NODE_ENV !== "production") {
