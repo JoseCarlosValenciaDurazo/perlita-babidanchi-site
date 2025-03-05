@@ -20,9 +20,7 @@ app.use(express.urlencoded({ extended: false }));
 
 // Serve files from attached_assets directory with a file mapping
 const fileMapping = {
-  'huachinera-deposit-study.pdf': 'Geología de los depósitos de perlita de Huachinera, Sonora, México.pdf',
-  'informe-babidanchi-2016.pdf': 'Informe proyecto Perlita Babidanchi 2016.pdf',
-  'thesis-signatures.pdf': 'Ratificacion de firmas y contenidos de TESIS.pdf'
+  'huachinera-deposit-study.pdf': 'Geología de los depósitos de perlita de Huachinera, Sonora, México.pdf'
 };
 
 app.use('/assets', (req, res, next) => {
