@@ -5,7 +5,7 @@ import { exec } from 'child_process';
 import { promisify } from 'util';
 
 const execAsync = promisify(exec);
-const PORT = 4000;
+const PORT = 5000;
 
 const app = express();
 log("Starting Express application...");
@@ -60,7 +60,7 @@ const startServer = async (): Promise<void> => {
     // Start Vite setup in parallel with server binding
     const viteSetup = async () => {
       // Always use development mode unless explicitly set to production
-    if (process.env.NODE_ENV !== "production") {
+      if (process.env.NODE_ENV !== "production") {
         log("Setting up Vite in development mode...");
         await setupVite(app, server);
         log("Vite setup complete");
