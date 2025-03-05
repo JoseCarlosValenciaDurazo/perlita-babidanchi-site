@@ -35,7 +35,6 @@ export default function Bibliography() {
       title: "Babidanchi Perlite Studies",
       description: "The following scientific studies and reports were conducted on the Babidanchi Perlite deposits:",
       link: "https://www.gob.mx/sgm",
-      pdfUrl: undefined,
       references: [
         {
           title: "Geología de los depósitos de perlita de Huachinera, Sonora, México",
@@ -60,6 +59,12 @@ export default function Bibliography() {
       ]
     }
   ];
+
+  const handlePdfClick = (pdfUrl: string) => {
+    if (pdfUrl) {
+      setSelectedPdf(pdfUrl);
+    }
+  };
 
   return (
     <section id="bibliography" className="py-20 bg-gray-50">
@@ -97,7 +102,7 @@ export default function Bibliography() {
                           <>
                             <Separator orientation="vertical" className="h-4" />
                             <button
-                              onClick={() => setSelectedPdf(ref.pdfUrl)}
+                              onClick={() => handlePdfClick(ref.pdfUrl!)}
                               className="text-primary hover:text-primary/80 font-medium flex items-center gap-2 transition-colors duration-200 hover:underline"
                             >
                               View PDF
@@ -107,14 +112,14 @@ export default function Bibliography() {
                         )}
                       </div>
                       {/* Render nested references for Babidanchi studies */}
-                      {'references' in ref && ref.references && (
+                      {ref.references && (
                         <div className="mt-6 pl-4 border-l-2 border-gray-200">
                           {ref.references.map((study, studyIndex) => (
                             <div key={studyIndex} className="mb-4">
                               <div className="flex items-center gap-4">
                                 <FileText className="h-4 w-4 text-primary" />
                                 <button
-                                  onClick={() => setSelectedPdf(study.pdfUrl)}
+                                  onClick={() => handlePdfClick(study.pdfUrl)}
                                   className="text-primary hover:text-primary/80 font-medium flex items-center gap-2 transition-colors duration-200 hover:underline"
                                 >
                                   {study.title}
