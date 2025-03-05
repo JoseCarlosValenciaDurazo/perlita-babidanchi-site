@@ -5,7 +5,7 @@ import { exec } from 'child_process';
 import { promisify } from 'util';
 
 const execAsync = promisify(exec);
-const PORT = 5000;
+const PORT = 3000;
 
 const app = express();
 log("Starting Express application...");
