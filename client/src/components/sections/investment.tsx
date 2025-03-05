@@ -14,9 +14,8 @@ export default function Investment() {
   const { t } = useTranslation();
 
   return (
-    <section id="investment" className="py-12 bg-white">
+    <section id="investment" className="py-12 bg-gray-50">
       <div className="container mx-auto px-4">
-        {/* Main Title */}
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-4 text-gray-900">
             {t('investment.title')}
@@ -26,14 +25,12 @@ export default function Investment() {
           </p>
         </div>
 
-        {/* Market Analysis Section Title */}
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold text-gray-900">
             {t('investment.market_analysis.title')}
           </h2>
         </div>
 
-        {/* U.S. Market Analysis */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-4">
           <Card className="bg-white shadow-lg">
             <CardContent className="pt-6">
@@ -120,12 +117,10 @@ export default function Investment() {
           </Card>
         </div>
 
-        {/* Source Citation */}
         <p className="text-sm text-gray-500 text-center italic mb-16">
           {t('investment.source')}
         </p>
 
-        {/* Key Advantages Section */}
         <div className="mb-16">
           <h3 className="text-2xl font-semibold text-center mb-8 text-gray-900">
             {t('investment.key_advantages.title')}

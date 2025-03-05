@@ -64,9 +64,7 @@ export default function Bibliography() {
   const handlePdfClick = (pdfUrl: string) => {
     try {
       setPdfError(null);
-      // Keep the URL format consistent
       const cleanUrl = pdfUrl;
-      // Encode the URL components while preserving the path structure
       const encodedUrl = cleanUrl.split('/').map(part => encodeURIComponent(part)).join('/');
       console.log('Opening PDF:', encodedUrl);
       setSelectedPdf(encodedUrl);
@@ -77,7 +75,7 @@ export default function Bibliography() {
   };
 
   return (
-    <section id="bibliography" className="py-20 bg-blue-50"> {/* Changed background color here */}
+    <section id="bibliography" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold mb-12 text-center text-gray-900">
           {t('nav.bibliography')}
