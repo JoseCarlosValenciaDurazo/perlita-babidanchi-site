@@ -5,7 +5,7 @@ import { exec } from 'child_process';
 import { promisify } from 'util';
 
 const execAsync = promisify(exec);
-const PORT = 3000;
+const PORT = 5000;
 
 const app = express();
 log("Starting Express application...");
@@ -22,6 +22,11 @@ if (process.env.NODE_ENV !== "production") {
     next();
   });
 }
+
+// Add a health check endpoint
+app.get('/health', (_req, res) => {
+  res.status(200).json({ status: 'ok' });
+});
 
 const startServer = async (): Promise<void> => {
   try {
