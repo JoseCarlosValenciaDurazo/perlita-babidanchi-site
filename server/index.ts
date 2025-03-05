@@ -7,21 +7,6 @@ import { promisify } from 'util';
 const execAsync = promisify(exec);
 const PORT = 5000;
 
-// Try to clear port 5000 before any server initialization
-async function clearPort() {
-  try {
-    const { stdout, stderr } = await execAsync('npx fkill :5000 --force');
-    log(`Port clear stdout: ${stdout}`);
-    if (stderr) log(`Port clear stderr: ${stderr}`);
-    log('Cleared port 5000');
-    // Add a delay to ensure the port is fully released
-    await new Promise(resolve => setTimeout(resolve, 2000));
-  } catch (error) {
-    // If no process was using the port, fkill will throw an error, which we can ignore
-    log('Port 5000 was already free');
-  }
-}
-
 const app = express();
 log("Starting Express application...");
 
@@ -61,7 +46,6 @@ app.use((req, res, next) => {
 const startServer = async (): Promise<void> => {
   try {
     log("Initializing server...");
-    await clearPort(); // Clear port before server initialization
 
     // Create HTTP server first
     const server = registerRoutes(app);
@@ -93,11 +77,32 @@ const startServer = async (): Promise<void> => {
           log(`Server listening on port ${PORT} (took ${bindTime}ms to bind)`);
           resolve();
         })
-        .once('error', (err: NodeJS.ErrnoException) => {
+        .once('error', async (err: NodeJS.ErrnoException) => {
           if (err.code === 'EADDRINUSE') {
-            log(`Error: Port ${PORT} is already in use. Please ensure no other processes are using port ${PORT} and try again.`);
-            log(`Detailed error: ${err.message}`);
-            reject(new Error(`Port ${PORT} is required but is already in use. Please free up port ${PORT} and restart the application.`));
+            log(`Port ${PORT} is in use, attempting to free it...`);
+            try {
+              const { stdout, stderr } = await execAsync('npx fkill :5000 --force');
+              log(`Port clear stdout: ${stdout}`);
+              if (stderr) log(`Port clear stderr: ${stderr}`);
+
+              // Shorter delay since we already tried binding once
+              await new Promise(resolve => setTimeout(resolve, 1000));
+
+              // Try binding again
+              server.listen(PORT, "0.0.0.0")
+                .once('listening', () => {
+                  const retryTime = Date.now() - startTime;
+                  log(`Server listening on port ${PORT} after retry (took ${retryTime}ms total)`);
+                  resolve();
+                })
+                .once('error', (retryErr) => {
+                  log(`Failed to bind to port ${PORT} after retry: ${retryErr.message}`);
+                  reject(retryErr);
+                });
+            } catch (killError) {
+              log(`Failed to free port ${PORT}: ${killError}`);
+              reject(new Error(`Could not free port ${PORT} for use`));
+            }
           } else {
             log(`Failed to start server: ${err.message}`);
             reject(err);
