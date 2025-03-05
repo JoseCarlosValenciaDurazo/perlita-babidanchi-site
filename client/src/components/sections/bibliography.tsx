@@ -11,6 +11,7 @@ interface Reference {
   link: string;
   pdfUrl?: string;
   pdfDescription?: string;
+  references?: { title: string; pdfUrl: string }[];
 }
 
 export default function Bibliography() {
@@ -31,9 +32,32 @@ export default function Bibliography() {
       link: "https://www.perlite.org/"
     },
     {
-      title: "Babidachi Pearlite Studies",
-      description: "The following studies were conducted by Perlita Babidanchi:",
-      link: "https://www.gob.mx/sgm"
+      title: "Babidanchi Perlite Studies",
+      description: "The following scientific studies and reports were conducted on the Babidanchi Perlite deposits:",
+      link: "https://www.gob.mx/sgm",
+      pdfUrl: undefined,
+      references: [
+        {
+          title: "Geología de los depósitos de perlita de Huachinera, Sonora, México",
+          pdfUrl: "/attached_assets/Geología de los depósitos de perlita de Huachinera, Sonora, México.pdf"
+        },
+        {
+          title: "Geology of the Selene perlite deposit Sonora, Mexico",
+          pdfUrl: "/attached_assets/Geology of the Selene perlite deposit Sonora, Mexico.pdf"
+        },
+        {
+          title: "Informe proyecto Perlita Babidanchi agosto 2016",
+          pdfUrl: "/attached_assets/Informe proyecto Perlita Babidanchi agosto 2016.docx"
+        },
+        {
+          title: "Ratificación de firmas y contenidos de tesis",
+          pdfUrl: "/attached_assets/Ratificación de firmas y contenidos de tesis.pdf"
+        },
+        {
+          title: "Tesis Lic. Geol. Emmanuel Melgarejo Joris",
+          pdfUrl: "/attached_assets/Tesis Lic. Geol. Emmanuel Melgarejo Joris.pdf"
+        }
+      ]
     }
   ];
 
@@ -82,6 +106,24 @@ export default function Bibliography() {
                           </>
                         )}
                       </div>
+                      {/* Render nested references for Babidanchi studies */}
+                      {'references' in ref && ref.references && (
+                        <div className="mt-6 pl-4 border-l-2 border-gray-200">
+                          {ref.references.map((study, studyIndex) => (
+                            <div key={studyIndex} className="mb-4">
+                              <div className="flex items-center gap-4">
+                                <FileText className="h-4 w-4 text-primary" />
+                                <button
+                                  onClick={() => setSelectedPdf(study.pdfUrl)}
+                                  className="text-primary hover:text-primary/80 font-medium flex items-center gap-2 transition-colors duration-200 hover:underline"
+                                >
+                                  {study.title}
+                                </button>
+                              </div>
+                            </div>
+                          ))}
+                        </div>
+                      )}
                     </div>
                   </div>
                 </CardContent>
