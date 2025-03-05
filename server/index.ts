@@ -68,61 +68,29 @@ app.get('/health', (_req, res) => {
 const startServer = async (): Promise<void> => {
   try {
     log("Initializing server...");
-
-    // Create HTTP server first
     const server = registerRoutes(app);
-
-    // Create a promise that resolves when the server is ready
-    const serverReady = new Promise<void>((resolve, reject) => {
-      const startTime = Date.now();
-      log(`Attempting to bind to port ${PORT}...`);
-
+    await new Promise<void>((resolve, reject) => {
       server.listen(PORT, "0.0.0.0")
         .once('listening', () => {
-          const bindTime = Date.now() - startTime;
-          log(`Server bound to port ${PORT} (took ${bindTime}ms)`);
+          log(`Server bound to port ${PORT}`);
           resolve();
         })
         .once('error', (err: NodeJS.ErrnoException) => {
-          if (err.code === 'EADDRINUSE') {
-            log(`Failed to bind to port ${PORT}: ${err.message}`);
-            reject(new Error(`Port ${PORT} is in use. The application will restart automatically.`));
-          } else {
-            log(`Failed to start server: ${err.message}`);
-            reject(err);
-          }
+          reject(err);
         });
     });
 
-    // Start Vite setup in parallel with server binding
-    const viteSetup = async () => {
-      // Always use development mode unless explicitly set to production
-      if (process.env.NODE_ENV !== "production") {
-        log("Setting up Vite in development mode...");
-        await setupVite(app, server);
-        log("Vite setup complete");
-      } else {
-        log("Setting up static file serving...");
-        serveStatic(app);
-      }
-    };
-
-    // Wait for server to bind first
-    await serverReady;
-
-    // Then set up Vite without blocking server readiness
-    viteSetup().catch(error => {
-      log(`Error during Vite setup: ${error}`);
-      // Don't throw here, let the server continue running
-    });
-
+    if (process.env.NODE_ENV !== "production") {
+      await setupVite(app, server);
+    } else {
+      serveStatic(app);
+    }
   } catch (error) {
     log(`Fatal error during startup: ${error instanceof Error ? error.message : String(error)}`);
     throw error;
   }
 };
 
-// Start the server
 startServer().catch((error) => {
   log(`Could not start server: ${error}`);
   process.exit(1);
