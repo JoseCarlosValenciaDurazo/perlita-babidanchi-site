@@ -19,7 +19,22 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 // Serve files from attached_assets directory
-app.use('/assets', express.static(path.resolve(__dirname, '..', 'attached_assets')));
+app.use('/assets', express.static(path.resolve(__dirname, '..', 'attached_assets'), {
+  setHeaders: (res, filePath) => {
+    // Set appropriate headers for PDF and DOCX files
+    if (filePath.endsWith('.pdf')) {
+      res.setHeader('Content-Type', 'application/pdf');
+    } else if (filePath.endsWith('.docx')) {
+      res.setHeader('Content-Type', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document');
+    }
+  }
+}));
+
+// Add logging middleware for asset requests
+app.use('/assets', (req, res, next) => {
+  log(`Asset request: ${req.path}`);
+  next();
+});
 
 // Simplified request logging middleware for development
 if (process.env.NODE_ENV !== "production") {

@@ -15,6 +15,12 @@ interface PDFPreviewModalProps {
 }
 
 export default function PDFPreviewModal({ url, onClose, isOpen }: PDFPreviewModalProps) {
+  // Add error handling for PDF loading
+  const handleIframeError = (error: React.SyntheticEvent<HTMLIFrameElement, Event>) => {
+    console.error('Error loading PDF:', error);
+    console.log('Attempted URL:', url);
+  };
+
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-6xl h-[85vh]">
@@ -28,6 +34,7 @@ export default function PDFPreviewModal({ url, onClose, isOpen }: PDFPreviewModa
           src={url}
           className="w-full h-full"
           title="PDF Preview"
+          onError={handleIframeError}
         />
       </DialogContent>
     </Dialog>
