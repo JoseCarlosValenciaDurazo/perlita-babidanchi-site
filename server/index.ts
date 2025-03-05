@@ -1,15 +1,11 @@
 import express, { type Request, Response, NextFunction } from "express";
 import { registerRoutes } from "./routes";
 import { setupVite, serveStatic, log } from "./vite";
-import { exec } from 'child_process';
-import { promisify } from 'util';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
-
-const execAsync = promisify(exec);
 const PORT = 5000;
 
 const app = express();
@@ -18,25 +14,24 @@ log("Starting Express application...");
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-// Add logging middleware for asset requests
+// Detailed logging middleware for assets
 app.use('/assets', (req, res, next) => {
-  // Log the incoming request
-  log(`Asset request: ${req.path}`);
-  log(`Full URL: ${req.url}`);
-  log(`Original URL: ${req.originalUrl}`);
+  const fullPath = path.resolve(__dirname, '..', 'attached_assets', decodeURIComponent(req.path.substring(1)));
+  log('Asset Request Details:');
+  log(`Request Path: ${req.path}`);
+  log(`Decoded Path: ${decodeURIComponent(req.path)}`);
+  log(`Full File Path: ${fullPath}`);
   next();
 });
 
 // Serve files from attached_assets directory
 app.use('/assets', express.static(path.resolve(__dirname, '..', 'attached_assets'), {
   setHeaders: (res, filePath) => {
-    // Set appropriate headers for PDF and DOCX files
     if (filePath.endsWith('.pdf')) {
       res.setHeader('Content-Type', 'application/pdf');
     } else if (filePath.endsWith('.docx')) {
       res.setHeader('Content-Type', 'application/vnd.openxmlformats-officedocument.wordprocessingml.document');
     }
-    // Log the file being served
     log(`Serving file: ${filePath}`);
   }
 }));
