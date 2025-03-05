@@ -38,7 +38,7 @@ export default function Bibliography() {
       link: "https://www.gob.mx/sgm",
       references: [
         {
-          title: "Geología de los depósitos de perlita de Huachinera, Sonora, México",
+          title: "Geología de los depositos de perlita de Huachinera, Sonora, Mexico",
           pdfUrl: "/assets/Geologia de los depositos de perlita de Huachinera, Sonora, Mexico.pdf"
         },
         {
