@@ -39,7 +39,7 @@ export default function Bibliography() {
       references: [
         {
           title: "Geología de los depósitos de perlita de Huachinera, Sonora, México",
-          pdfUrl: "attached_assets/Geología de los depósitos de perlita de Huachinera, Sonora, México.pdf"
+          pdfUrl: "/attached_assets/Geología de los depósitos de perlita de Huachinera, Sonora, México.pdf"
         },
         {
           title: "Geology of the Selene perlite deposit Sonora, Mexico",
