@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: false }));
 // Detailed logging middleware for assets
 app.use('/assets', (req, res, next) => {
   const fullPath = path.resolve(__dirname, '..', 'attached_assets', decodeURIComponent(req.path.substring(1)));
-  log('Asset Request Details:');
+  log(`Asset Request Details:`);
   log(`Request Path: ${req.path}`);
   log(`Decoded Path: ${decodeURIComponent(req.path)}`);
   log(`Full File Path: ${fullPath}`);

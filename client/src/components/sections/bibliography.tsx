@@ -24,7 +24,7 @@ export default function Bibliography() {
       title: "U.S. Geological Survey",
       description: t('The U.S. Geological Survey (USGS) is a scientific agency dedicated to researching and providing data on natural resources, including minerals like perlite, to support informed decision-making and sustainable development.'),
       link: "https://www.usgs.gov/",
-      pdfUrl: "/attached_assets/USGS 2024 Perlite .pdf",
+      pdfUrl: "/assets/USGS 2024 Perlite .pdf",
       pdfDescription: t('bibliography.usgs.pdf_description')
     },
     {
@@ -39,23 +39,23 @@ export default function Bibliography() {
       references: [
         {
           title: "Geología de los depósitos de perlita de Huachinera, Sonora, México",
-          pdfUrl: "attached_assets/Geología de los depósitos de perlita de Huachinera, Sonora, México.pdf"
+          pdfUrl: "/assets/Geología de los depósitos de perlita de Huachinera, Sonora, México.pdf"
         },
         {
           title: "Geology of the Selene perlite deposit Sonora, Mexico",
-          pdfUrl: "attached_assets/Geology of the Selene perlite deposit Sonora, Mexico.pdf"
+          pdfUrl: "/assets/Geology of the Selene perlite deposit Sonora, Mexico.pdf"
         },
         {
           title: "Informe proyecto Perlita Babidanchi 2016",
-          pdfUrl: "attached_assets/Informe proyecto Perlita Babidanchi 2016.pdf"
+          pdfUrl: "/assets/Informe proyecto Perlita Babidanchi 2016.pdf"
         },
         {
           title: "Ratificación de firmas y contenidos de tesis",
-          pdfUrl: "attached_assets/Ratificación de firmas y contenidos de tesis.pdf"
+          pdfUrl: "/assets/Ratificación de firmas y contenidos de tesis.pdf"
         },
         {
           title: "Tesis Lic. Geol. Emmanuel Melgarejo Joris",
-          pdfUrl: "attached_assets/Tesis Lic. Geol. Emmanuel Melgarejo Joris.pdf"
+          pdfUrl: "/assets/Tesis Lic. Geol. Emmanuel Melgarejo Joris.pdf"
         }
       ].sort((a, b) => a.title.localeCompare(b.title))
     }
