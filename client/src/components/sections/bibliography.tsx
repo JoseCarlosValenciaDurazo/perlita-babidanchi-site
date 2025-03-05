@@ -43,19 +43,19 @@ export default function Bibliography() {
         },
         {
           title: "Geology of the Selene perlite deposit Sonora, Mexico",
-          pdfUrl: "/attached_assets/Geology of the Selene perlite deposit Sonora, Mexico.pdf"
+          pdfUrl: "attached_assets/Geology of the Selene perlite deposit Sonora, Mexico.pdf"
         },
         {
           title: "Informe proyecto Perlita Babidanchi 2016",
-          pdfUrl: "/attached_assets/Informe proyecto Perlita Babidanchi 2016.pdf"
+          pdfUrl: "attached_assets/Informe proyecto Perlita Babidanchi 2016.pdf"
         },
         {
           title: "Ratificación de firmas y contenidos de tesis",
-          pdfUrl: "/attached_assets/Ratificación de firmas y contenidos de tesis.pdf"
+          pdfUrl: "attached_assets/Ratificación de firmas y contenidos de tesis.pdf"
         },
         {
           title: "Tesis Lic. Geol. Emmanuel Melgarejo Joris",
-          pdfUrl: "/attached_assets/Tesis Lic. Geol. Emmanuel Melgarejo Joris.pdf"
+          pdfUrl: "attached_assets/Tesis Lic. Geol. Emmanuel Melgarejo Joris.pdf"
         }
       ].sort((a, b) => a.title.localeCompare(b.title))
     }
@@ -64,13 +64,10 @@ export default function Bibliography() {
   const handlePdfClick = (pdfUrl: string) => {
     try {
       setPdfError(null);
-      // Ensure consistent URL format (keep the leading slash)
-      const cleanUrl = pdfUrl.startsWith('/') ? pdfUrl : '/' + pdfUrl;
+      // Remove leading slash if present
+      const cleanUrl = pdfUrl.startsWith('/') ? pdfUrl.slice(1) : pdfUrl;
       // Encode the URL components while preserving the path structure
-      const encodedUrl = cleanUrl.split('/').map((part, index) => 
-        // Skip encoding the empty string that comes from the first slash
-        index === 0 && part === '' ? '' : encodeURIComponent(part)
-      ).join('/');
+      const encodedUrl = cleanUrl.split('/').map(part => encodeURIComponent(part)).join('/');
       console.log('Opening PDF:', encodedUrl);
       setSelectedPdf(encodedUrl);
     } catch (error) {
