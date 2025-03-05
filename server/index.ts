@@ -16,10 +16,11 @@ app.use(express.urlencoded({ extended: false }));
 
 // Detailed logging middleware for assets
 app.use('/assets', (req, res, next) => {
-  const fullPath = path.resolve(__dirname, '..', 'attached_assets', decodeURIComponent(req.path.substring(1)));
+  const assetPath = decodeURIComponent(req.path.substring(1));
+  const fullPath = path.resolve(__dirname, '..', 'attached_assets', assetPath);
   log(`Asset Request Details:`);
-  log(`Request Path: ${req.path}`);
-  log(`Decoded Path: ${decodeURIComponent(req.path)}`);
+  log(`Original Request Path: ${req.path}`);
+  log(`Decoded Asset Path: ${assetPath}`);
   log(`Full File Path: ${fullPath}`);
   next();
 });
@@ -28,6 +29,7 @@ app.use('/assets', (req, res, next) => {
 app.use('/assets', express.static(path.resolve(__dirname, '..', 'attached_assets'), {
   dotfiles: 'allow',
   setHeaders: (res, filePath) => {
+    log(`Attempting to serve file: ${filePath}`);
     if (filePath.endsWith('.pdf')) {
       res.setHeader('Content-Type', 'application/pdf');
       res.setHeader('Content-Disposition', 'inline');
@@ -36,9 +38,14 @@ app.use('/assets', express.static(path.resolve(__dirname, '..', 'attached_assets
     }
     res.setHeader('Access-Control-Allow-Origin', '*');
     res.setHeader('Cache-Control', 'no-cache');
-    log(`Serving file: ${filePath}`);
   }
 }));
+
+// Add error handling for assets
+app.use('/assets', (err: any, req: Request, res: Response, next: NextFunction) => {
+  log(`Error serving asset: ${err.message}`);
+  res.status(404).json({ error: 'File not found' });
+});
 
 // Simplified request logging middleware for development
 if (process.env.NODE_ENV !== "production") {
