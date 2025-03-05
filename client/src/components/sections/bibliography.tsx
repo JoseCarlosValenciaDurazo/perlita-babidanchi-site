@@ -110,7 +110,7 @@ export default function Bibliography() {
                           rel="noopener noreferrer"
                           className="text-primary hover:text-primary/80 font-medium flex items-center gap-2 transition-colors duration-200 hover:underline"
                         >
-                          {t('www.usgs.gov')}
+                          {ref.title === "Perlite Institute" ? "www.perlite.org" : t('www.usgs.gov')}
                           <LinkIcon className="h-4 w-4" />
                         </a>
                         {ref.pdfUrl && (
