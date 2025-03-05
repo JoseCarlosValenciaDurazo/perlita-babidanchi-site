@@ -23,7 +23,7 @@ export default function Bibliography() {
       title: "U.S. Geological Survey",
       description: t('bibliography.usgs.description'),
       link: "https://www.usgs.gov/",
-      pdfUrl: "/pdfs/USGS-2024-Perlite.pdf",
+      pdfUrl: "/assets/USGS 2024 Perlite .pdf",
       pdfDescription: t('bibliography.usgs.pdf_description')
     },
     {
@@ -45,8 +45,8 @@ export default function Bibliography() {
           pdfUrl: "/assets/Geology of the Selene perlite deposit Sonora, Mexico.pdf"
         },
         {
-          title: "Informe proyecto Perlita Babidanchi agosto 2016",
-          pdfUrl: "/assets/informe-babidanchi-2016.docx"
+          title: "Informe proyecto Perlita Babidanchi 2016",
+          pdfUrl: "/assets/informe-babidanchi-2016.pdf"
         },
         {
           title: "Ratificación de firmas y contenidos de tesis",

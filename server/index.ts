@@ -21,8 +21,8 @@ app.use(express.urlencoded({ extended: false }));
 // Serve files from attached_assets directory with a file mapping
 const fileMapping = {
   'huachinera-deposit-study.pdf': 'Geología de los depósitos de perlita de Huachinera, Sonora, México.pdf',
-  'informe-babidanchi-2016.docx': 'Informe proyecto Perlita Babidanchi agosto 2016.docx',
-  'thesis-signatures.pdf': 'Ratificación de firmas y contenidos de tesis.pdf'
+  'informe-babidanchi-2016.pdf': 'Informe proyecto Perlita Babidanchi 2016.pdf',
+  'thesis-signatures.pdf': 'Ratificacion de firmas y contenidos de TESIS.pdf'
 };
 
 app.use('/assets', (req, res, next) => {
@@ -32,6 +32,9 @@ app.use('/assets', (req, res, next) => {
   // Check if we need to map the requested file to its actual name
   const requestedFile = req.path.substring(1); // Remove leading slash
   const actualFileName = fileMapping[requestedFile] || requestedFile;
+
+  // Log the file mapping
+  log(`Mapping ${requestedFile} to ${actualFileName}`);
 
   // Set the actual file path
   req.url = '/' + actualFileName;
