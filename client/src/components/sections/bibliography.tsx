@@ -39,7 +39,7 @@ export default function Bibliography() {
       references: [
         {
           title: "Geología de los depósitos de perlita de Huachinera, Sonora, México",
-          pdfUrl: "/attached_assets/Geología de los depósitos de perlita de Huachinera, Sonora, México.pdf"
+          pdfUrl: "attached_assets/Geología de los depósitos de perlita de Huachinera, Sonora, México.pdf"
         },
         {
           title: "Geology of the Selene perlite deposit Sonora, Mexico",
@@ -64,8 +64,8 @@ export default function Bibliography() {
   const handlePdfClick = (pdfUrl: string) => {
     try {
       setPdfError(null);
-      // Remove leading slash if present
-      const cleanUrl = pdfUrl.startsWith('/') ? pdfUrl.slice(1) : pdfUrl;
+      // Keep the URL format consistent
+      const cleanUrl = pdfUrl;
       // Encode the URL components while preserving the path structure
       const encodedUrl = cleanUrl.split('/').map(part => encodeURIComponent(part)).join('/');
       console.log('Opening PDF:', encodedUrl);
