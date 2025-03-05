@@ -7,7 +7,7 @@ export default function StrategicDelivery() {
   const { t } = useTranslation();
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <Card className="bg-white shadow-lg max-w-3xl mx-auto">
           <CardContent className="pt-6">

@@ -77,7 +77,7 @@ export default function Bibliography() {
   };
 
   return (
-    <section id="bibliography" className="py-20 bg-gray-50">
+    <section id="bibliography" className="py-20 bg-blue-50"> {/* Changed background color here */}
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold mb-12 text-center text-gray-900">
           {t('nav.bibliography')}
