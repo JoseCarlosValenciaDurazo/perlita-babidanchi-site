@@ -173,7 +173,7 @@ const resources = {
         },
         location: {
           title: "Strategic Location",
-          description: "3 hours from the US border, enabling fast logistics and reduced costs."
+          description: "213 Km from the US border, enabling fast logistics and reduced costs."
         },
         water: {
           title: "Resources of Exceptional Quality",
@@ -416,7 +416,7 @@ const resources = {
         },
         location: {
           title: "Ubicación Estratégica",
-          description: "A 3 horas de la frontera con EE.UU., permitiendo una logística rápida y costos reducidos."
+          description: "A 213 Km de la frontera con EE.UU., permitiendo una logística rápida y costos reducidos."
         },
         water: {
           title: "Recursos de Calidad Excepcional",
