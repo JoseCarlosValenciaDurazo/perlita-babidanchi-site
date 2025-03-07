@@ -15,22 +15,21 @@ export default function Navbar() {
   const scrollToElement = useSmoothScroll();
 
   const navItems = [
-    { href: "#who-we-are", label: "Who We Are" },
-    { href: "#location", label: "Location" },
-    { href: "#more-than-a-mine", label: "More Than a Mine" },
-    { href: "#what-is-perlite", label: "What is Perlite?" },
-    { href: "#mineral-future", label: "The mineral of the future" },
-    { href: "#why-invest", label: "Why Invest" },
-    { href: "#deposits", label: "Deposits" },
-    { href: "#bibliography", label: "Bibliography" },
-    { href: "#gallery", label: "Gallery" },
-    { href: "#contact", label: "Contact us" }
+    { href: "who-we-are", label: "Who We Are" },
+    { href: "location", label: "Location" },
+    { href: "more-than-a-mine", label: "More Than a Mine" },
+    { href: "what-is-perlite", label: "What is Perlite?" },
+    { href: "mineral-future", label: "The mineral of the future" },
+    { href: "why-invest", label: "Why Invest" },
+    { href: "deposits", label: "Deposits" },
+    { href: "bibliography", label: "Bibliography" },
+    { href: "gallery", label: "Gallery" },
+    { href: "contact", label: "Contact us" }
   ];
 
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
-    const targetId = href.replace('#', '');
-    scrollToElement(targetId);
+    scrollToElement(href);
   };
 
   return (
@@ -63,8 +62,8 @@ export default function Navbar() {
                   {navItems.map((item) => (
                     <a
                       key={item.href}
-                      href={item.href}
-                      onClick={(e) => handleScroll(e, item.href)}
+                      href={`#${item.href}`}
+                      onClick={(e) => handleScroll(e, `#${item.href}`)}
                       className="block px-4 py-2.5 text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50/80 rounded-lg transition-colors"
                     >
                       {item.label}

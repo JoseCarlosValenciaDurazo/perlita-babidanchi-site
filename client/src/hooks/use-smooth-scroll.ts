@@ -3,26 +3,42 @@ import { useCallback } from 'react';
 export function useSmoothScroll() {
   const scrollToElement = useCallback((elementId: string) => {
     try {
-      const element = document.getElementById(elementId);
+      // Remove the leading # if present
+      const cleanId = elementId.replace('#', '');
+      const element = document.getElementById(cleanId);
+
       if (!element) {
-        console.warn(`Element with id "${elementId}" not found`);
+        console.warn(`Element with id "${cleanId}" not found. Make sure the section has this exact ID.`);
         return;
       }
 
       // Get the header height for offset calculation
       const header = document.querySelector('header');
-      const offset = (header?.offsetHeight || 0) + 16; // Add extra padding
+      const headerHeight = header?.offsetHeight || 0;
+      const padding = 24; // Additional padding for better visual spacing
+      const offset = headerHeight + padding;
 
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - offset;
+      // Calculate position accounting for any parent scroll containers
+      const elementRect = element.getBoundingClientRect();
+      const absoluteElementTop = elementRect.top + window.pageYOffset;
+      const offsetPosition = absoluteElementTop - offset;
 
-      // Check if browser supports smooth scrolling
-      if ('scrollBehavior' in document.documentElement.style) {
+      // Log scroll details for debugging
+      console.log('Scrolling to section:', {
+        id: cleanId,
+        elementTop: elementRect.top,
+        absoluteElementTop,
+        offset,
+        finalPosition: offsetPosition
+      });
+
+      // Use smooth scroll with fallback
+      try {
         window.scrollTo({
           top: offsetPosition,
           behavior: 'smooth'
         });
-      } else {
+      } catch (scrollError) {
         // Fallback for browsers that don't support smooth scrolling
         window.scrollTo(0, offsetPosition);
       }
