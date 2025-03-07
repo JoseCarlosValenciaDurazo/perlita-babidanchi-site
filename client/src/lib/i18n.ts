@@ -5,18 +5,16 @@ const resources = {
   en: {
     translation: {
       nav: {
-        who_we_are: "Who We Are",
-        location: "Our Location",
-        strategic_resource: "More Than a Mine",
-        what_is_perlite: "What is Perlite",
-        mineral_future: "Mineral of the Future",
-        investment: "Why Invest",
-        key_advantages: "Key Advantages",
-        strategic_delivery: "Strategic Delivery",
+        whoWeAre: "Who We Are",
+        location: "Location",
+        about: "More Than a Mine",
+        whatIsPerlite: "What is Perlite?",
+        mineralFuture: "The mineral of the future",
+        whyInvest: "Why Invest",
         deposits: "Deposits",
         bibliography: "Bibliography",
         gallery: "Gallery",
-        contact: "Contact Us",
+        contact: "Contact us",
         language: "en"
       },
       hero: {
@@ -248,14 +246,12 @@ const resources = {
   es: {
     translation: {
       nav: {
-        who_we_are: "Quiénes Somos",
+        whoWeAre: "Quiénes Somos",
         location: "Ubicación",
-        strategic_resource: "Más que una Mina",
-        what_is_perlite: "¿Qué es la Perlita?",
-        mineral_future: "Mineral del Futuro",
-        investment: "Por qué Invertir",
-        key_advantages: "Ventajas Clave",
-        strategic_delivery: "Entrega Estratégica",
+        about: "Más que una Mina",
+        whatIsPerlite: "¿Qué es la Perlita?",
+        mineralFuture: "El mineral del futuro",
+        whyInvest: "Por qué Invertir",
         deposits: "Depósitos",
         bibliography: "Bibliografía",
         gallery: "Galería",
