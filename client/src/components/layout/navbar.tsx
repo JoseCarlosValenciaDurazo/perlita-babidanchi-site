@@ -15,14 +15,12 @@ export default function Navbar() {
   const scrollToElement = useSmoothScroll();
 
   const navItems = [
-    { href: "#hero", label: t('nav.who_we_are') },
+    { href: "#who-we-are", label: t('nav.who_we_are') },
     { href: "#location", label: t('nav.location') },
-    { href: "#about", label: t('nav.strategic_resource') },
+    { href: "#more-than-mine", label: t('nav.more_than_mine') },
     { href: "#what-is-perlite", label: t('nav.what_is_perlite') },
     { href: "#mineral-future", label: t('nav.mineral_future') },
-    { href: "#investment", label: t('nav.investment') },
-    { href: "#key-advantages", label: t('nav.key_advantages') },
-    { href: "#strategic-delivery", label: t('nav.strategic_delivery') },
+    { href: "#why-invest", label: t('nav.why_invest') },
     { href: "#deposits", label: t('nav.deposits') },
     { href: "#bibliography", label: t('nav.bibliography') },
     { href: "#gallery", label: t('nav.gallery') },
