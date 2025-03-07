@@ -9,10 +9,12 @@ import {
 } from "@/components/ui/sheet";
 import LanguageToggle from "./language-toggle";
 import { useSmoothScroll } from "@/hooks/use-smooth-scroll";
+import { useState } from "react";
 
 export default function Navbar() {
   const { t } = useTranslation();
   const scrollToElement = useSmoothScroll();
+  const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
     { href: "who-we-are", label: "Who We Are" },
@@ -30,6 +32,7 @@ export default function Navbar() {
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
     e.preventDefault();
     scrollToElement(sectionId);
+    setIsOpen(false); // Close mobile menu after clicking
   };
 
   return (
@@ -47,7 +50,7 @@ export default function Navbar() {
             <LanguageToggle />
 
             {/* Menu Button */}
-            <Sheet>
+            <Sheet open={isOpen} onOpenChange={setIsOpen}>
               <SheetTrigger asChild>
                 <Button 
                   variant="ghost" 

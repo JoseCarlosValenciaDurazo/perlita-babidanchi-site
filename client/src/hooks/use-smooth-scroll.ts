@@ -9,7 +9,7 @@ export function useSmoothScroll() {
       // Find the target element
       const element = document.getElementById(id);
       if (!element) {
-        console.warn(`Target element #${id} not found`);
+        console.warn(`Target element #${id} not found. Make sure the section ID exists in your HTML.`);
         return;
       }
 
@@ -17,14 +17,14 @@ export function useSmoothScroll() {
       const header = document.querySelector('header');
       const headerOffset = header?.offsetHeight || 0;
 
-      // Get element's position relative to the viewport
-      const elementPosition = element.getBoundingClientRect().top;
-      // Add current scroll position to get absolute position
-      const offsetPosition = elementPosition + window.pageYOffset - headerOffset - 20;
+      // Calculate scroll position
+      const elementRect = element.getBoundingClientRect();
+      const scrollOffset = window.pageYOffset || document.documentElement.scrollTop;
+      const targetPosition = elementRect.top + scrollOffset - headerOffset - 32; // Added extra padding
 
-      // Perform the smooth scroll
+      // Scroll into view with smooth behavior
       window.scrollTo({
-        top: offsetPosition,
+        top: targetPosition,
         behavior: 'smooth'
       });
 
