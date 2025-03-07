@@ -71,33 +71,14 @@ const resources = {
         description: "Perlita Babidanchi is conveniently situated just 10 kilometers from Aribabi, a municipality in the state of Sonora, Mexico."
       },
       product: {
-        title: "What is Perlite?",
-        definition: {
-          title: "Definition",
-          description: "Perlite is a volcanic mineral belonging to the family of amorphous siliceous glass. It forms when silica-rich lava cools rapidly, trapping small amounts of water within its vitreous structure. Its name comes from its physical appearance, as unexpanded particles often exhibit concentric fractures that resemble pearls."
-        },
-        expansion: {
-          title: "Expansion Process",
-          description: "Raw perlite (in its natural state) contains between 2% and 5% water. When heated to temperatures between 760°C and 1,100°C, the trapped water vaporizes, causing the mineral to expand up to 20 times its original volume. This process creates a porous, ultra-lightweight, and white material with unique properties."
-        },
-        properties: {
-          density: {
-            title: "Low Density",
-            description: "It weighs only between 32 kg/m³ and 240 kg/m³ (depending on the degree of expansion)."
-          },
-          fire: {
-            title: "Fire Resistance",
-            description: "It is non-flammable and withstands extreme temperatures."
-          },
-          insulation: {
-            title: "Insulation",
-            description: "Its cellular structure retains air, reducing heat and sound transfer."
-          },
-          inert: {
-            title: "Inert & Sterile",
-            description: "It is chemically non-reactive, pH-neutral, and free of pathogens."
-          }
-        }
+        title: "What is Perlite",
+        description: "A versatile volcanic glass with exceptional value across multiple industries",
+        uses: [
+          "Construction & Building Materials",
+          "Horticulture & Agriculture",
+          "Industrial Filtration",
+          "Insulation Products"
+        ]
       },
       deposits: {
         title: "Our Deposits",
@@ -161,16 +142,16 @@ const resources = {
           }
         },
         deposits: {
-          title: "2 Massive, High-Quality Deposits",
-          description: "Premium Quality Perlite deposits with abundant reserves"
+          title: "2 Vast Deposits Holding Millions of Tons",
+          description: "We have huge perlite deposits that would allow us to work for many years."
         },
         location: {
           title: "Strategic Location",
           description: "3 hours from the US border, enabling fast logistics and reduced costs"
         },
         water: {
-          title: "Guaranteed Water Access",
-          description: "The only mine in the region with a perennial river and active permits"
+          title: "Resources of Exceptional Quality",
+          description: "Our perlites' quality is backed by certified laboratory documentation."
         },
         source: "Data source: U.S. Geological Survey (USGS) Mineral Commodity Summaries, 2024",
         strategic_advantage: {
@@ -290,32 +271,13 @@ const resources = {
       },
       product: {
         title: "¿Qué es la Perlita?",
-        definition: {
-          title: "Definición",
-          description: "La perlita es un mineral volcánico perteneciente a la familia del vidrio silíceo amorfo. Se forma cuando la lava rica en sílice se enfría rápidamente, atrapando pequeñas cantidades de agua dentro de su estructura vítrea. Su nombre proviene de su apariencia física, ya que las partículas no expandidas suelen exhibir fracturas concéntricas que se asemejan a perlas."
-        },
-        expansion: {
-          title: "Proceso de Expansión",
-          description: "La perlita cruda (en su estado natural) contiene entre 2% y 5% de agua. Cuando se calienta a temperaturas entre 760°C y 1,100°C, el agua atrapada se vaporiza, causando que el mineral se expanda hasta 20 veces su volumen original. Este proceso crea un material poroso, ultraligero y blanco con propiedades únicas."
-        },
-        properties: {
-          density: {
-            title: "Baja Densidad",
-            description: "Pesa solo entre 32 kg/m³ y 240 kg/m³ (dependiendo del grado de expansión)."
-          },
-          fire: {
-            title: "Resistencia al Fuego",
-            description: "Es no inflamable y resiste temperaturas extremas."
-          },
-          insulation: {
-            title: "Aislamiento",
-            description: "Su estructura celular retiene el aire, reduciendo la transferencia de calor y sonido."
-          },
-          inert: {
-            title: "Inerte y Estéril",
-            description: "Es químicamente no reactivo, pH neutro y libre de patógenos."
-          }
-        }
+        description: "Un vidrio volcánico versátil con valor excepcional en múltiples industrias",
+        uses: [
+          "Construcción y Materiales de Construcción",
+          "Horticultura y Agricultura",
+          "Filtración Industrial",
+          "Productos de Aislamiento"
+        ]
       },
       deposits: {
         title: "Nuestros Depósitos",
@@ -400,7 +362,7 @@ const resources = {
           external_suppliers: "Proveedores externos: 93% de las importaciones provienen de Grecia, 4% de China (USGS, 2024)"
         },
         key_advantages: {
-          title: "Ventajas Clave de Perlita Babidanchi"
+          title: "Ventajas Clave de la Perlita Babidanchi"
         },
         mineral_future: {
           title: "El Mineral del Futuro",
