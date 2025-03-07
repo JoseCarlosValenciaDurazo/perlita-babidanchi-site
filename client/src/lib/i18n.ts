@@ -60,15 +60,15 @@ const resources = {
         title: "More Than a Mine: A Strategic Resource",
         who_we_are: {
           title: "Who We Are",
-          description: "We are a Sonoran-based company that emerged from identifying a business opportunity for our family, who owns and operates Rancho Babidanchi. This land is home to two significant perlite deposits of high quality, located close to each other, with enormous resource potential to become a leader in North America."
+          description: "We are a Sonora based company that emerged from identifying a business opportunity for our family, who owns and operates Rancho Babidanchi. This land is home to two significant perlite deposits of high quality, located close to each other, with enormous resource potential to become a leader in North America."
         },
         history: "Located in the heart of Sonora, our family-owned perlite mine represents a unique investment opportunity in the industrial minerals sector",
         mission: "Produce the highest-quality perlite for strategic markets, responsibly and sustainably",
         vision: "To become a leading global supplier of premium perlite, delivering high-quality products and sustainable solutions to meet the diverse needs of our clients worldwide"
       },
       location: {
-        title: "Our Location",
-        description: "Perlita Babidanchi is conveniently situated just 10 kilometers from Aribabi, a municipality in the state of Sonora, Mexico."
+        title: "Location",
+        description: "Perlita Babidanchi is conveniently located just 10 kilometers from the town of Aribabi, belonging to the municipality of Huachinera in the state of Sonora, Mexico."
       },
       product: {
         title: "What is Perlite?",
@@ -249,7 +249,7 @@ const resources = {
     translation: {
       nav: {
         who_we_are: "Quiénes Somos",
-        location: "Nuestra Ubicación",
+        location: "Ubicación",
         strategic_resource: "Más que una Mina",
         what_is_perlite: "¿Qué es la Perlita?",
         mineral_future: "Mineral del Futuro",
@@ -310,8 +310,8 @@ const resources = {
         vision: "Convertirnos en un proveedor global líder de perlita premium, entregando productos de alta calidad y soluciones sostenibles para satisfacer las diversas necesidades de nuestros clientes en todo el mundo"
       },
       location: {
-        title: "Nuestra Ubicación",
-        description: "Perlita Babidanchi está convenientemente ubicada a solo 10 kilómetros de Aribabi, un municipio en el estado de Sonora, México."
+        title: "Ubicación",
+        description: "Perlita Babidanchi está convenientemente ubicada a solo 10 kilómetros de la localidad de Aribabi, perteneciente al municipio de Huachinera en el estado de Sonora, México."
       },
       product: {
         title: "¿Qué es la Perlita?",
