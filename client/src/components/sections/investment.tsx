@@ -43,24 +43,24 @@ export default function Investment() {
               <Table>
                 <TableHeader>
                   <TableRow>
-                    <TableHead>{t('investment.perlite_gap.table_headers.problem')}</TableHead>
-                    <TableHead>{t('investment.perlite_gap.table_headers.solution')}</TableHead>
+                    <TableHead className="text-gray-900">{t('investment.perlite_gap.table_headers.problem')}</TableHead>
+                    <TableHead className="text-gray-900">{t('investment.perlite_gap.table_headers.solution')}</TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
                   <TableRow>
-                    <TableCell className="text-gray-700">
+                    <TableCell className="text-gray-700 hover:bg-transparent">
                       {t('investment.perlite_gap.problem1')}
                     </TableCell>
-                    <TableCell className="text-gray-700 font-medium text-primary">
+                    <TableCell className="text-gray-700 font-medium text-primary hover:bg-transparent">
                       {t('investment.perlite_gap.solution1')}
                     </TableCell>
                   </TableRow>
                   <TableRow>
-                    <TableCell className="text-gray-700">
+                    <TableCell className="text-gray-700 hover:bg-transparent">
                       {t('investment.perlite_gap.problem2')}
                     </TableCell>
-                    <TableCell className="text-gray-700 font-medium text-primary">
+                    <TableCell className="text-gray-700 font-medium text-primary hover:bg-transparent">
                       {t('investment.perlite_gap.solution2')}
                     </TableCell>
                   </TableRow>
@@ -83,10 +83,10 @@ export default function Investment() {
               <Table>
                 <TableHeader>
                   <TableRow>
-                    <TableHead>{t('investment.stats.headers.metric')}</TableHead>
-                    <TableHead>{t('investment.stats.headers.y2020')}</TableHead>
-                    <TableHead>{t('investment.stats.headers.y2024')}</TableHead>
-                    <TableHead>{t('investment.stats.headers.trend')}</TableHead>
+                    <TableHead className="text-gray-900">{t('investment.stats.headers.metric')}</TableHead>
+                    <TableHead className="text-gray-900">{t('investment.stats.headers.y2020')}</TableHead>
+                    <TableHead className="text-gray-900">{t('investment.stats.headers.y2024')}</TableHead>
+                    <TableHead className="text-gray-900">{t('investment.stats.headers.trend')}</TableHead>
                   </TableRow>
                 </TableHeader>
                 <TableBody>
@@ -97,16 +97,16 @@ export default function Investment() {
                     dependency: 'dependency'
                   }).map(([key, value]) => (
                     <TableRow key={key}>
-                      <TableCell className="text-gray-700">
+                      <TableCell className="text-gray-700 hover:bg-transparent">
                         {t(`investment.stats.rows.${value}.label`)}
                       </TableCell>
-                      <TableCell className="text-gray-700">
+                      <TableCell className="text-gray-700 hover:bg-transparent">
                         {t(`investment.stats.rows.${value}.y2020`)}
                       </TableCell>
-                      <TableCell className="text-gray-700">
+                      <TableCell className="text-gray-700 hover:bg-transparent">
                         {t(`investment.stats.rows.${value}.y2024`)}
                       </TableCell>
-                      <TableCell className="text-gray-700">
+                      <TableCell className="text-gray-700 hover:bg-transparent">
                         {t(`investment.stats.rows.${value}.trend`)}
                       </TableCell>
                     </TableRow>
