@@ -490,17 +490,31 @@ const resources = {
   }
 };
 
+// Try to detect browser language
+const detectBrowserLanguage = () => {
+  const navigatorLang = navigator.language;
+  return navigatorLang.startsWith('es') ? 'es' : 'en';
+};
+
 i18n
   .use(initReactI18next)
   .init({
     resources,
-    lng: "en",
-    fallbackLng: "en",
+    lng: typeof window !== 'undefined' ? detectBrowserLanguage() : 'en',
+    fallbackLng: 'en',
     interpolation: {
       escapeValue: false
     },
     react: {
       useSuspense: false
+    },
+    detection: {
+      order: ['navigator']
+    },
+    // Improve caching for mobile
+    cache: {
+      enabled: true,
+      expirationTime: 7 * 24 * 60 * 60 * 1000 // 7 days
     }
   });
 
