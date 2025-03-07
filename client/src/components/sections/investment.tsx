@@ -1,6 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Card, CardContent } from "@/components/ui/card";
-import { Database, MapPin, Droplets, TrendingUp, LineChart } from "lucide-react";
+import { Database, MapPin, Award, TrendingUp, LineChart } from "lucide-react";
 import {
   Table,
   TableBody,
@@ -157,7 +157,7 @@ export default function Investment() {
             <Card className="bg-white shadow-lg">
               <CardContent className="pt-6">
                 <div className="flex flex-col items-center text-center">
-                  <Droplets className="h-8 w-8 text-primary mb-4" />
+                  <Award className="h-8 w-8 text-primary mb-4" />
                   <h4 className="text-xl font-semibold mb-3 text-gray-900">
                     {t('investment.water.title')}
                   </h4>

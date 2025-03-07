@@ -151,7 +151,7 @@ const resources = {
         },
         water: {
           title: "Resources of Exceptional Quality",
-          description: "Our perlites' quality is backed by certified laboratory documentation."
+          description: "The quality of our perlites is backed by certified laboratory documentation"
         },
         source: "Data source: U.S. Geological Survey (USGS) Mineral Commodity Summaries, 2024",
         strategic_advantage: {
@@ -362,7 +362,7 @@ const resources = {
           external_suppliers: "Proveedores externos: 93% de las importaciones provienen de Grecia, 4% de China (USGS, 2024)"
         },
         key_advantages: {
-          title: "Ventajas Clave de la Perlita Babidanchi"
+          title: "Ventajas Clave de Perlita Babidanchi"
         },
         mineral_future: {
           title: "El Mineral del Futuro",
