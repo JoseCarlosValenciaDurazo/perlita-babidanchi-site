@@ -4,7 +4,7 @@ export default function Map({ showTitle = true }) {
   const { t } = useTranslation();
 
   return (
-    <section className="py-8 bg-white">
+    <section id="location" className="py-8 bg-white">
       <div className="container mx-auto px-4">
         {showTitle && (
           <>

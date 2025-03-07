@@ -5,7 +5,7 @@ export default function Hero() {
   const { t } = useTranslation();
 
   return (
-    <section className="relative min-h-[70vh] flex items-center justify-center bg-gray-50 py-20">
+    <section id="who-we-are" className="relative min-h-[70vh] flex items-center justify-center bg-gray-50 py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 text-gray-900">
