@@ -27,9 +27,20 @@ export default function Navbar() {
     { href: "contact", label: "Contact us" }
   ];
 
-  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+  const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
     e.preventDefault();
-    scrollToElement(href);
+    // Log the section we're trying to scroll to
+    console.log('Attempting to scroll to section:', sectionId);
+
+    // Add a small delay to ensure the DOM is ready
+    setTimeout(() => {
+      const section = document.getElementById(sectionId);
+      if (section) {
+        scrollToElement(sectionId);
+      } else {
+        console.warn(`Section with ID "${sectionId}" not found in the DOM`);
+      }
+    }, 100);
   };
 
   return (
@@ -63,7 +74,7 @@ export default function Navbar() {
                     <a
                       key={item.href}
                       href={`#${item.href}`}
-                      onClick={(e) => handleScroll(e, `#${item.href}`)}
+                      onClick={(e) => handleScroll(e, item.href)}
                       className="block px-4 py-2.5 text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50/80 rounded-lg transition-colors"
                     >
                       {item.label}
