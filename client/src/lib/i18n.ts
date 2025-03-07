@@ -212,6 +212,8 @@ const resources = {
       },
       contact: {
         title: "Contact Us",
+        email_label: "Email:",
+        phone_label: "Phone:",
         name: "Full Name",
         email: "Email Address",
         message: "Your Message",
@@ -453,6 +455,8 @@ const resources = {
       },
       contact: {
         title: "Contáctenos",
+        email_label: "Correo:",
+        phone_label: "Teléfono:",
         name: "Nombre Completo",
         email: "Correo Electrónico",
         message: "Su Mensaje",
