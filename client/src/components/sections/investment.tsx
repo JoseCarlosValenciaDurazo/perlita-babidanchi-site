@@ -93,7 +93,6 @@ export default function Investment() {
                   {Object.entries({
                     production: 'production',
                     imports: 'imports',
-                    price: 'price',
                     dependency: 'dependency'
                   }).map(([key, value]) => (
                     <TableRow key={key}>
