@@ -17,16 +17,16 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navItems = [
-    { href: "who-we-are", label: "Who We Are" },
-    { href: "location", label: "Location" },
-    { href: "about", label: "More Than a Mine" },
-    { href: "what-is-perlite", label: "What is Perlite?" },
-    { href: "mineral-future", label: "The mineral of the future" },
-    { href: "why-invest", label: "Why Invest" },
-    { href: "deposits", label: "Deposits" },
-    { href: "bibliography", label: "Bibliography" },
-    { href: "gallery", label: "Gallery" },
-    { href: "contact", label: "Contact us" }
+    { href: "who-we-are", label: t("nav.whoWeAre", "Who We Are") },
+    { href: "location", label: t("nav.location", "Location") },
+    { href: "about", label: t("nav.about", "More Than a Mine") },
+    { href: "what-is-perlite", label: t("nav.whatIsPerlite", "What is Perlite?") },
+    { href: "mineral-future", label: t("nav.mineralFuture", "The mineral of the future") },
+    { href: "why-invest", label: t("nav.whyInvest", "Why Invest") },
+    { href: "deposits", label: t("nav.deposits", "Deposits") },
+    { href: "bibliography", label: t("nav.bibliography", "Bibliography") },
+    { href: "gallery", label: t("nav.gallery", "Gallery") },
+    { href: "contact", label: t("nav.contact", "Contact us") }
   ];
 
   const handleScroll = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>, sectionId: string) => {
