@@ -29,7 +29,7 @@ export default function Navbar() {
     { href: "contact", label: "Contact us" }
   ];
 
-  const handleScroll = (e: React.MouseEvent<HTMLButtonElement>, sectionId: string) => {
+  const handleScroll = (e: React.MouseEvent<HTMLButtonElement, MouseEvent>, sectionId: string) => {
     e.preventDefault();
     e.stopPropagation();
     console.log('Clicked section:', sectionId); 
@@ -67,7 +67,7 @@ export default function Navbar() {
                   {navItems.map((item) => (
                     <button
                       key={item.href}
-                      onClick={(e) => handleScroll(e as any, item.href)}
+                      onClick={(e) => handleScroll(e, item.href)}
                       className="block w-full text-left px-4 py-2.5 text-base font-medium text-gray-600 hover:text-gray-900 hover:bg-gray-50/80 rounded-lg transition-colors"
                     >
                       {item.label}
