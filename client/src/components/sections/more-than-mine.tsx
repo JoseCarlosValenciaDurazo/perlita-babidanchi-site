@@ -5,7 +5,7 @@ export default function MoreThanMine() {
   const { t } = useTranslation();
 
   return (
-    <section id="more_than_mine" className="py-20 bg-gray-50">
+    <section id="about" className="py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold mb-6 text-gray-900">
