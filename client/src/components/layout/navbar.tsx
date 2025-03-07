@@ -15,16 +15,16 @@ export default function Navbar() {
   const scrollToElement = useSmoothScroll();
 
   const navItems = [
-    { href: "#who-we-are", label: t('nav.who_we_are') },
-    { href: "#location", label: t('nav.location') },
-    { href: "#more-than-mine", label: t('nav.more_than_mine') },
-    { href: "#what-is-perlite", label: t('nav.what_is_perlite') },
-    { href: "#mineral-future", label: t('nav.mineral_future') },
-    { href: "#why-invest", label: t('nav.why_invest') },
-    { href: "#deposits", label: t('nav.deposits') },
-    { href: "#bibliography", label: t('nav.bibliography') },
-    { href: "#gallery", label: t('nav.gallery') },
-    { href: "#contact", label: t('nav.contact') }
+    { href: "#who-we-are", label: "Who We Are" },
+    { href: "#location", label: "Location" },
+    { href: "#more-than-a-mine", label: "More Than a Mine" },
+    { href: "#what-is-perlite", label: "What is Perlite?" },
+    { href: "#mineral-future", label: "The mineral of the future" },
+    { href: "#why-invest", label: "Why Invest" },
+    { href: "#deposits", label: "Deposits" },
+    { href: "#bibliography", label: "Bibliography" },
+    { href: "#gallery", label: "Gallery" },
+    { href: "#contact", label: "Contact us" }
   ];
 
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
