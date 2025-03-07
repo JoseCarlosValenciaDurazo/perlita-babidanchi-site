@@ -4,7 +4,7 @@ import MoreThanMine from "@/components/sections/more-than-mine";
 import WhatIsPerlite from "@/components/sections/what-is-perlite";
 import MineralFuture from "@/components/sections/mineral-future";
 import Investment from "@/components/sections/investment";
-import StrategicDelivery from "@/components/sections/strategic-delivery";
+// import StrategicDelivery from "@/components/sections/strategic-delivery";
 import Deposits from "@/components/sections/deposits";
 import Bibliography from "@/components/sections/bibliography";
 import Gallery from "@/components/sections/gallery";
@@ -19,7 +19,7 @@ export default function Home() {
       <WhatIsPerlite />
       <MineralFuture />
       <Investment />
-      <StrategicDelivery />
+      {/* <StrategicDelivery /> */}
       <Deposits />
       <Bibliography />
       <Gallery />
