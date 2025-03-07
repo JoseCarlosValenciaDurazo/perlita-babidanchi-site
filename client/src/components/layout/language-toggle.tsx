@@ -16,7 +16,7 @@ export default function LanguageToggle() {
       variant="ghost"
       size="sm"
       onClick={toggleLanguage}
-      className="flex items-center gap-2 relative overflow-hidden text-gray-700 hover:text-gray-700"
+      className="flex items-center gap-2 relative overflow-hidden text-gray-700"
     >
       <motion.div
         initial={{ rotate: 0 }}

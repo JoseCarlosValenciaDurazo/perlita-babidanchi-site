@@ -55,7 +55,7 @@ export default function Navbar() {
                 <Button 
                   variant="ghost" 
                   size="icon"
-                  className="h-10 w-10 text-gray-700 hover:text-gray-700"
+                  className="h-10 w-10 text-gray-700"
                 >
                   <Menu className="h-6 w-6" />
                 </Button>
