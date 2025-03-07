@@ -267,7 +267,7 @@ const resources = {
       },
       location: {
         title: "Nuestra Ubicación",
-        description: "Posicionamiento estratégico para una distribución eficiente"
+        description: "Perlita Babidanchi está convenientemente ubicada a solo 10 kilómetros de Aribabi, un municipio en el estado de Sonora, México."
       },
       product: {
         title: "¿Qué es la Perlita?",
