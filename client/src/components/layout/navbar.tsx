@@ -29,18 +29,7 @@ export default function Navbar() {
 
   const handleScroll = (e: React.MouseEvent<HTMLAnchorElement>, sectionId: string) => {
     e.preventDefault();
-    // Log the section we're trying to scroll to
-    console.log('Attempting to scroll to section:', sectionId);
-
-    // Add a small delay to ensure the DOM is ready
-    setTimeout(() => {
-      const section = document.getElementById(sectionId);
-      if (section) {
-        scrollToElement(sectionId);
-      } else {
-        console.warn(`Section with ID "${sectionId}" not found in the DOM`);
-      }
-    }, 100);
+    scrollToElement(sectionId);
   };
 
   return (

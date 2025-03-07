@@ -3,42 +3,33 @@ import { useCallback } from 'react';
 export function useSmoothScroll() {
   const scrollToElement = useCallback((elementId: string) => {
     try {
-      // Clean the ID (remove special characters and spaces)
-      const cleanId = elementId.replace(/[^a-zA-Z0-9-]/g, '');
-      console.log('Scrolling to element with ID:', cleanId);
+      // Remove the '#' if present
+      const id = elementId.startsWith('#') ? elementId.slice(1) : elementId;
 
-      const element = document.getElementById(cleanId);
+      // Find the target element
+      const element = document.getElementById(id);
       if (!element) {
-        console.warn(`Element with id "${cleanId}" not found`);
+        console.warn(`Target element #${id} not found`);
         return;
       }
 
-      // Get the header height
+      // Get the header for offset calculation
       const header = document.querySelector('header');
-      const headerHeight = header?.offsetHeight || 0;
-      const padding = 16; // Additional padding
+      const headerOffset = header?.offsetHeight || 0;
 
-      // Calculate the element's position
-      const elementRect = element.getBoundingClientRect();
-      const elementPosition = elementRect.top + window.pageYOffset;
-      const offsetPosition = elementPosition - headerHeight - padding;
+      // Get element's position relative to the viewport
+      const elementPosition = element.getBoundingClientRect().top;
+      // Add current scroll position to get absolute position
+      const offsetPosition = elementPosition + window.pageYOffset - headerOffset - 20;
 
-      // Log the calculation details
-      console.log('Scroll calculations:', {
-        elementTop: elementRect.top,
-        pageYOffset: window.pageYOffset,
-        headerHeight,
-        padding,
-        finalPosition: offsetPosition
-      });
-
-      // Perform the scroll
+      // Perform the smooth scroll
       window.scrollTo({
         top: offsetPosition,
         behavior: 'smooth'
       });
+
     } catch (error) {
-      console.error('Error during smooth scroll:', error);
+      console.error('Smooth scroll failed:', error);
     }
   }, []);
 
