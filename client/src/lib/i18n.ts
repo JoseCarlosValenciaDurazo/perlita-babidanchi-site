@@ -15,7 +15,7 @@ const resources = {
         strategic_delivery: "Strategic Delivery",
         deposits: "Deposits",
         bibliography: "Bibliography",
-        gallery: "Our Gallery",
+        gallery: "Gallery",
         contact: "Contact Us",
         language: "en"
       },
@@ -222,8 +222,8 @@ const resources = {
         error: "Error sending message. Please try again"
       },
       gallery: {
-        title: "Our Gallery",
-        description: "Discover in our image gallery the stunning perlite deposits sources that are part of our mine"
+        title: "Gallery",
+        description: "Discover in the image gallery the impressive sources of perlite deposits that are part of Pelrita Babidanchi."
       },
       bibliography: {
         usgs: {
@@ -258,7 +258,7 @@ const resources = {
         strategic_delivery: "Entrega Estratégica",
         deposits: "Depósitos",
         bibliography: "Bibliografía",
-        gallery: "Nuestra Galería",
+        gallery: "Galería",
         contact: "Contáctenos",
         language: "es"
       },
@@ -465,8 +465,8 @@ const resources = {
         error: "Error al enviar mensaje. Intente nuevamente"
       },
       gallery: {
-        title: "Nuestra Galería",
-        description: "Descubra en nuestra galería de imágenes las impresionantes fuentes de depósitos de perlita que forman parte de nuestra mina"
+        title: "Galería",
+        description: "Descubra en la galería de imágenes las impresionantes fuentes de depósitos de perlita que forman parte de Pelrita Babidanchi."
       },
       bibliography: {
         usgs: {
