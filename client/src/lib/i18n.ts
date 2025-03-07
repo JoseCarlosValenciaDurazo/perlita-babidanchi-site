@@ -147,11 +147,11 @@ const resources = {
         },
         location: {
           title: "Strategic Location",
-          description: "3 hours from the US border, enabling fast logistics and reduced costs"
+          description: "3 hours from the US border, enabling fast logistics and reduced costs."
         },
         water: {
           title: "Resources of Exceptional Quality",
-          description: "The quality of our perlites is backed by certified laboratory documentation"
+          description: "The quality of our perlites is backed by certified laboratory documentation."
         },
         source: "Data source: U.S. Geological Survey (USGS) Mineral Commodity Summaries, 2024",
         strategic_advantage: {
@@ -341,16 +341,16 @@ const resources = {
           }
         },
         deposits: {
-          title: "Dos Depósitos Masivos de Alta Calidad",
-          description: "Depósitos de perlita de alta calidad con reservas abundantes"
+          title: "2 Inmensos Depósitos con Millones de Toneladas",
+          description: "Enormes depósitos de perlita que nos permitirían trabajar durante muchos años."
         },
         location: {
           title: "Ubicación Estratégica",
-          description: "A 3 horas de la frontera con EE.UU., permitiendo una logística rápida y costos reducidos"
+          description: "A 3 horas de la frontera con EE.UU., permitiendo una logística rápida y costos reducidos."
         },
         water: {
-          title: "Acceso Garantizado al Agua",
-          description: "La única mina en la región con un río perenne y permisos activos"
+          title: "Recursos de Calidad Excepcional",
+          description: "La calidad de nuestras perlitras está respaldada por documentación de laboratorios certificados."
         },
         source: "Fuente de datos: Resumen de Productos Minerales del Servicio Geológico de EE.UU. (USGS), 2024",
         strategic_advantage: {
