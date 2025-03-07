@@ -19,7 +19,7 @@ export default function Navbar() {
   const navItems = [
     { href: "who-we-are", label: "Who We Are" },
     { href: "location", label: "Location" },
-    { href: "more-than-a-mine", label: "More Than a Mine" },
+    { href: "about", label: "More Than a Mine" },
     { href: "what-is-perlite", label: "What is Perlite?" },
     { href: "mineral-future", label: "The mineral of the future" },
     { href: "why-invest", label: "Why Invest" },
