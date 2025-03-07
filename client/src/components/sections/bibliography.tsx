@@ -22,14 +22,14 @@ export default function Bibliography() {
   const references: Reference[] = [
     {
       title: "U.S. Geological Survey",
-      description: t('The U.S. Geological Survey (USGS) is a scientific agency dedicated to researching and providing data on natural resources, including minerals like perlite, to support informed decision-making and sustainable development.'),
+      description: t('bibliography.usgs.description'),
       link: "https://www.usgs.gov/",
       pdfUrl: "/assets/USGS 2024 Perlite .pdf",
       pdfDescription: t('bibliography.usgs.pdf_description')
     },
     {
       title: "Perlite Institute",
-      description: t('The Perlite Institute is an organization dedicated to the research, promotion, and development of perlite applications, a volcanic mineral widely used in industries such as construction, agriculture, and filtration.'),
+      description: t('bibliography.perlite_institute.description'),
       link: "https://www.perlite.org/"
     },
     {
@@ -70,7 +70,7 @@ export default function Bibliography() {
       setSelectedPdf(encodedUrl);
     } catch (error) {
       console.error('Error handling PDF:', error);
-      setPdfError(t('bibliography.pdf_error') || 'Error loading PDF');
+      setPdfError(t('bibliography.pdf_error'));
     }
   };
 
@@ -108,7 +108,7 @@ export default function Bibliography() {
                           rel="noopener noreferrer"
                           className="text-primary hover:text-primary/80 font-medium flex items-center gap-2 transition-colors duration-200 hover:underline"
                         >
-                          {ref.title === "Perlite Institute" ? "www.perlite.org" : t('www.usgs.gov')}
+                          {t(ref.title === "Perlite Institute" ? 'bibliography.website_links.perlite_institute' : 'bibliography.website_links.usgs')}
                           <LinkIcon className="h-4 w-4" />
                         </a>
                         {ref.pdfUrl && (
@@ -118,7 +118,7 @@ export default function Bibliography() {
                               onClick={() => handlePdfClick(ref.pdfUrl!)}
                               className="text-primary hover:text-primary/80 font-medium flex items-center gap-2 transition-colors duration-200 hover:underline"
                             >
-                              {t('USGS 2024 Perlite')}
+                              {t('bibliography.babidanchi.view_pdf')}
                               <FileText className="h-4 w-4" />
                             </button>
                           </>
@@ -157,7 +157,6 @@ export default function Bibliography() {
           setPdfError(null);
         }}
         url={selectedPdf || ''}
-        error={pdfError}
       />
     </section>
   );

@@ -198,6 +198,24 @@ const resources = {
       gallery: {
         title: "Our Gallery",
         description: "Discover in our image gallery the stunning perlite deposits sources that are part of our mine"
+      },
+      bibliography: {
+        usgs: {
+          description: 'The U.S. Geological Survey (USGS) is a scientific agency dedicated to researching and providing data on natural resources, including minerals like perlite, to support informed decision-making and sustainable development.',
+          pdf_description: 'USGS 2024 Mineral Commodity Summary for Perlite'
+        },
+        perlite_institute: {
+          description: 'The Perlite Institute is an organization dedicated to the research, promotion, and development of perlite applications, a volcanic mineral widely used in industries such as construction, agriculture, and filtration.'
+        },
+        babidanchi: {
+          description: 'Collection of geological studies, research papers, and technical reports about the Babidanchi perlite deposits in Sonora, Mexico.',
+          view_pdf: 'View PDF'
+        },
+        pdf_error: 'Error loading PDF. Please try again later.',
+        website_links: {
+          usgs: 'www.usgs.gov',
+          perlite_institute: 'www.perlite.org'
+        }
       }
     }
   },
@@ -397,6 +415,24 @@ const resources = {
       gallery: {
         title: "Nuestra Galería",
         description: "Descubra en nuestra galería de imágenes las impresionantes fuentes de depósitos de perlita que forman parte de nuestra mina"
+      },
+      bibliography: {
+        usgs: {
+          description: 'El Servicio Geológico de los Estados Unidos (USGS) es una agencia científica dedicada a la investigación y provisión de datos sobre recursos naturales, incluyendo minerales como la perlita, para apoyar la toma de decisiones informada y el desarrollo sostenible.',
+          pdf_description: 'Resumen de Productos Minerales USGS 2024 para Perlita'
+        },
+        perlite_institute: {
+          description: 'El Instituto de Perlita es una organización dedicada a la investigación, promoción y desarrollo de aplicaciones de perlita, un mineral volcánico ampliamente utilizado en industrias como la construcción, agricultura y filtración.'
+        },
+        babidanchi: {
+          description: 'Colección de estudios geológicos, trabajos de investigación e informes técnicos sobre los depósitos de perlita Babidanchi en Sonora, México.',
+          view_pdf: 'Ver PDF'
+        },
+        pdf_error: 'Error al cargar el PDF. Por favor, inténtelo de nuevo más tarde.',
+        website_links: {
+          usgs: 'www.usgs.gov',
+          perlite_institute: 'www.perlite.org'
+        }
       }
     }
   }
