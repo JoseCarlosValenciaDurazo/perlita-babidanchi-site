@@ -13,7 +13,7 @@ const resources = {
         investment: "Why Invest",
         key_advantages: "Key Advantages",
         strategic_delivery: "Strategic Delivery",
-        deposits: "Our Deposits",
+        deposits: "Deposits",
         bibliography: "Bibliography",
         gallery: "Our Gallery",
         contact: "Contact Us",
@@ -107,7 +107,7 @@ const resources = {
         }
       },
       deposits: {
-        title: "Our Deposits",
+        title: "Deposits",
         description: "2 Premium Quality Perlite deposits with abundant reserves",
         selene: {
           title: "South Deposit",
@@ -256,7 +256,7 @@ const resources = {
         investment: "Por qué Invertir",
         key_advantages: "Ventajas Clave",
         strategic_delivery: "Entrega Estratégica",
-        deposits: "Nuestros Depósitos",
+        deposits: "Depósitos",
         bibliography: "Bibliografía",
         gallery: "Nuestra Galería",
         contact: "Contáctenos",
@@ -350,7 +350,7 @@ const resources = {
         }
       },
       deposits: {
-        title: "Nuestros Depósitos",
+        title: "Depósitos",
         description: "2 Depósitos de perlita de primera calidad con abundantes reservas",
         selene: {
           title: "Depósito Sur",

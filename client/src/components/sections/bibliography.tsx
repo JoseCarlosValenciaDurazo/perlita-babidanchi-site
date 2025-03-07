@@ -21,18 +21,6 @@ export default function Bibliography() {
 
   const references: Reference[] = [
     {
-      title: "U.S. Geological Survey",
-      description: t('bibliography.usgs.description'),
-      link: "https://www.usgs.gov/",
-      pdfUrl: "/assets/USGS 2024 Perlite .pdf",
-      pdfDescription: t('bibliography.usgs.pdf_description')
-    },
-    {
-      title: "Perlite Institute",
-      description: t('bibliography.perlite_institute.description'),
-      link: "https://www.perlite.org/"
-    },
-    {
       title: "Babidanchi Perlite Studies",
       description: t('bibliography.babidanchi.description'),
       link: "https://www.gob.mx/sgm",
@@ -108,7 +96,7 @@ export default function Bibliography() {
                           rel="noopener noreferrer"
                           className="text-primary hover:text-primary/80 font-medium flex items-center gap-2 transition-colors duration-200 hover:underline"
                         >
-                          {t(ref.title === "Perlite Institute" ? 'bibliography.website_links.perlite_institute' : 'bibliography.website_links.usgs')}
+                          {ref.title === "Perlite Institute" ? t('bibliography.website_links.perlite_institute') : ref.title === "U.S. Geological Survey" ? t('bibliography.website_links.usgs') : ref.link}
                           <LinkIcon className="h-4 w-4" />
                         </a>
                         {ref.pdfUrl && (
