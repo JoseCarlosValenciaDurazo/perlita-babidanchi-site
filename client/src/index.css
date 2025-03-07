@@ -19,5 +19,6 @@
 @layer components {
   section {
     transition: background-color 0.5s ease-in-out;
+    scroll-margin-top: 5rem;
   }
 }
