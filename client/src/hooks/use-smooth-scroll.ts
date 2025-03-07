@@ -5,6 +5,7 @@ export function useSmoothScroll() {
     try {
       // Remove the '#' if present
       const id = elementId.startsWith('#') ? elementId.slice(1) : elementId;
+      console.log('Attempting to scroll to:', id); // Debug log
 
       // Find the target element
       const element = document.getElementById(id);
@@ -19,12 +20,19 @@ export function useSmoothScroll() {
 
       // Calculate scroll position
       const elementRect = element.getBoundingClientRect();
-      const scrollOffset = window.pageYOffset || document.documentElement.scrollTop;
-      const targetPosition = elementRect.top + scrollOffset - headerOffset - 32; // Added extra padding
+      const absoluteTop = elementRect.top + window.pageYOffset;
+      const finalPosition = absoluteTop - headerOffset - 16;
 
-      // Scroll into view with smooth behavior
+      console.log('Scroll calculation:', {
+        elementId: id,
+        headerOffset,
+        absoluteTop,
+        finalPosition
+      });
+
+      // Perform smooth scroll
       window.scrollTo({
-        top: targetPosition,
+        top: finalPosition,
         behavior: 'smooth'
       });
 
