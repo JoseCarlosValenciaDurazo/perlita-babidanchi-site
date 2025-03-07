@@ -50,10 +50,33 @@ export default function Bibliography() {
   const handlePdfClick = (pdfUrl: string) => {
     try {
       setPdfError(null);
-      const cleanUrl = pdfUrl;
+      
+      // Properly encode the URL to handle special characters
+      const cleanUrl = pdfUrl.trim();
       const encodedUrl = cleanUrl.split('/').map(part => encodeURIComponent(part)).join('/');
-      console.log('Opening PDF:', encodedUrl);
-      setSelectedPdf(encodedUrl);
+      
+      // Check if we're on mobile - if screen width is less than 768px
+      const isMobile = window.innerWidth < 768;
+      console.log(`Opening PDF (${isMobile ? 'mobile' : 'desktop'}):`);
+      
+      if (isMobile) {
+        // Preload the PDF to check if it works
+        fetch(encodedUrl)
+          .then(response => {
+            if (!response.ok) {
+              throw new Error('PDF not found');
+            }
+            // If PDF exists, show it in our modal
+            setSelectedPdf(encodedUrl);
+          })
+          .catch(err => {
+            console.error('Error fetching PDF:', err);
+            setPdfError(t('bibliography.pdf_error'));
+          });
+      } else {
+        // On desktop, just open in modal
+        setSelectedPdf(encodedUrl);
+      }
     } catch (error) {
       console.error('Error handling PDF:', error);
       setPdfError(t('bibliography.pdf_error'));
@@ -95,7 +118,7 @@ export default function Bibliography() {
                                 <FileText className="h-4 w-4 text-primary" />
                                 <button
                                   onClick={() => handlePdfClick(study.pdfUrl)}
-                                  className="text-primary hover:text-primary/80 font-medium flex items-center gap-2 transition-colors duration-200 hover:underline"
+                                  className="text-primary hover:text-primary/80 font-medium flex items-center gap-2 transition-colors duration-200 hover:underline min-h-[44px] px-2 py-1 -ml-2 rounded-md hover:bg-primary/10 text-left w-full"
                                 >
                                   {study.title}
                                 </button>
