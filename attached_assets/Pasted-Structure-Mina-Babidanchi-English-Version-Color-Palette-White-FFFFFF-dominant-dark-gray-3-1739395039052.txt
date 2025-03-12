@@ -1,0 +1,65 @@
+Structure: Mina Babidanchi (English Version)
+
+Color Palette: White (#FFFFFF) dominant, dark gray (#333333) for text, soft accent color for buttons (e.g., light blue: #6C9BCF).
+Design Style: Clean, generous spacing, sans-serif fonts (e.g., Inter), rounded edges for images.
+
+🔹 Navbar (Fixed, White Background, Subtle Shadow)
+
+Title: “Mina Babidanchi” (left-aligned, dark gray).
+Sections (right-aligned, dark gray, no icons):
+Home
+About
+Investment
+Sustainability
+Contact
+Language Toggle: Button labeled "EN | ES" (top-right corner, dark gray text, no border).
+✅ Home Section (Hero)
+
+Featured Image: Black-and-white photo of perlite or mine (full-width, rounded edges).
+Headline: “The Mineral of the Future” (centered, bold, dark gray).
+Short Description:
+"Strategically located in Sonora (US-Mexico border), high-quality deposits, and guaranteed water access. A local solution for the global perlite demand."
+✅ About Section
+
+Subtitle: “More Than a Mine, a Strategic Resource” (dark gray).
+Content:
+History & Location: 2-3 lines about the project’s origins and Sonora’s strategic advantages.
+Why Perlite Matters: Brief explanation of its industrial applications (construction, agriculture, etc.).
+Mission & Vision:
+Mission: “To deliver the highest-quality perlite for strategic markets, responsibly and sustainably.”
+Vision: “To become North America’s leading sustainable perlite provider by 2030.”
+✅ Investment Section
+
+Subtitle: “Why Invest in Mina Babidanchi” (dark gray).
+Content:
+Minimalist List (no icons, dark gray text):
+Two Certified Deposits: Technical names + aerial photos (rounded edges).
+Strategic Location: “3 hours from the US border, enabling fast logistics and reduced costs.”
+Guaranteed Water Access: “The only mine in the region with a perennial river and active permits.”
+Market Data: Subtle textbox (light gray background):
+“Current perlite price: $XX USD/ton. 80% of US perlite is imported from Greece and Turkey.”
+✅ Sustainability Section
+
+Subtitle: “Commitment to the Future” (dark gray).
+Content:
+Clean Bullet Points:
+“Low-impact extraction technology.”
+“Investment in Sonora’s community development programs.”
+✅ Contact Section
+
+Subtitle: “Let’s Talk Opportunities” (dark gray).
+Form:
+Name (single-line input).
+Email (single-line input).
+Message (small text area).
+Submit Button: “Send Message” (light blue background, white text).
+🚀 Key Features
+
+Language Toggle: A small button in the navbar (“EN | ES”) switches between English and Spanish seamlessly.
+Responsive Design: Optimized for mobile (collapsed navbar, stacked sections).
+No Clutter: No icons, no excessive colors, no overlapping elements.
+Design Notes
+
+Images: Use high-resolution photos of perlite (white expanded perlite on white background) and the mine.
+Fonts: Bold titles (size: 2rem), regular text (size: 1.1rem, line height: 1.6).
+Spacing: 80px padding between sections, 40px margin below subtitles.
