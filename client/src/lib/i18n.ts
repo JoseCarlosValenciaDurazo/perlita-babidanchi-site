@@ -418,7 +418,7 @@ const resources = {
         },
         water: {
           title: "Recursos de Calidad Excepcional",
-          description: "La calidad de nuestras perlitras está respaldada por documentación de laboratorios certificados."
+          description: "La calidad de nuestras perlitas está respaldada por documentación de laboratorios certificados."
         },
         source: "Fuente de datos: Resumen de Productos Minerales del Servicio Geológico de EE.UU. (USGS), 2024",
         strategic_advantage: {
