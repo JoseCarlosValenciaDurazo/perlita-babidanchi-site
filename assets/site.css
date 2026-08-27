@@ -294,3 +294,6 @@ a.doc:hover .ext{border-color:var(--accent);color:var(--accent-deep);}
 .btn-line{background:var(--paper);color:var(--accent-deep);border:1px solid var(--line);}
 .btn-line:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-soft);}
 .btn-line .ext{margin-left:.4rem;}
+
+.btn-ghost .ext{margin-left:.4rem;border-color:rgba(237,238,236,.3);color:#B8BEC3;}
+.btn-ghost:hover .ext{border-color:rgba(237,238,236,.6);color:#EDEEEC;}
