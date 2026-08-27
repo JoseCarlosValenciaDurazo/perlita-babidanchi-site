@@ -1,60 +1,690 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <style data-vite-theme="" data-inject-first="">:root {
-      --background: 0 0% 100%;
---foreground: 20 14.3% 4.1%;
---muted: 60 4.8% 95.9%;
---muted-foreground: 25 5.3% 44.7%;
---popover: 0 0% 100%;
---popover-foreground: 20 14.3% 4.1%;
---card: 0 0% 100%;
---card-foreground: 20 14.3% 4.1%;
---border: 20 5.9% 90%;
---input: 20 5.9% 90%;
---primary: 212 51% 62%;
---primary-foreground: 212 55% 99%;
---secondary: 60 4.8% 95.9%;
---secondary-foreground: 24 9.8% 10%;
---accent: 60 4.8% 95.9%;
---accent-foreground: 24 9.8% 10%;
---destructive: 0 84.2% 60.2%;
---destructive-foreground: 60 9.1% 97.8%;
---ring: 20 14.3% 4.1%;
---radius: 0.75rem;
-  }
-  .dark {
-      --background: 240 10% 3.9%;
---foreground: 0 0% 98%;
---muted: 240 3.7% 15.9%;
---muted-foreground: 240 5% 64.9%;
---popover: 240 10% 3.9%;
---popover-foreground: 0 0% 98%;
---card: 240 10% 3.9%;
---card-foreground: 0 0% 98%;
---border: 240 3.7% 15.9%;
---input: 240 3.7% 15.9%;
---primary: 212 51% 62%;
---primary-foreground: 212 55% 99%;
---secondary: 240 3.7% 15.9%;
---secondary-foreground: 0 0% 98%;
---accent: 240 3.7% 15.9%;
---accent-foreground: 0 0% 98%;
---destructive: 0 62.8% 30.6%;
---destructive-foreground: 0 0% 98%;
---ring: 240 4.9% 83.9%;
---radius: 0.75rem;
-  }</style>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Perlita Babidanchi — Yacimientos de perlita en Sonora, México</title>
+<meta name="description" content="Dos yacimientos de perlita de alta calidad en Huachinera, Sonora, a 218 km de la frontera con Estados Unidos. Propiedad privada, mineral no concesible, agua propia y estudios geológicos independientes.">
+<link rel="canonical" href="https://perlitababidanchi.com.mx/">
+<link rel="alternate" hreflang="es" href="https://perlitababidanchi.com.mx/">
+<link rel="alternate" hreflang="en" href="https://perlitababidanchi.com.mx/en/">
+<link rel="alternate" hreflang="x-default" href="https://perlitababidanchi.com.mx/">
+<meta name="robots" content="index,follow">
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-    <meta name="theme-color" content="#ffffff" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <script type="module" crossorigin src="/perlita-babidanchi-site/assets/index-CHtyVAhU.js"></script>
-    <link rel="stylesheet" crossorigin href="/perlita-babidanchi-site/assets/index-hZiBRHMb.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+<meta property="og:type" content="website">
+<meta property="og:locale" content="es_MX">
+<meta property="og:locale:alternate" content="en_US">
+<meta property="og:site_name" content="Perlita Babidanchi">
+<meta property="og:title" content="Perlita Babidanchi — Yacimientos de perlita en Sonora, México">
+<meta property="og:description" content="Dos yacimientos de perlita de alta calidad a 218 km de la frontera con Estados Unidos. Mineral no concesible, propiedad privada, agua propia y estudios geológicos independientes.">
+<meta property="og:url" content="https://perlitababidanchi.com.mx/">
+<meta property="og:image" content="https://perlitababidanchi.com.mx/assets/img/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Yacimiento de perlita en el Rancho Babidanchi, Sonora">
+<meta name="twitter:card" content="summary_large_image">
+
+<meta name="theme-color" content="#12161A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&display=swap">
+<link rel="stylesheet" href="assets/site.css">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Organization",
+  "name":"Perlita Babidanchi, S.A. de C.V.",
+  "url":"https://perlitababidanchi.com.mx/",
+  "email":"perlitababidanchi@gmail.com",
+  "telephone":"+52-662-256-2933",
+  "description":"Propietarios de dos yacimientos de perlita en el Rancho Babidanchi, municipio de Huachinera, Sonora, México.",
+  "address":{"@type":"PostalAddress","addressRegion":"Sonora","addressCountry":"MX"},
+  "areaServed":["MX","US"]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+
+<header class="topbar">
+  <div class="wrap topbar-in">
+    <a class="brand" href="#">
+      <b>Perlita Babidanchi</b>
+      <span>Sonora, México</span>
+    </a>
+    <button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false" aria-controls="nav"><span></span></button>
+    <nav class="nav" id="nav">
+      <a href="#recurso">El recurso</a>
+      <a href="#perlita">La perlita</a>
+      <a href="#derechos">Derechos</a>
+      <a href="#ubicacion">Ubicación</a>
+      <a href="#rancho">El rancho</a>
+      <a href="#evidencia">Evidencia</a>
+      <a href="#oportunidad">Oportunidad</a>
+      <a href="#contacto">Contacto</a>
+      <a class="lang" href="en/" hreflang="en">EN</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="hero-img"><img src="assets/img/hero.jpg" alt="Afloramiento de perlita en el yacimiento La Bendición, Rancho Babidanchi" fetchpriority="high"></div>
+    <div class="wrap hero-in">
+      <p class="eyebrow on-dark">Huachinera, Sonora · México</p>
+      <h1>Dos yacimientos de perlita en propiedad privada, a 218&nbsp;km de Estados Unidos</h1>
+      <p class="lede hero-lede">El Rancho Babidanchi alberga dos depósitos de perlita de alta calidad sobre tierra de una sola familia. La perlita no es un mineral concesible en México: aquí no hay concesión de por medio ni tercero con derechos sobre el material.</p>
+      <div class="hero-cta">
+        <a class="btn btn-solid" href="mailto:perlitababidanchi@gmail.com?subject=Solicitud%20del%20expediente%20t%C3%A9cnico%20%E2%80%94%20Perlita%20Babidanchi">Solicitar el expediente técnico</a>
+        <a class="btn btn-ghost" href="#recurso">Ver el recurso</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="figures" aria-label="Cifras principales del proyecto">
+    <div class="wrap figures-in">
+      <div class="fig"><span class="n">2</span><span class="l">Yacimientos identificados sobre el mismo predio</span></div>
+      <div class="fig"><span class="n">5.2 <small>Mt</small></span><span class="l">Reservas mínimas medidas en superficie</span></div>
+      <div class="fig"><span class="n">80.7 <small>Mt</small></span><span class="l">Recursos geológicos estimados, sin certificar</span></div>
+      <div class="fig"><span class="n">218 <small>km</small></span><span class="l">A la frontera de Agua Prieta – Douglas, Arizona</span></div>
+      <div class="fig"><span class="n">20–43<small>×</small></span><span class="l">Índice de expansión aparente del mineral</span></div>
+    </div>
+  </section>
+
+  <section class="sec" id="recurso">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">El recurso</p>
+        <h2>Dos depósitos del mismo domo perlítico</h2>
+        <p class="lede">Los estudios geológicos concluyen que ambos yacimientos se formaron en un solo evento volcánico, con dos puntos de emisión distintos. Están dentro del mismo rancho, separados por el arroyo Babidanchi, y la evidencia apunta a un domo perlítico único con varias salidas a la superficie: es decir, es posible que estén unidos en el subsuelo.</p>
+      </div>
+
+      <div class="deps">
+        <article class="dep">
+          <img src="assets/img/selene-pan.jpg" alt="Vista panorámica del yacimiento Selene, tomada desde el Rancho Babidanchi" loading="lazy">
+          <div class="txt">
+            <h3>Yacimiento Selene</h3>
+            <p>Depósito sur. De aquí salió la muestra que un comprador industrial validó en pruebas de laboratorio en China para fabricación de arena para gatos.</p>
+            <dl>
+              <dt>Ubicación</dt><dd>Sur del arroyo Babidanchi</dd>
+              <dt>Estatus</dt><dd>Muestreado y analizado</dd>
+            </dl>
+          </div>
+        </article>
+        <article class="dep">
+          <img src="assets/img/bendicion-pan.jpg" alt="Vista panorámica del yacimiento La Bendición, al norte del arroyo Babidanchi" loading="lazy">
+          <div class="txt">
+            <h3>Yacimiento La Bendición</h3>
+            <p>Depósito norte. Cuenta con barrenación en 3.5 hectáreas del margen izquierdo del arroyo, además del mapeo geológico de superficie del resto del área.</p>
+            <dl>
+              <dt>Ubicación</dt><dd>Norte del arroyo Babidanchi</dd>
+              <dt>Estatus</dt><dd>Barrenado y mapeado</dd>
+            </dl>
+          </div>
+        </article>
+      </div>
+
+      <div class="sec-body" style="margin-top:2.5rem">
+        <h3>Calidad del mineral</h3>
+        <p>En 2016 se expandieron once muestras de ambos yacimientos en el laboratorio del <strong>New Mexico Bureau of Geology &amp; Mineral Resources</strong>, recreando las condiciones de un horno industrial a 704&nbsp;°C sin precalentamiento. Estos son los resultados publicados en el informe de reconocimiento geológico:</p>
+      </div>
+
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th scope="col">Parámetro</th><th scope="col">Resultado Babidanchi</th><th scope="col">Qué significa</th></tr></thead>
+          <tbody>
+            <tr>
+              <td>Índice de expansión aparente</td>
+              <td class="num">20 – 43 ×</td>
+              <td>Relación entre la densidad del mineral crudo y la del expandido, en la fracción −50 +100</td>
+            </tr>
+            <tr>
+              <td>Densidad expandida</td>
+              <td class="num">1.34 – 2.79 lb/ft³</td>
+              <td>Entre 21 y 45 kg/m³. Un producto muy ligero</td>
+            </tr>
+            <tr>
+              <td>Rendimiento de horno</td>
+              <td class="num">84 – 93 %</td>
+              <td>Proporción del material que expande correctamente</td>
+            </tr>
+            <tr>
+              <td>Impurezas</td>
+              <td class="num">desde 0.67 %</td>
+              <td>Material que no expande. Un valor bajo es un indicador de pureza</td>
+            </tr>
+            <tr>
+              <td>Pérdida por calcinación (LOI)</td>
+              <td class="num">4 – 6 %</td>
+              <td>Contenido de volátiles. A menor LOI, mayor expansión</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="sec-body" style="margin-top:1.5rem">
+        <div class="claim">
+          <p>La muestra <strong>PB16-29B</strong>, del yacimiento La Bendición, registró un brillo alto, una densidad expandida de 1.34&nbsp;lb/ft³ y solo <strong>0.67&nbsp;% de impurezas</strong>: mejores resultados que la perlita <em>Socorro</em> que el propio laboratorio usa como estándar de referencia.</p>
+          <p class="src">Vidal Solano, J.R. e Hinojosa García, H.J. (2016). <em>Informe de reconocimiento geológico y evaluación económica preliminar</em>, Tablas 3 y 4. Ensayos: New Mexico Bureau of Geology &amp; Mineral Resources.</p>
+        </div>
+        <p>La alta expansión se relaciona con la ausencia casi total de fenocristales en la roca y con el bajo contenido de volátiles. Como referencia, las fuentes públicas sitúan la expansión de la perlita comercial entre 4 y 20 veces su volumen: el <a href="https://www.ams.usda.gov/sites/default/files/media/2024TechnicalReportPerliteHandling.pdf" target="_blank" rel="noopener">reporte técnico del Departamento de Agricultura de Estados Unidos (USDA, 2024)</a> señala "hasta 20 veces". El índice de Babidanchi es más alto porque se mide sobre la fracción fina y contra la densidad del mineral crudo, y porque la perlita expandió a una densidad muy baja: 21–45&nbsp;kg/m³, propia de grado criogénico y no de grado hortícola, que es contra el que suele calcularse ese rango.</p>
+      </div>
+
+      <div class="sec-body" style="margin-top:2.5rem">
+        <h3>Reservas y recursos</h3>
+        <p>Las <strong>reservas mínimas de 5.2 millones de toneladas</strong> son la suma de dos trabajos independientes. Consultoría Geológica GV confirmó <strong>1,244,784.82&nbsp;m³ de reservas probadas</strong> mediante mapeo a detalle, cinco barrenos y topografía en 3.5 hectáreas del yacimiento norte; a una densidad in situ de 2.3&nbsp;t/m³ equivalen a 2,863,005&nbsp;t. Vidal Solano e Hinojosa García estimaron 2,337,628&nbsp;t adicionales a la vista, sobre superficie distinta.</p>
+        <p>La cifra es conservadora por dos razones: <strong>no incluye las 926,398.63&nbsp;m³ de reservas probables</strong> que el mismo estudio de Consultoría Geológica GV reporta —otros 2.1 millones de toneladas—, y no incluye nada del volumen profundo del domo.</p>
+        <p>Los <strong>80.7 millones de toneladas de recursos geológicos</strong> provienen de la tesis de Almazán Holguín y Trelles Monge (1986), que estimó el volumen del domo completo. Es una estimación, no una reserva certificada.</p>
+        <p class="note">Aún no existe un reporte de recursos bajo norma NI 43-101 o JORC. Levantar ese reporte es parte de lo que se contempla con el socio o comprador que entre al proyecto.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec alt" id="perlita">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">El mineral</p>
+        <h2>Qué es la perlita</h2>
+        <p class="lede">Un vidrio volcánico que, al calentarse, se convierte en un material blanco, poroso y extraordinariamente ligero. Si no conoce el mineral, esta sección es el punto de partida.</p>
+      </div>
+
+      <div class="sec-body two-col">
+        <div>
+          <h3>Origen</h3>
+          <p>La perlita pertenece a la familia de los vidrios silíceos amorfos. Se forma cuando la lava rica en sílice se enfría con rapidez y atrapa pequeñas cantidades de agua dentro de su estructura vítrea. El nombre viene de su aspecto: las partículas sin expandir presentan fracturas concéntricas que recuerdan a perlas.</p>
+        </div>
+        <div>
+          <h3>El proceso de expansión</h3>
+          <p>La perlita cruda contiene entre 2&nbsp;% y 5&nbsp;% de agua. Al calentarla entre 760&nbsp;°C y 1,100&nbsp;°C, la estructura de silicato se reblandece y el agua atrapada se convierte en vapor, que infla la masa viscosa como una espuma de burbujas de vidrio. El resultado ocupa muchas veces el volumen original y no se puede revertir.</p>
+        </div>
+      </div>
+
+      <figure class="fig-wide">
+        <img src="assets/img/expandida.jpg" alt="Perlita expandida, de color blanco y textura porosa, sostenida en las manos" loading="lazy">
+        <figcaption>Perlita expandida: el producto que sale del horno.</figcaption>
+      </figure>
+
+      <div class="sec-body" style="margin-top:2.5rem">
+        <h3>Por qué se usa</h3>
+      </div>
+      <div class="cards four">
+        <article class="card pad">
+          <h3>Baja densidad</h3>
+          <p>Entre 32 y 240&nbsp;kg/m³ según el grado de expansión. Reduce el peso de morteros, concretos y sustratos sin sacrificar volumen.</p>
+        </article>
+        <article class="card pad">
+          <h3>Aislamiento</h3>
+          <p>Su estructura celular retiene aire, lo que frena la transferencia de calor y de sonido. Se usa desde muros y techos hasta tanques criogénicos.</p>
+        </article>
+        <article class="card pad">
+          <h3>Incombustible</h3>
+          <p>Es un vidrio volcánico: no arde ni aporta carga de fuego, y resiste temperaturas extremas. Se emplea en protección pasiva contra incendio.</p>
+        </article>
+        <article class="card pad">
+          <h3>Inerte y estéril</h3>
+          <p>Químicamente no reactiva, de pH neutro y libre de patógenos. Por eso se admite en filtración de alimentos, bebidas y productos farmacéuticos.</p>
+        </article>
+      </div>
+
+      <div class="sec-body" style="margin-top:2.5rem">
+        <h3>Dónde termina</h3>
+        <div class="tablewrap">
+          <table>
+            <thead><tr><th scope="col">Industria</th><th scope="col">Aplicación</th></tr></thead>
+            <tbody>
+              <tr><td>Construcción</td><td>Agregado ligero para concretos y morteros, yesos aislantes, paneles y placas, aislamiento de cavidades, protección contra fuego</td></tr>
+              <tr><td>Horticultura y agricultura</td><td>Sustratos y mejoradores de suelo: airea la raíz y retiene humedad sin compactarse</td></tr>
+              <tr><td>Filtración industrial</td><td>Ayuda-filtrante en cerveza, vino, jugos, aceites comestibles, jarabes, agua y productos farmacéuticos</td></tr>
+              <tr><td>Criogenia e industria</td><td>Aislamiento de tanques de gases licuados, moldes de fundición, abrasivos suaves, absorbentes</td></tr>
+              <tr><td>Consumo</td><td>Arena sanitaria para mascotas, absorbentes de derrames, cargas ligeras</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="sec-head" style="margin-top:4rem">
+        <p class="eyebrow">El mercado</p>
+        <h2>Estados Unidos produce perlita y aun así importa una cuarta parte de la que consume</h2>
+        <p class="lede">Es el dato que explica el proyecto. Estados Unidos es el cuarto productor mundial de perlita y, aun así, tiene un déficit permanente: cerca del 23&nbsp;% del mineral que consume tiene que comprarlo fuera del país, y el 94&nbsp;% de esas compras cruza el Atlántico desde Grecia.</p>
+      </div>
+
+      <div class="tablewrap">
+        <table>
+          <caption>Estados Unidos · perlita, cifras anuales en miles de toneladas métricas</caption>
+          <thead><tr><th scope="col">Concepto</th><th scope="col">2021</th><th scope="col">2023</th><th scope="col">2025<sup>e</sup></th></tr></thead>
+          <tbody>
+            <tr><td>Producción minera (mineral crudo)</td><td class="num">879</td><td class="num">654</td><td class="num">730</td></tr>
+            <tr><td>Perlita procesada vendida o usada</td><td class="num">491</td><td class="num">410</td><td class="num">460</td></tr>
+            <tr><td>Importaciones para consumo</td><td class="num">170</td><td class="num">140</td><td class="num">160</td></tr>
+            <tr><td>Precio promedio (USD por tonelada)</td><td class="num">$64</td><td class="num">$74</td><td class="num">$78</td></tr>
+            <tr><td>Dependencia de importaciones</td><td class="num">23 %</td><td class="num">23 %</td><td class="num">23 %</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="cards two" style="margin-top:2rem">
+        <article class="card pad">
+          <h3>De dónde importa Estados Unidos</h3>
+          <p class="big-num">94 %</p>
+          <p>de las importaciones estadounidenses de perlita provienen de <strong>Grecia</strong>, y un 3&nbsp;% de China. Llegan por barco a los puertos de la costa este. El resto del mundo aporta el 3&nbsp;% restante.</p>
+        </article>
+        <article class="card pad">
+          <h3>Producción mundial, 2025</h3>
+          <div class="bars">
+            <div class="bar"><span class="bl">China</span><span class="bt" style="--w:100%"></span><span class="bv">1,500</span></div>
+            <div class="bar"><span class="bl">Turquía</span><span class="bt" style="--w:93%"></span><span class="bv">1,400</span></div>
+            <div class="bar"><span class="bl">Grecia</span><span class="bt" style="--w:56%"></span><span class="bv">840</span></div>
+            <div class="bar"><span class="bl">Estados Unidos</span><span class="bt" style="--w:31%"></span><span class="bv">460</span></div>
+            <div class="bar"><span class="bl">Hungría</span><span class="bt" style="--w:5%"></span><span class="bv">80</span></div>
+          </div>
+          <p class="src">Miles de toneladas métricas. México no figura entre los productores registrados.</p>
+        </article>
+      </div>
+
+      <p class="src" style="margin-top:1.5rem">Fuente de todas las cifras de mercado: U.S. Geological Survey, <em>Mineral Commodity Summaries 2026</em>, capítulo Perlite. Las cifras de 2025 son estimaciones del propio USGS. Origen de las importaciones: promedio 2021–2024.</p>
+    </div>
+  </section>
+
+  <section class="sec dark" id="derechos">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow on-dark">Situación jurídica</p>
+        <h2>Sin concesión de por medio</h2>
+        <p class="lede">Es la diferencia más importante entre este proyecto y casi cualquier otro activo minero, y conviene entenderla antes que cualquier cifra.</p>
+      </div>
+      <div class="sec-body">
+        <p>La Ley Minera mexicana enumera de forma cerrada, en su Artículo 4, las sustancias sujetas a concesión federal. <strong>La perlita no aparece en esa lista.</strong> El Artículo 5, en sus fracciones IV y V, excluye además de la Ley las rocas destinadas a materiales de construcción y las extraídas mediante trabajos a cielo abierto, que es el método propio de la perlita.</p>
+        <p>La consecuencia práctica: la perlita pertenece al dueño del terreno donde se encuentra. No hay concesión que pueda vencerse, cancelarse o disputarse, ni un tercero con derechos preferentes sobre el mineral. Tampoco hay pago por adquisición de materia prima: el rancho es propiedad de los socios de la empresa.</p>
+        <div class="claim" style="background:#1B2126;border-left-color:#D98A70">
+          <p style="color:#E8EAE8">La Delegación Federal de la Secretaría de Economía en Hermosillo lo confirmó por escrito, en respuesta a una consulta formal presentada por nuestro abogado.</p>
+          <p class="src" style="color:#8B939A">Oficio 146.8 / 2016 – 4851 · Subdirección General de Minas · Disponible en el expediente técnico</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="ubicacion">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Ubicación y logística</p>
+        <h2>Cerca del mayor consumidor de perlita del mundo</h2>
+        <p class="lede">Estados Unidos importa perlita cruda procesada principalmente desde Grecia, en barco, hacia puertos de la costa este. El Rancho Babidanchi está en tierra firme, a un día de camión de la frontera.</p>
+      </div>
+
+      <figure class="mapfig">
+        <img src="assets/mapa.svg" alt="Mapa del noroeste de México y el suroeste de Estados Unidos con la ubicación del Rancho Babidanchi en Huachinera, Sonora, y las rutas hacia Agua Prieta–Douglas, Ciudad Juárez–El Paso, Hermosillo y Guaymas." loading="lazy" width="1200" height="832">
+        <figcaption>Rancho Babidanchi, municipio de Huachinera, Sonora. Coordenadas aproximadas 30.14&nbsp;N, 109.09&nbsp;O.</figcaption>
+      </figure>
+
+      <div class="tablewrap">
+        <table>
+          <thead><tr><th scope="col">Destino</th><th scope="col">Distancia</th><th scope="col">Vía</th></tr></thead>
+          <tbody>
+            <tr><td>Frontera Agua Prieta – Douglas, Arizona</td><td class="num">218 km</td><td>Carretera</td></tr>
+            <tr><td>Hermosillo, Sonora</td><td class="num">267 km</td><td>Carretera · enlace ferroviario intermodal</td></tr>
+            <tr><td>Frontera Ciudad Juárez – El Paso, Texas</td><td class="num">367 km</td><td>Carretera · centro ferroviario de carga</td></tr>
+            <tr><td>Puerto de Guaymas, Sonora</td><td class="num">429 km</td><td>Carretera · salida marítima</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="sec-body two-col" style="margin-top:2rem">
+        <div>
+          <h3>Hacia el norte y el este</h3>
+          <p>Desde el rancho se accede por carretera a Douglas, Tucson y Phoenix, en Arizona; y hacia el este a El Paso, Texas, donde se encuentra uno de los mayores centros ferroviarios de carga de Estados Unidos, con espuela de ferrocarril para las plantas de expansión del sureste.</p>
+        </div>
+        <div>
+          <h3>Hacia el sur y el mar</h3>
+          <p>Hacia el sur, Hermosillo y el puerto de Guaymas abren la salida marítima a los mercados de Europa, Asia y Sudamérica, y permiten competir en el mismo segmento de importaciones que hoy atienden los embarques griegos.</p>
+        </div>
+      </div>
+
+      <div class="sec-body" style="margin-top:1.5rem">
+        <p>El acceso al rancho es por diez kilómetros de camino de terracería en buen estado desde la localidad de Aribabi, que conecta con carretera pavimentada.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec alt" id="rancho">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">El lugar</p>
+        <h2>Rancho Babidanchi</h2>
+        <p class="lede">En ópata, <em>babi</em> es beber y <em>danchi</em> correr: el lugar donde corre el agua. El nombre no es casual.</p>
+      </div>
+
+      <figure class="fig-wide">
+        <img src="assets/img/rio.jpg" alt="Corriente de agua entre rocas y arboleda en el arroyo Babidanchi" loading="lazy">
+        <figcaption>El arroyo Babidanchi lleva agua todo el año.</figcaption>
+      </figure>
+
+      <div class="sec-body" style="margin-top:2.5rem">
+        <h3>Agua</h3>
+        <p>Un <strong>arroyo perenne de agua de manantial</strong> atraviesa el rancho: corre los doce meses del año. El predio cuenta además con una <strong>concesión de aguas nacionales del subsuelo por 5.6 millones de metros cúbicos anuales</strong> —título SON124116, inscrito en el Registro Público de Derechos de Agua de la Comisión Nacional del Agua— y con la infraestructura de aprovechamiento ya construida en sitio.</p>
+        <p>El aprovechamiento se ubica dentro del <strong>acuífero 2631 Río Bavispe</strong>. En su estudio oficial de disponibilidad, la Comisión Nacional del Agua reporta para ese acuífero una recarga de 29.7 millones de metros cúbicos anuales frente a una extracción de 15.2 millones, con <strong>disponibilidad positiva y déficit cero</strong>.</p>
+        <p class="note">Para un proyecto minero, tener agua corriente todo el año, concesionada y registrada, sobre un acuífero que la autoridad no declara sobreexplotado, es una condición que rara vez viene resuelta de antemano.</p>
+      </div>
+
+      <div class="gal" style="margin-top:2rem">
+        <figure class="wide">
+          <img src="assets/img/canon.jpg" alt="Cañón del arroyo Babidanchi visto desde arriba, con vegetación de ribera" loading="lazy">
+          <figcaption>El cañón del arroyo, con vegetación de ribera todo el año</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/img/arroyo.jpg" alt="Arroyo perenne que atraviesa el Rancho Babidanchi" loading="lazy">
+          <figcaption>Agua corriente dentro del predio</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/img/aereo-rancho.jpg" alt="Vista aérea de las construcciones del Rancho Babidanchi entre arboleda" loading="lazy">
+          <figcaption>El casco del rancho, desde el aire</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/img/caballos.jpg" alt="Jinetes recorriendo el pastizal del Rancho Babidanchi" loading="lazy">
+          <figcaption>El rancho sigue en operación ganadera</figcaption>
+        </figure>
+      </div>
+
+      <div class="sec-body" style="margin-top:2.5rem">
+        <h3>Lo que ya está construido</h3>
+        <p>El rancho es una operación ganadera en funcionamiento, no un terreno baldío. Un proyecto que entre aquí no empieza desde cero:</p>
+      </div>
+
+      <div class="cards three">
+        <article class="card pad">
+          <h3>Instalaciones</h3>
+          <p>Casa amueblada con energía solar, bodega, corrales, patios, oficina, depósito de agua y señal telefónica.</p>
+        </article>
+        <article class="card pad">
+          <h3>Caminos</h3>
+          <p>Caminos internos en operación y diez kilómetros de terracería en buen estado hasta la carretera pavimentada. Para tráiler está proyectado un camino nuevo de siete kilómetros.</p>
+        </article>
+        <article class="card pad">
+          <h3>Sitio de planta</h3>
+          <p>El sitio previsto para la planta de trituración está a menos de dos kilómetros de los yacimientos y a siete de la carretera pavimentada.</p>
+        </article>
+        <article class="card pad">
+          <h3>Método de extracción</h3>
+          <p>Tajo a cielo abierto. El mineral aflora en superficie y es blando: se tumba y se extrae con buldócer, sin voladura ni obra subterránea.</p>
+        </article>
+        <article class="card pad">
+          <h3>Mano de obra</h3>
+          <p>Personal de Aribabi y Huachinera, que regresa a su domicilio a diario. Sin costos de campamento ni de logística de personal.</p>
+        </article>
+        <article class="card pad">
+          <h3>Entorno</h3>
+          <p>Región Sierra Alta de Sonora, con presencia permanente de la Guardia Nacional en Bavispe y Moctezuma, a 62 y 93 kilómetros.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="evidencia">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Evidencia técnica</p>
+        <h2>Lo que respalda el proyecto</h2>
+        <p class="lede">Cuatro décadas de trabajo geológico sobre el mismo depósito, más los documentos oficiales que respaldan la situación jurídica y el agua. Los marcados se abren en una pestaña nueva, para leerlos en línea o descargarlos.</p>
+      </div>
+
+      <div class="docs">
+        <a class="doc" href="docs/oficio-146-8-2016-4851-secretaria-de-economia.pdf" target="_blank" rel="noopener">
+          <h3>Oficio 146.8/2016-4851 · Secretaría de Economía <span class="ext">PDF</span></h3>
+          <p>Respuesta oficial de la Delegación Federal en Hermosillo, Subdirección de Minas. Transcribe el Artículo 4 de la Ley Minera y concluye textualmente que <em>"la sustancia PERLITA no está sujeta a las disposiciones de la Ley Minera y su Reglamento"</em>. Es el documento que sostiene la sección jurídica de esta página. Se omitieron los datos personales del destinatario.</p>
+          <span class="yr">2016</span>
+        </a>
+        <a class="doc" href="docs/informe-reconocimiento-geologico-2016.pdf" target="_blank" rel="noopener">
+          <h3>Reconocimiento geológico y evaluación económica preliminar <span class="ext">PDF</span></h3>
+          <p>El estudio más completo del proyecto: mapeo en semidetalle, petrografía de ocho juegos de muestras, geoquímica y las pruebas de expansión citadas en esta página, con el certificado del laboratorio. Dr. Jesús Roberto Vidal Solano y M.C. Héctor Jesús Hinojosa García, Departamento de Geología de la Universidad de Sonora. Se omitieron el presupuesto interno del estudio y los datos personales de contacto.</p>
+          <span class="yr">2016</span>
+        </a>
+        <a class="doc" href="docs/geology-selene-perlite-deposit-boletin-sgm-2016.pdf" target="_blank" rel="noopener">
+          <h3>Geology of the Selene perlite deposit, northern Sierra Madre Occidental <span class="ext">PDF</span></h3>
+          <p>Artículo arbitrado publicado en el Boletín de la Sociedad Geológica Mexicana, volumen 68. Hinojosa-Prieto, Vidal-Solano, Kibler y Hinojosa-García. Es la validación académica independiente del yacimiento.</p>
+          <span class="yr">2016</span>
+        </a>
+        <a class="doc" href="docs/estudio-geologico-yacimiento-la-bendicion-cggv-2015.pdf" target="_blank" rel="noopener">
+          <h3>Estudio geológico del yacimiento La Bendición <span class="ext">PDF</span></h3>
+          <p>Dictamen de exploración de Consultoría Geológica GV: mapeo geológico a detalle, estratigrafía, geología estructural, descripción de la roca vítrea y anexo con 84 estaciones de campo georreferenciadas.</p>
+          <span class="yr">2015</span>
+        </a>
+        <a class="doc" href="docs/calculo-de-reservas-la-bendicion-cggv-2016.pdf" target="_blank" rel="noopener">
+          <h3>Cálculo de reservas del proyecto La Bendición <span class="ext">PDF</span></h3>
+          <p>Cálculo volumétrico de Consultoría Geológica GV a partir de cinco barrenos exploratorios, cartografía y topografía independiente. Es la fuente de las reservas probadas que aparecen arriba.</p>
+          <span class="yr">2016</span>
+        </a>
+        <a class="doc" href="docs/disponibilidad-acuifero-2631-rio-bavispe-conagua.pdf" target="_blank" rel="noopener">
+          <h3>Determinación de la disponibilidad de agua subterránea, acuífero 2631 Río Bavispe <span class="ext">PDF</span></h3>
+          <p>Estudio oficial de la Comisión Nacional del Agua. Determina para el acuífero una recarga de 29.7 millones de metros cúbicos anuales frente a una extracción de 15.2 millones, con déficit cero.</p>
+          <span class="yr">2009</span>
+        </a>
+        <a class="doc" href="docs/certificado-analisis-geoquimico-als-chemex-2016.pdf" target="_blank" rel="noopener">
+          <h3>Certificado de análisis geoquímico · ALS Chemex de México <span class="ext">PDF</span></h3>
+          <p>Análisis de once muestras de roca por ICP-AES e ICP-MS: elementos mayores, traza y tierras raras, más pérdida por ignición. Laboratorio internacional independiente.</p>
+          <span class="yr">2016</span>
+        </a>
+        <a class="doc" href="docs/tesis-geologia-depositos-perlita-huachinera-1986.pdf" target="_blank" rel="noopener">
+          <h3>Geología de los depósitos de perlita del municipio de Huachinera <span class="ext">PDF</span></h3>
+          <p>Tesis de licenciatura de Óscar Fernando Almazán Holguín y Sergio Alfonso Trelles Monge, Universidad de Sonora. Es el origen de la estimación de recursos geológicos del domo.</p>
+          <span class="yr">1986</span>
+        </a>
+        <a class="doc" href="docs/ratificacion-de-firmas-y-contenidos-de-tesis.pdf" target="_blank" rel="noopener">
+          <h3>Ratificación de firmas y contenidos de tesis <span class="ext">PDF</span></h3>
+          <p>Ambos autores de la tesis de 1986 ratificaron por escrito firmas y contenido. Sergio Alfonso Trelles Monge está certificado como geólogo profesional N.º 10304 por el American Institute of Professional Geologists.</p>
+          <span class="yr">1988</span>
+        </a>
+        <a class="doc" href="docs/tesis-caracterizacion-petrologica-melgarejo-joris.pdf" target="_blank" rel="noopener">
+          <h3>Caracterización petrológica y origen de los depósitos de perlita <span class="ext">PDF</span></h3>
+          <p>Tesis de Emmanuel Melgarejo Joris, Universidad de Sonora. Implicaciones geoquímicas e interdependencia de las variables que gobiernan la expansión del mineral.</p>
+          <span class="yr">—</span>
+        </a>
+      </div>
+
+      <figure class="fig-wide" style="margin-top:2.5rem">
+        <img src="assets/img/campo2.jpg" alt="Geólogo tomando muestras en un afloramiento de perlita durante el trabajo de campo" loading="lazy">
+        <figcaption>Trabajo de campo, julio de 2016.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="sec dark" id="oportunidad">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow on-dark">Qué buscamos</p>
+        <h2>Seis caminos, todos abiertos</h2>
+        <p class="lede">Somos una empresa familiar. El activo está listo y documentado; lo que no tenemos es el capital para arrancar la operación. Estamos abiertos a cualquiera de estas rutas, o a una combinación.</p>
+      </div>
+      <div class="cards three">
+        <article class="card" style="background:#1B2126;">
+          <span class="tag" style="color:#D98A70">01</span>
+          <h3 style="color:#FBFBFA">Contrato de suministro</h3>
+          <p style="color:#B8BEC3">Compra de perlita cruda procesada, con volúmenes y plazos definidos. Ya hemos recibido cartas de intención de compradores en México y Estados Unidos.</p>
+        </article>
+        <article class="card" style="background:#1B2126;">
+          <span class="tag" style="color:#D98A70">02</span>
+          <h3 style="color:#FBFBFA">Arrendamiento con regalía</h3>
+          <p style="color:#B8BEC3">Un tercero opera y paga una renta más una regalía por tonelada extraída. La familia conserva la propiedad de la tierra y del mineral. Es la figura habitual para minerales industriales sobre propiedad privada.</p>
+        </article>
+        <article class="card" style="background:#1B2126;">
+          <span class="tag" style="color:#D98A70">03</span>
+          <h3 style="color:#FBFBFA">Opción de compra con exploración</h3>
+          <p style="color:#B8BEC3">El interesado financia la barrenación y el reporte certificado durante un plazo acordado, con derecho a comprar a un precio pactado si decide ejercerlo. Resuelve la certificación sin que el proyecto quede comprometido de antemano.</p>
+        </article>
+        <article class="card" style="background:#1B2126;">
+          <span class="tag" style="color:#D98A70">04</span>
+          <h3 style="color:#FBFBFA">Asociación</h3>
+          <p style="color:#B8BEC3">Socio operador o financiero que aporte capital y capacidad de ejecución a cambio de participación en el proyecto.</p>
+        </article>
+        <article class="card" style="background:#1B2126;">
+          <span class="tag" style="color:#D98A70">05</span>
+          <h3 style="color:#FBFBFA">Capital de arranque</h3>
+          <p style="color:#B8BEC3">Inversión para poner en marcha la extracción y la planta de trituración, con la producción comprometida como garantía.</p>
+        </article>
+        <article class="card" style="background:#1B2126;">
+          <span class="tag" style="color:#D98A70">06</span>
+          <h3 style="color:#FBFBFA">Venta</h3>
+          <p style="color:#B8BEC3">Enajenación del proyecto completo —derechos sobre el mineral e infraestructura asociada— o de una participación accionaria en la sociedad.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" id="galeria">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Galería</p>
+        <h2>El yacimiento y el camino</h2>
+      </div>
+      <div class="gal">
+        <figure class="wide">
+          <img src="assets/img/afloramientos.jpg" alt="Afloramientos de perlita frente al rancho" loading="lazy">
+          <figcaption>Afloramientos de perlita frente al rancho</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/img/coyote.jpg" alt="Formación conocida como El Corazón del Coyote, en el camino al rancho" loading="lazy">
+          <figcaption>El Corazón del Coyote, en el camino al rancho</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/img/muestra.jpg" alt="Muestra de mineral de perlita del yacimiento" loading="lazy">
+          <figcaption>Muestra de mineral</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/img/valle.jpg" alt="Vista del valle del Rancho Babidanchi desde el yacimiento Selene" loading="lazy">
+          <figcaption>El valle, visto desde el yacimiento Selene</figcaption>
+        </figure>
+        <figure>
+          <img src="assets/img/ganado.jpg" alt="Ganado pastando en el Rancho Babidanchi" loading="lazy">
+          <figcaption>Ganado del rancho</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec alt" id="contacto">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Contacto</p>
+        <h2>Hablemos</h2>
+        <p class="lede">Si el proyecto le interesa, escríbanos. Compartimos el expediente técnico completo —estudios geológicos, análisis de laboratorio y documentación legal— bajo acuerdo de confidencialidad.</p>
+      </div>
+
+      <div class="contact-card wide-card">
+        <div class="row">
+          <span class="k">Correo</span>
+          <span class="v"><a href="mailto:perlitababidanchi@gmail.com">perlitababidanchi@gmail.com</a></span>
+        </div>
+        <div class="row">
+          <span class="k">Teléfono</span>
+          <span class="v"><a href="tel:+526622562933">+52 662 256 2933</a></span>
+        </div>
+        <div class="row">
+          <span class="k">Ubicación</span>
+          <span class="v">Rancho Babidanchi · Huachinera, Sonora, México</span>
+        </div>
+        <div class="row">
+          <span class="k">Empresa</span>
+          <span class="v">Perlita Babidanchi, S.A. de C.V.</span>
+        </div>
+      </div>
+
+      <div class="hero-cta" style="margin-top:2rem">
+        <a class="btn btn-solid" href="mailto:perlitababidanchi@gmail.com?subject=Solicitud%20del%20expediente%20t%C3%A9cnico%20%E2%80%94%20Perlita%20Babidanchi">Solicitar el expediente técnico</a>
+        <a class="btn btn-line" href="docs/ficha-perlita-babidanchi.pdf" target="_blank" rel="noopener">Ficha del proyecto en una página <span class="ext">PDF</span></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-in">
+    <p>Perlita Babidanchi, S.A. de C.V. · Huachinera, Sonora, México</p>
+    <p class="sep"></p>
+    <p><a href="en/" hreflang="en">English version</a></p>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var b=document.getElementById('burger'), n=document.getElementById('nav');
+  if(b&&n){
+    b.addEventListener('click',function(){
+      var open=n.classList.toggle('open');
+      b.setAttribute('aria-expanded',open?'true':'false');
+      b.setAttribute('aria-label',open?'Cerrar menú':'Abrir menú');
+    });
+    n.addEventListener('click',function(e){
+      if(e.target.tagName==='A'&&window.innerWidth<=900){
+        n.classList.remove('open');b.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  /* Cambio de idioma conservando el punto exacto de lectura.
+     Se guarda la seccion visible y la fraccion recorrida dentro de ella;
+     la otra pagina la restaura al cargar. Se mide en el momento del clic
+     porque las imagenes cargan de forma diferida y el alto del documento
+     cambia mientras se lee. */
+  var KEY='pb-lang-pos';
+  var MAP={recurso:'resource',perlita:'perlite',derechos:'rights',ubicacion:'location',
+             rancho:'ranch',evidencia:'evidence',oportunidad:'opportunity',
+             galeria:'gallery',contacto:'contact'};
+  var secs=document.querySelectorAll('section[id]');
+
+  function headerOffset(){
+    var t=document.querySelector('.topbar');
+    return t ? t.getBoundingClientRect().height : 0;
+  }
+
+  function reading(){
+    var mark=headerOffset()+1, best=null;
+    for(var i=0;i<secs.length;i++){
+      if(secs[i].getBoundingClientRect().top<=mark) best=secs[i]; else break;
+    }
+    if(!best) return null;
+    var r=best.getBoundingClientRect();
+    var frac=r.height>0 ? (mark-r.top)/r.height : 0;
+    return {id:best.id, frac:Math.max(0,Math.min(1,frac))};
+  }
+
+  function restore(){
+    var raw;
+    try{ raw=sessionStorage.getItem(KEY); }catch(e){ return; }
+    if(!raw) return;
+    var want;
+    try{ want=JSON.parse(raw); }catch(e){ return; }
+    var el=document.getElementById(want.id);
+    if(!el) return;
+
+    var html=document.documentElement, prev=html.style.scrollBehavior;
+    html.style.scrollBehavior='auto';
+    function place(){
+      var r=el.getBoundingClientRect();
+      window.scrollTo(0, window.scrollY + r.top + r.height*want.frac - headerOffset());
+    }
+    place();
+    /* Las imagenes diferidas cambian el alto: se vuelve a ajustar al terminar de cargar. */
+    window.addEventListener('load', function(){
+      place();
+      setTimeout(function(){ place(); html.style.scrollBehavior=prev; },120);
+    });
+    setTimeout(place,60);
+    try{ sessionStorage.removeItem(KEY); }catch(e){}
+  }
+
+  Array.prototype.forEach.call(document.querySelectorAll('a.lang, a[hreflang="en"]'),function(a){
+    a.addEventListener('click',function(e){
+      var at=reading();
+      if(!at||!MAP[at.id]) return;
+      e.preventDefault();
+      try{ sessionStorage.setItem(KEY, JSON.stringify({id:MAP[at.id], frac:at.frac})); }catch(err){}
+      location.href=a.getAttribute('href')+'#'+MAP[at.id];
+    });
+  });
+
+  restore();
+})();
+</script>
+</body>
 </html>
