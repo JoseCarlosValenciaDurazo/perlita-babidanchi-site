@@ -27,7 +27,7 @@
 <meta name="theme-color" content="#12161A">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&display=swap">
 <link rel="stylesheet" href="../assets/site.css">
 
 <script type="application/ld+json">
@@ -47,23 +47,27 @@
 <body>
 <a class="skip" href="#main">Skip to content</a>
 
+<div class="progress" aria-hidden="true"><i id="pbar"></i></div>
+
 <header class="topbar">
   <div class="wrap topbar-in">
     <a class="brand" href="#">
       <b>Perlita Babidanchi</b>
       <span>Sonora, Mexico</span>
     </a>
+    <a class="bar-cta" href="#contact">Contact</a>
     <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="nav"><span></span></button>
     <nav class="nav" id="nav">
       <a href="#resource">The resource</a>
       <a href="#perlite">Perlite</a>
+      <a href="#market">Market</a>
       <a href="#rights">Rights</a>
       <a href="#location">Location</a>
       <a href="#ranch">The ranch</a>
       <a href="#evidence">Evidence</a>
       <a href="#opportunity">Opportunity</a>
       <a href="#contact">Contact</a>
-      <a class="lang" href="../" hreflang="es">ES</a>
+      <a class="lang" href="../" hreflang="es">Español</a>
     </nav>
   </div>
 </header>
@@ -71,14 +75,15 @@
 <main id="main">
 
   <section class="hero">
-    <div class="hero-img"><img src="../assets/img/hero.jpg" alt="Perlite outcrop at the La Bendición deposit, Rancho Babidanchi" fetchpriority="high"></div>
+    <div class="hero-img"><img src="../assets/img/portada.jpg" alt="The Selene deposit at dusk, seen from Rancho Babidanchi" fetchpriority="high"></div>
     <div class="wrap hero-in">
       <p class="eyebrow on-dark">Huachinera, Sonora · Mexico</p>
       <h1>Two perlite deposits on private land, 218&nbsp;km from the United States</h1>
       <p class="lede hero-lede">Rancho Babidanchi holds two high-quality perlite deposits on land owned by a single family. Perlite is not a concessible mineral under Mexican law: there is no mining concession in the way, and no third party holds rights over the material.</p>
       <div class="hero-cta">
         <a class="btn btn-solid" href="mailto:perlitababidanchi@gmail.com?subject=Technical%20file%20request%20%E2%80%94%20Perlita%20Babidanchi">Request the technical file</a>
-        <a class="btn btn-ghost" href="../docs/perlita-babidanchi-fact-sheet.pdf" target="_blank" rel="noopener">One-page fact sheet <span class="ext">PDF</span></a>
+        <a class="btn btn-ghost" href="https://wa.me/526622562933?text=Hello%2C%20I%20am%20writing%20about%20the%20perlite%20project%20at%20Rancho%20Babidanchi." target="_blank" rel="noopener">Message on WhatsApp</a>
+        <a class="btn btn-ghost" href="../docs/perlita-babidanchi-fact-sheet.pdf" target="_blank" rel="noopener">Fact sheet <span class="ext">PDF</span></a>
       </div>
     </div>
   </section>
@@ -244,7 +249,12 @@
         </div>
       </div>
 
-      <div class="sec-head" style="margin-top:4rem">
+    </div>
+  </section>
+
+  <section class="sec" id="market">
+    <div class="wrap">
+      <div class="sec-head">
         <p class="eyebrow">The market</p>
         <h2>The United States produces perlite and still imports a quarter of what it consumes</h2>
         <p class="lede">This is the figure that explains the project. The United States is the world's fourth-largest perlite producer and still runs a permanent shortfall: around 23&nbsp;% of the mineral it consumes has to be bought abroad, and 94&nbsp;% of those purchases cross the Atlantic from Greece.</p>
@@ -287,20 +297,27 @@
     </div>
   </section>
 
-  <section class="sec dark" id="rights">
+  <section class="sec legal" id="rights">
     <div class="wrap">
-      <div class="sec-head">
-        <p class="eyebrow on-dark">Legal standing</p>
-        <h2>No mining concession in the way</h2>
-        <p class="lede">This is the most important difference between this project and almost any other mining asset, and it is worth understanding before any figure.</p>
-      </div>
-      <div class="sec-body">
-        <p>Mexico's Mining Law sets out, in Article 4, a closed list of substances subject to federal concession. <strong>Perlite does not appear on that list.</strong> Article 5, sections IV and V, further excludes from the Law those rocks intended for construction materials and those extracted through open-pit work — which is precisely how perlite is mined.</p>
-        <p>The practical consequence: perlite belongs to the owner of the land where it lies. There is no concession that can expire, be cancelled or be disputed, and no third party holds preferential rights over the mineral. There is also no raw material acquisition cost: the ranch is owned by the company's shareholders.</p>
-        <div class="claim" style="background:#1B2126;border-left-color:#D98A70">
-          <p style="color:#E8EAE8">The Federal Delegation of the Ministry of Economy in Hermosillo confirmed this in writing, in response to a formal enquiry filed by our attorney.</p>
-          <p class="src" style="color:#8B939A">Official letter 146.8 / 2016 – 4851 · Directorate General of Mines · Available in the technical file</p>
+      <div class="legal-grid">
+        <div>
+          <p class="eyebrow on-dark">Legal standing</p>
+          <p class="legal-claim">There is no concession here that can <em>expire</em>.</p>
+          <p class="legal-sub">Mexico's Mining Law sets out a closed list of substances subject to federal concession. Perlite does not appear on that list, and for that reason it belongs to the owner of the land where it lies.</p>
+          <div class="legal-why">
+            <p><strong>Article 4.</strong> Closed list of concessible substances. Perlite is not on it.</p>
+            <p><strong>Article 5, sections IV and V.</strong> Excludes from the Law rocks intended for construction materials and those extracted by open-pit work, which is precisely how perlite is mined.</p>
+            <p><strong>The consequence.</strong> No concession to expire, lapse or be disputed. No third party with preferential rights. No payment for raw material: the ranch belongs to the company's shareholders.</p>
+          </div>
         </div>
+
+        <a class="evidence" href="../docs/oficio-146-8-2016-4851-secretaria-de-economia.pdf" target="_blank" rel="noopener">
+          <img src="../assets/docs/oficio-detalle.jpg" alt="Excerpt from the Ministry of Economy official letter stating that the substance PERLITE is not subject to the provisions of the Mining Law, followed by the signature of the Deputy Director of Mines" loading="lazy">
+          <figcaption>
+            <span class="t">Official letter 146.8/2016-4851 · Ministry of Economy</span>
+            <span class="s">Federal Delegation in Hermosillo · Directorate of Mines<br>24 August 2016 · Open the full document</span>
+          </figcaption>
+        </a>
       </div>
     </div>
   </section>
@@ -425,60 +442,89 @@
       <div class="sec-head">
         <p class="eyebrow">Technical evidence</p>
         <h2>What backs the project</h2>
-        <p class="lede">Four decades of geological work on the same deposit, plus the official documents behind the legal standing and the water rights. Marked items open in a new tab, to read online or download.</p>
+        <p class="lede">Four decades of geological work on the same deposit, plus the official documents behind the legal standing and the water rights. All of them open in a new tab, to read online or download.</p>
       </div>
 
-      <div class="docs">
-        <a class="doc" href="../docs/oficio-146-8-2016-4851-secretaria-de-economia.pdf" target="_blank" rel="noopener">
-          <h3>Official letter 146.8/2016-4851 · Ministry of Economy <span class="ext">PDF</span></h3>
-          <p>Official response from the Federal Delegation in Hermosillo, Directorate of Mines. It transcribes Article 4 of the Mining Law and concludes verbatim that <em>"the substance PERLITE is not subject to the provisions of the Mining Law and its Regulations"</em>. This is the document behind the legal section of this page. Recipient's personal details were removed. In Spanish.</p>
-          <span class="yr">2016</span>
-        </a>
-        <a class="doc" href="../docs/informe-reconocimiento-geologico-2016.pdf" target="_blank" rel="noopener">
-          <h3>Geological reconnaissance and preliminary economic evaluation <span class="ext">PDF</span></h3>
-          <p>The most complete study of the project: semi-detailed mapping, petrography of eight sample sets, geochemistry and the expansion testing cited on this page, including the laboratory certificate. Dr Jesús Roberto Vidal Solano and M.Sc. Héctor Jesús Hinojosa García, Department of Geology, Universidad de Sonora. The study's internal budget and personal contact details were removed. In Spanish.</p>
-          <span class="yr">2016</span>
-        </a>
-        <a class="doc" href="../docs/geology-selene-perlite-deposit-boletin-sgm-2016.pdf" target="_blank" rel="noopener">
-          <h3>Geology of the Selene perlite deposit, northern Sierra Madre Occidental <span class="ext">PDF</span></h3>
-          <p>Peer-reviewed article published in the Boletín de la Sociedad Geológica Mexicana, volume 68. Hinojosa-Prieto, Vidal-Solano, Kibler and Hinojosa-García. The independent academic validation of the deposit.</p>
-          <span class="yr">2016</span>
-        </a>
-        <a class="doc" href="../docs/estudio-geologico-yacimiento-la-bendicion-cggv-2015.pdf" target="_blank" rel="noopener">
-          <h3>Geological study of the La Bendición deposit <span class="ext">PDF</span></h3>
-          <p>Exploration report by Consultoría Geológica GV: detailed geological mapping, stratigraphy, structural geology, description of the vitreous rock and an annex with 84 georeferenced field stations. In Spanish.</p>
-          <span class="yr">2015</span>
-        </a>
-        <a class="doc" href="../docs/calculo-de-reservas-la-bendicion-cggv-2016.pdf" target="_blank" rel="noopener">
-          <h3>Reserve calculation, La Bendición project <span class="ext">PDF</span></h3>
-          <p>Volumetric calculation by Consultoría Geológica GV based on five exploratory boreholes, mapping and independent topographic survey. This is the source of the proven reserves cited above. In Spanish.</p>
-          <span class="yr">2016</span>
-        </a>
-        <a class="doc" href="../docs/disponibilidad-acuifero-2631-rio-bavispe-conagua.pdf" target="_blank" rel="noopener">
-          <h3>Groundwater availability assessment, 2631 Río Bavispe aquifer <span class="ext">PDF</span></h3>
-          <p>Official study by Mexico's National Water Commission. It establishes for the aquifer a recharge of 29.7 million cubic metres per year against an extraction of 15.2 million, with zero deficit. In Spanish.</p>
-          <span class="yr">2009</span>
-        </a>
-        <a class="doc" href="../docs/certificado-analisis-geoquimico-als-chemex-2016.pdf" target="_blank" rel="noopener">
-          <h3>Geochemical certificate of analysis · ALS Chemex de México <span class="ext">PDF</span></h3>
-          <p>Analysis of eleven rock samples by ICP-AES and ICP-MS: major, trace and rare earth elements, plus loss on ignition. Independent international laboratory.</p>
-          <span class="yr">2016</span>
-        </a>
-        <a class="doc" href="../docs/tesis-geologia-depositos-perlita-huachinera-1986.pdf" target="_blank" rel="noopener">
-          <h3>Geology of the perlite deposits of the Huachinera municipality <span class="ext">PDF</span></h3>
-          <p>Undergraduate thesis by Óscar Fernando Almazán Holguín and Sergio Alfonso Trelles Monge, Universidad de Sonora. The source of the geological resource estimate for the dome. In Spanish.</p>
-          <span class="yr">1986</span>
-        </a>
-        <a class="doc" href="../docs/ratificacion-de-firmas-y-contenidos-de-tesis.pdf" target="_blank" rel="noopener">
-          <h3>Ratification of signatures and thesis contents <span class="ext">PDF</span></h3>
-          <p>Both authors of the 1986 thesis ratified their signatures and its contents in writing. Sergio Alfonso Trelles Monge is certified as professional geologist No. 10304 by the American Institute of Professional Geologists.</p>
-          <span class="yr">1988</span>
-        </a>
-        <a class="doc" href="../docs/tesis-caracterizacion-petrologica-melgarejo-joris.pdf" target="_blank" rel="noopener">
-          <h3>Petrological characterisation and origin of the perlite deposits <span class="ext">PDF</span></h3>
-          <p>Thesis by Emmanuel Melgarejo Joris, Universidad de Sonora. Geochemical implications and the interdependence of the variables governing expansion. In Spanish.</p>
-          <span class="yr">—</span>
-        </a>
+      <div class="shelf">
+
+        <div class="decade">
+          <span class="yr">1986 – 1988</span>
+          <div class="docgrid">
+          <a class="docitem" href="../docs/tesis-geologia-depositos-perlita-huachinera-1986.pdf" target="_blank" rel="noopener">
+            <span class="cover"><img src="../assets/docs/tesis-geologia-depositos-perlita-huachinera-1986.jpg" alt="Cover of Geology of the perlite deposits of Huachinera" loading="lazy"></span>
+            <h3>Geology of the perlite deposits of Huachinera</h3>
+            <p>Undergraduate thesis by Almazán Holguín and Trelles Monge, Universidad de Sonora. The source of the dome resource estimate. In Spanish.</p>
+            <span class="tag">PDF · 86 pages</span>
+          </a>
+          <a class="docitem" href="../docs/ratificacion-de-firmas-y-contenidos-de-tesis.pdf" target="_blank" rel="noopener">
+            <span class="cover"><img src="../assets/docs/ratificacion-de-firmas-y-contenidos-de-tesis.jpg" alt="Cover of Ratification of signatures and contents" loading="lazy"></span>
+            <h3>Ratification of signatures and contents</h3>
+            <p>Both authors ratified in writing. Trelles Monge is certified as professional geologist No. 10304 by the American Institute of Professional Geologists.</p>
+            <span class="tag">PDF · 1 page</span>
+          </a>
+          </div>
+        </div>
+
+        <div class="decade">
+          <span class="yr">2015 – 2016</span>
+          <div class="docgrid">
+          <a class="docitem" href="../docs/oficio-146-8-2016-4851-secretaria-de-economia.pdf" target="_blank" rel="noopener">
+            <span class="cover"><img src="../assets/docs/oficio-146-8-2016-4851-secretaria-de-economia.jpg" alt="Cover of Official letter 146.8/2016-4851" loading="lazy"></span>
+            <h3>Official letter 146.8/2016-4851</h3>
+            <p>Ministry of Economy. Confirms in writing that perlite is not subject to the Mining Law. In Spanish.</p>
+            <span class="tag">PDF · 2 pages</span>
+          </a>
+          <a class="docitem" href="../docs/geology-selene-perlite-deposit-boletin-sgm-2016.pdf" target="_blank" rel="noopener">
+            <span class="cover"><img src="../assets/docs/geology-selene-perlite-deposit-boletin-sgm-2016.jpg" alt="Cover of Geology of the Selene perlite deposit" loading="lazy"></span>
+            <h3>Geology of the Selene perlite deposit</h3>
+            <p>Peer-reviewed article, Boletín de la Sociedad Geológica Mexicana, volume 68. The independent academic validation. In English.</p>
+            <span class="tag">PDF · 35 pages</span>
+          </a>
+          <a class="docitem" href="../docs/estudio-geologico-yacimiento-la-bendicion-cggv-2015.pdf" target="_blank" rel="noopener">
+            <span class="cover"><img src="../assets/docs/estudio-geologico-yacimiento-la-bendicion-cggv-2015.jpg" alt="Cover of Geological study of the La Bendición deposit" loading="lazy"></span>
+            <h3>Geological study of the La Bendición deposit</h3>
+            <p>Consultoría Geológica GV. Detailed mapping with 84 georeferenced field stations. In Spanish.</p>
+            <span class="tag">PDF · 27 pages</span>
+          </a>
+          <a class="docitem" href="../docs/calculo-de-reservas-la-bendicion-cggv-2016.pdf" target="_blank" rel="noopener">
+            <span class="cover"><img src="../assets/docs/calculo-de-reservas-la-bendicion-cggv-2016.jpg" alt="Cover of Reserve calculation for La Bendición" loading="lazy"></span>
+            <h3>Reserve calculation for La Bendición</h3>
+            <p>Consultoría Geológica GV. Five boreholes, independent topographic survey and volumetric calculation. In Spanish.</p>
+            <span class="tag">PDF · 7 pages</span>
+          </a>
+          <a class="docitem" href="../docs/informe-reconocimiento-geologico-2016.pdf" target="_blank" rel="noopener">
+            <span class="cover"><img src="../assets/docs/informe-reconocimiento-geologico-2016.jpg" alt="Cover of Geological reconnaissance and preliminary evaluation" loading="lazy"></span>
+            <h3>Geological reconnaissance and preliminary evaluation</h3>
+            <p>Vidal Solano and Hinojosa García, Universidad de Sonora. Petrography, geochemistry and the expansion testing cited on this page. In Spanish.</p>
+            <span class="tag">PDF · 114 pages</span>
+          </a>
+          <a class="docitem" href="../docs/certificado-analisis-geoquimico-als-chemex-2016.pdf" target="_blank" rel="noopener">
+            <span class="cover"><img src="../assets/docs/certificado-analisis-geoquimico-als-chemex-2016.jpg" alt="Cover of Geochemical certificate of analysis" loading="lazy"></span>
+            <h3>Geochemical certificate of analysis</h3>
+            <p>ALS Chemex de México. Eleven samples by ICP-AES and ICP-MS: major, trace and rare earth elements.</p>
+            <span class="tag">PDF · 6 pages</span>
+          </a>
+          </div>
+        </div>
+
+        <div class="decade">
+          <span class="yr">2009 · Water</span>
+          <div class="docgrid">
+          <a class="docitem" href="../docs/disponibilidad-acuifero-2631-rio-bavispe-conagua.pdf" target="_blank" rel="noopener">
+            <span class="cover"><img src="../assets/docs/disponibilidad-acuifero-2631-rio-bavispe-conagua.jpg" alt="Cover of Availability of the 2631 Río Bavispe aquifer" loading="lazy"></span>
+            <h3>Availability of the 2631 Río Bavispe aquifer</h3>
+            <p>National Water Commission. Recharge of 29.7 million m³ per year against an extraction of 15.2 million, with zero deficit. In Spanish.</p>
+            <span class="tag">PDF · 34 pages</span>
+          </a>
+          <a class="docitem" href="../docs/tesis-caracterizacion-petrologica-melgarejo-joris.pdf" target="_blank" rel="noopener">
+            <span class="cover"><img src="../assets/docs/tesis-caracterizacion-petrologica-melgarejo-joris.jpg" alt="Cover of Petrological characterisation of the deposits" loading="lazy"></span>
+            <h3>Petrological characterisation of the deposits</h3>
+            <p>Thesis by Melgarejo Joris, Universidad de Sonora. The variables that govern the expansion of the ore. In Spanish.</p>
+            <span class="tag">PDF · 140 pages</span>
+          </a>
+          </div>
+        </div>
+
       </div>
 
       <figure class="fig-wide" style="margin-top:2.5rem">
@@ -492,41 +538,25 @@
     <div class="wrap">
       <div class="sec-head">
         <p class="eyebrow on-dark">What we are looking for</p>
-        <h2>Six routes, all open</h2>
-        <p class="lede">We are a family company. The asset is ready and documented; what we do not have is the capital to start the operation. We are open to any of these routes, or to a combination.</p>
+        <h2>Two preferred routes, and everything else open</h2>
+        <p class="lede">We are a family company. The asset is ready and documented; what we do not have is the capital to start the operation. These are the two structures that best fit the project as it stands today.</p>
       </div>
-      <div class="cards three">
-        <article class="card" style="background:#1B2126;">
-          <span class="tag" style="color:#D98A70">01</span>
-          <h3 style="color:#FBFBFA">Supply contract</h3>
-          <p style="color:#B8BEC3">Purchase of processed crude perlite, with defined volumes and terms. We have already received letters of intent from buyers in Mexico and the United States.</p>
+      <div class="routes-2">
+        <article class="route-main">
+          <span class="k">Preferred route</span>
+          <h3>Option to purchase with an exploration period</h3>
+          <p>The interested party funds the drilling and the certified resource report over an agreed term, with the right to purchase at a set price if it chooses to exercise.</p>
+          <p class="por">It resolves the one thing the project still lacks — certification under standard — without either side being committed in advance.</p>
         </article>
-        <article class="card" style="background:#1B2126;">
-          <span class="tag" style="color:#D98A70">02</span>
-          <h3 style="color:#FBFBFA">Lease with royalty</h3>
-          <p style="color:#B8BEC3">A third party operates and pays rent plus a royalty per tonne extracted. The family retains ownership of the land and the mineral. This is the standard structure for industrial minerals on private land.</p>
-        </article>
-        <article class="card" style="background:#1B2126;">
-          <span class="tag" style="color:#D98A70">03</span>
-          <h3 style="color:#FBFBFA">Option to purchase with exploration</h3>
-          <p style="color:#B8BEC3">The interested party funds drilling and the certified resource report over an agreed term, with the right to purchase at a set price if it chooses to exercise. It solves certification without committing the project in advance.</p>
-        </article>
-        <article class="card" style="background:#1B2126;">
-          <span class="tag" style="color:#D98A70">04</span>
-          <h3 style="color:#FBFBFA">Partnership</h3>
-          <p style="color:#B8BEC3">An operating or financial partner contributing capital and execution capability in exchange for a stake in the project.</p>
-        </article>
-        <article class="card" style="background:#1B2126;">
-          <span class="tag" style="color:#D98A70">05</span>
-          <h3 style="color:#FBFBFA">Start-up capital</h3>
-          <p style="color:#B8BEC3">Investment to bring extraction and the crushing plant into operation, with committed production as security.</p>
-        </article>
-        <article class="card" style="background:#1B2126;">
-          <span class="tag" style="color:#D98A70">06</span>
-          <h3 style="color:#FBFBFA">Sale</h3>
-          <p style="color:#B8BEC3">Sale of the complete project — mineral rights and associated infrastructure — or of an equity stake in the company.</p>
+        <article class="route-main">
+          <span class="k">Preferred route</span>
+          <h3>Lease with royalty</h3>
+          <p>A third party operates and pays rent plus a royalty per tonne extracted. The family retains ownership of the land and the mineral.</p>
+          <p class="por">It is the standard structure for industrial minerals on private land, and it fits here precisely because perlite is not concessible.</p>
         </article>
       </div>
+
+      <p class="routes-rest">We also consider a <b>supply contract</b> for processed crude perlite — we have already received letters of intent from buyers in Mexico and the United States —, a <b>partnership</b> with an operating or financial partner, <b>start-up capital</b> for extraction and the plant, or the <b>sale</b> of the complete asset or of an equity stake.</p>
     </div>
   </section>
 
@@ -579,6 +609,10 @@
           <span class="v"><a href="tel:+526622562933">+52 662 256 2933</a></span>
         </div>
         <div class="row">
+          <span class="k">WhatsApp</span>
+          <span class="v"><a href="https://wa.me/526622562933?text=Hello%2C%20I%20am%20writing%20about%20the%20perlite%20project%20at%20Rancho%20Babidanchi." target="_blank" rel="noopener">+52 662 256 2933</a></span>
+        </div>
+        <div class="row">
           <span class="k">Location</span>
           <span class="v">Rancho Babidanchi · Huachinera, Sonora, Mexico</span>
         </div>
@@ -590,7 +624,8 @@
 
       <div class="hero-cta" style="margin-top:2rem">
         <a class="btn btn-solid" href="mailto:perlitababidanchi@gmail.com?subject=Technical%20file%20request%20%E2%80%94%20Perlita%20Babidanchi">Request the technical file</a>
-        <a class="btn btn-line" href="../docs/perlita-babidanchi-fact-sheet.pdf" target="_blank" rel="noopener">One-page fact sheet <span class="ext">PDF</span></a>
+        <a class="btn btn-wa" href="https://wa.me/526622562933?text=Hello%2C%20I%20am%20writing%20about%20the%20perlite%20project%20at%20Rancho%20Babidanchi." target="_blank" rel="noopener">Message on WhatsApp</a>
+        <a class="btn btn-line" href="../docs/perlita-babidanchi-fact-sheet.pdf" target="_blank" rel="noopener">Project fact sheet <span class="ext">PDF</span></a>
       </div>
     </div>
   </section>
@@ -615,7 +650,7 @@
       b.setAttribute('aria-label',open?'Close menu':'Open menu');
     });
     n.addEventListener('click',function(e){
-      if(e.target.tagName==='A'&&window.innerWidth<=900){
+      if(e.target.tagName==='A'&&window.innerWidth<=1120){
         n.classList.remove('open');b.setAttribute('aria-expanded','false');
       }
     });
@@ -627,9 +662,9 @@
      images load lazily and the document height keeps changing as the
      reader scrolls. */
   var KEY='pb-lang-pos';
-  var MAP={resource:'recurso',perlite:'perlita',rights:'derechos',location:'ubicacion',
-             ranch:'rancho',evidence:'evidencia',opportunity:'oportunidad',
-             gallery:'galeria',contact:'contacto'};
+  var MAP={resource:'recurso',perlite:'perlita',market:'mercado',rights:'derechos',
+             location:'ubicacion',ranch:'rancho',evidence:'evidencia',
+             opportunity:'oportunidad',gallery:'galeria',contact:'contacto'};
   var secs=document.querySelectorAll('section[id]');
 
   function headerOffset(){
@@ -664,7 +699,7 @@
       window.scrollTo(0, window.scrollY + r.top + r.height*want.frac - headerOffset());
     }
     place();
-    /* Las imagenes diferidas cambian el alto: se vuelve a ajustar al terminar de cargar. */
+    /* Lazy images change the document height: re-place once they finish loading. */
     window.addEventListener('load', function(){
       place();
       setTimeout(function(){ place(); html.style.scrollBehavior=prev; },120);
@@ -684,6 +719,49 @@
   });
 
   restore();
+
+  /* Reading progress bar and active section in the menu.
+     Both are computed in the same frame to avoid duplicated work. */
+  var pbar=document.getElementById('pbar');
+  var enlaces={};
+  Array.prototype.forEach.call(document.querySelectorAll('.nav a[href^="#"]'),function(a){
+    enlaces[a.getAttribute('href').slice(1)]=a;
+  });
+  var pend=false, activa=null;
+  function pinta(){
+    pend=false;
+    if(pbar){
+      var alto=document.documentElement.scrollHeight-window.innerHeight;
+      pbar.style.width=(alto>0 ? Math.min(100,(window.scrollY/alto)*100) : 0)+'%';
+    }
+    var id=null, tope=headerOffset()+1;
+    for(var i=0;i<secs.length;i++){
+      if(secs[i].getBoundingClientRect().top<=tope) id=secs[i].id; else break;
+    }
+    if(id!==activa){
+      if(activa&&enlaces[activa]) enlaces[activa].removeAttribute('aria-current');
+      if(id&&enlaces[id]) enlaces[id].setAttribute('aria-current','true');
+      activa=id;
+    }
+  }
+  function agenda(){ if(!pend){ pend=true; requestAnimationFrame(pinta); } }
+  window.addEventListener('scroll',agenda,{passive:true});
+  window.addEventListener('resize',agenda,{passive:true});
+  pinta();
+
+  /* Hint that a table can be scrolled to the right */
+  function revisaTablas(){
+    Array.prototype.forEach.call(document.querySelectorAll('.tablewrap'),function(t){
+      t.classList.toggle('desborda', t.scrollWidth - t.clientWidth > 4);
+    });
+  }
+  revisaTablas();
+  window.addEventListener('resize',revisaTablas,{passive:true});
+  Array.prototype.forEach.call(document.querySelectorAll('.tablewrap'),function(t){
+    t.addEventListener('scroll',function(){
+      t.classList.toggle('desborda', t.scrollWidth - t.clientWidth - t.scrollLeft > 4);
+    },{passive:true});
+  });
 })();
 </script>
 </body>
