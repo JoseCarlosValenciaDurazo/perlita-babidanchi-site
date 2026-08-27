@@ -85,7 +85,7 @@ p{margin:0;}
 .burger span::before,.burger span::after{content:"";position:absolute;left:0;width:1.05rem;height:1.5px;background:var(--ink);}
 .burger span::before{top:-5px;} .burger span::after{top:5px;}
 
-@media (max-width:1120px){
+@media (max-width:860px){
   .burger{display:flex;}
   .nav{
     display:none;position:absolute;top:100%;left:0;right:0;background:var(--paper);
@@ -330,7 +330,7 @@ a.doc:hover .ext{border-color:var(--accent);color:var(--accent-deep);}
   padding:.55rem .85rem;border-radius:2px;margin-left:auto;margin-right:.6rem;
 }
 .bar-cta:hover{background:var(--accent-deep);color:#fff;}
-@media (max-width:1120px){
+@media (max-width:860px){
   .bar-cta{display:inline-flex;align-items:center;min-height:2.75rem;box-sizing:border-box;}
   .brand{margin-right:0;}
 }
@@ -452,3 +452,110 @@ a.docitem:hover .tag{color:var(--accent);}
 /* WhatsApp */
 .btn-wa{background:var(--paper);color:var(--accent-deep);border:1px solid var(--line);}
 .btn-wa:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-soft);}
+
+/* ═══════════ v3 — menú fijo, ancho aprovechado, cuadrícula de documentos ═══════════ */
+
+/* ── El menú vive fijo arriba en escritorio ──
+   Nueve secciones caben porque baja el cuerpo y la separación; el colapso
+   a botón de menú se retrasa hasta 860 px, donde ya no caben de ninguna forma. */
+.nav{gap:1.05rem;}
+.nav a{font-size:.82rem;}
+@media (min-width:861px) and (max-width:1060px){
+  .nav{gap:.8rem;}
+  .nav a{font-size:.775rem;}
+  .brand span{display:none;}
+}
+
+/* Idioma: etiqueta corta con su propio recuadro, para que no se lea como
+   una sección más del menú. */
+.nav a.lang{
+  font-family:var(--mono);font-size:.7rem;font-weight:500;letter-spacing:.1em;
+  background:var(--stone);border:1px solid var(--line);color:var(--ink);
+  padding:.34rem .6rem;border-radius:2px;margin-left:.4rem;
+}
+.nav a.lang:hover{
+  background:var(--accent-soft);border-color:var(--accent);color:var(--accent-deep);
+}
+
+/* ── Cabecera de sección a dos columnas: el título deja de colgar solo
+      a la izquierda y la entradilla ocupa el ancho que sobraba. ── */
+@media (min-width:1040px){
+  .sec-head{
+    display:grid;max-width:none;align-items:start;
+    grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);
+    column-gap:clamp(2.5rem,5vw,4.5rem);row-gap:.75rem;
+  }
+  .sec-head .eyebrow{grid-column:1;grid-row:1;}
+  .sec-head h2{grid-column:1;grid-row:2;}
+  .sec-head .lede{grid-column:2;grid-row:1/span 2;align-self:end;padding-bottom:.3rem;}
+}
+
+/* ── Prosa con panel de datos al costado ──
+   La medida de línea se queda en su ancho legible; lo que se llena es el
+   espacio sobrante, y se llena con datos, no con texto estirado. */
+.railed{display:grid;grid-template-columns:minmax(0,1fr);gap:1.6rem;}
+.railed > .prosa{display:flex;flex-direction:column;gap:1.15rem;}
+@media (min-width:1040px){
+  .railed{
+    grid-template-columns:minmax(0,34rem) minmax(0,1fr);
+    column-gap:clamp(2.5rem,5vw,4.5rem);align-items:start;
+  }
+}
+.rail{background:var(--paper);border:1px solid var(--line);display:flex;flex-direction:column;}
+.rail .rt{
+  font-family:var(--mono);font-size:.68rem;letter-spacing:.11em;text-transform:uppercase;
+  color:var(--faint);padding:.95rem 1.15rem .6rem;
+}
+.rail dl{margin:0;display:flex;flex-direction:column;}
+.rail .r{
+  display:flex;justify-content:space-between;align-items:baseline;gap:1.2rem;
+  padding:.6rem 1.15rem;border-top:1px solid var(--line);
+}
+.rail dt{font-family:var(--sans);font-size:.83rem;color:var(--slate);}
+.rail dd{
+  margin:0;font-family:var(--sans);font-size:.92rem;font-weight:500;
+  font-variant-numeric:tabular-nums;text-align:right;white-space:nowrap;
+}
+.rail .tot{background:var(--stone);}
+.rail .tot dt{color:var(--ink);}
+.rail .tot dd{color:var(--accent-deep);font-size:1.06rem;font-weight:600;}
+.rail .rn{
+  font-family:var(--sans);font-size:.78rem;color:var(--faint);line-height:1.5;
+  padding:.75rem 1.15rem .95rem;border-top:1px solid var(--line);
+}
+.rail .rn + .rn{border-top:none;padding-top:0;}
+
+/* ── Expediente: una sola cuadrícula, ordenada por tema ── */
+.docgrid{grid-template-columns:repeat(4,minmax(0,1fr));gap:1.7rem 1.4rem;}
+@media (max-width:1000px){ .docgrid{grid-template-columns:repeat(3,minmax(0,1fr));} }
+@media (max-width:760px){ .docgrid{grid-template-columns:repeat(2,minmax(0,1fr));} }
+@media (max-width:560px){ .docgrid{grid-template-columns:minmax(0,1fr);gap:1.5rem;} }
+.docitem .tag{flex-wrap:wrap;}
+
+/* ── Contacto: un solo renglón de teléfono, con las dos acciones ── */
+.contact-card .v a.wa{
+  font-family:var(--mono);font-size:.66rem;letter-spacing:.09em;text-transform:uppercase;
+  border:1px solid var(--line);border-radius:2px;padding:.24rem .48rem;
+  margin-left:.65rem;color:var(--faint);vertical-align:.12em;
+}
+.contact-card .v a.wa:hover{
+  border-color:var(--accent);color:var(--accent-deep);background:var(--accent-soft);
+}
+@media (max-width:700px){
+  .contact-card .v a.wa{
+    display:inline-block;margin-left:.9rem;padding:.5rem .7rem;
+    min-height:0;font-size:.7rem;font-weight:500;
+  }
+}
+
+/* ── Contacto: datos y acciones lado a lado ── */
+.contact-2{display:grid;grid-template-columns:minmax(0,1fr);gap:1.6rem;}
+@media (min-width:1040px){
+  .contact-2{
+    grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);
+    column-gap:clamp(2.5rem,5vw,4.5rem);align-items:start;
+  }
+}
+.contact-2 .contact-card{max-width:none;}
+.contact-act{display:flex;flex-direction:column;gap:.75rem;}
+.contact-act .btn{text-align:center;}
