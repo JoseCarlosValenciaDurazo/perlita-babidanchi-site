@@ -559,3 +559,12 @@ a.docitem:hover .tag{color:var(--accent);}
 .contact-2 .contact-card{max-width:none;}
 .contact-act{display:flex;flex-direction:column;gap:.75rem;}
 .contact-act .btn{text-align:center;}
+
+/* Fotografía al costado de un bloque de prosa, en el lugar del panel de datos */
+.railfig{margin:0;background:var(--paper);border:1px solid var(--line);}
+.railfig img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;}
+.railfig figcaption{
+  font-family:var(--sans);font-size:.82rem;color:var(--slate);
+  padding:.65rem .9rem .75rem;border-top:1px solid var(--line);
+}
+@media (max-width:1039px){ .railfig img{aspect-ratio:16/9;} }
