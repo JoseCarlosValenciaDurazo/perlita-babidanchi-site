@@ -1,29 +1,61 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Página no encontrada — Perlita Babidanchi</title>
+<title>Page not found — Perlita Babidanchi</title>
 <meta name="robots" content="noindex">
-<meta name="theme-color" content="#12161A">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Serif:ital,wght@0,400;0,600;1,400&display=swap">
-<link rel="stylesheet" href="/assets/site.css">
+<style>
+:root{--basalt:#12161A;--accent:#B5533A;--accent-deep:#8E3E29;}
+*,*::before,*::after{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  min-height:100vh;display:flex;align-items:center;background:var(--basalt);color:#E8EAE8;
+  font-family:"IBM Plex Serif",Georgia,serif;font-size:17px;line-height:1.65;
+}
+.wrap{max-width:74rem;margin:0 auto;padding:4rem clamp(1.25rem,4vw,3rem)}
+.eyebrow{
+  font-family:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;font-size:.72rem;font-weight:600;
+  letter-spacing:.16em;text-transform:uppercase;color:#D98A70;margin:0;
+}
+h1{
+  font-family:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;font-weight:600;
+  font-size:clamp(2.1rem,5.6vw,3.9rem);letter-spacing:-.035em;line-height:1.12;
+  color:#FBFBFA;max-width:16ch;margin:1rem 0 0;
+}
+p.lede{font-size:clamp(1.05rem,1.8vw,1.22rem);color:#B8BEC3;margin:1.2rem 0 0;max-width:46ch}
+.cta{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:2rem}
+.btn{
+  font-family:"IBM Plex Sans","Helvetica Neue",Arial,sans-serif;font-size:.9rem;font-weight:500;
+  text-decoration:none;padding:.72rem 1.3rem;border-radius:2px;display:inline-block;
+}
+.solid{background:var(--accent);color:#fff;border:1px solid var(--accent)}
+.solid:hover{background:var(--accent-deep);border-color:var(--accent-deep)}
+.ghost{background:transparent;color:#EDEEEC;border:1px solid rgba(237,238,236,.35)}
+.ghost:hover{border-color:#EDEEEC;color:#fff}
+</style>
+
 </head>
 <body>
-<main id="main" style="min-height:100vh;display:flex;align-items:center;background:#12161A;color:#E8EAE8">
-  <div class="wrap" style="padding-block:4rem">
-    <p class="eyebrow on-dark">Error 404</p>
-    <h1 style="color:#FBFBFA;max-width:16ch;margin-top:1rem">Esta página no existe</h1>
-    <p class="lede" style="color:#B8BEC3;margin-top:1.2rem;max-width:46ch">
-      Puede que el enlace esté mal escrito o que la página haya cambiado de dirección.
-    </p>
-    <div class="hero-cta" style="margin-top:2rem">
-      <a class="btn btn-solid" href="/">Ir al inicio</a>
-      <a class="btn btn-ghost" href="/en/">English version</a>
-    </div>
+<main class="wrap">
+  <p class="eyebrow">Error 404</p>
+  <h1>This page does not exist</h1>
+  <p class="lede">The link may be mistyped, or the page may have moved.</p>
+  <div class="cta">
+    <a class="btn solid" id="home" href="/">Go to the home page</a>
+    <a class="btn ghost" id="en" href="/es/">Versión en español</a>
   </div>
 </main>
+
+<script>
+/* La raiz del sitio cambia si se publica en un subdirectorio (por ejemplo en
+   usuario.github.io/repositorio/). Se calcula en el momento en lugar de fijarla. */
+(function(){
+  var p = location.pathname.split('/').filter(Boolean);
+  var root = (location.hostname.endsWith('github.io') && p.length) ? '/' + p[0] + '/' : '/';
+  document.getElementById('home').href = root;
+  document.getElementById('en').href = root + 'es/';
+})();
+</script>
 </body>
 </html>
