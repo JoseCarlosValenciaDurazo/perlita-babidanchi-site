@@ -702,3 +702,23 @@ a.docitem:hover .tag{color:var(--accent);}
 /* Contexto regional */
 #context .card .big-num,#contexto .card .big-num{font-size:2.3rem;}
 #context .cards,#contexto .cards{margin-top:2rem;}
+
+/* Idioma siempre visible en pantallas con menú colapsado, entre «Contacto» y el botón de menú */
+.bar-lang{display:none;}
+@media (max-width:1020px){
+  .topbar-in{gap:.5rem;}
+  .bar-cta{margin-right:0;}
+  .brand{margin-right:auto;}
+  .bar-cta{margin-left:0;}
+  .topbar .bar-lang{
+    display:inline-flex;align-items:center;justify-content:center;
+    min-height:2.75rem;min-width:2.75rem;box-sizing:border-box;padding:0 .55rem;
+    background:var(--stone);color:var(--ink);font-size:.72rem;font-weight:500;letter-spacing:.1em;
+  }
+  .nav a.lang{display:none;}
+  /* Menú largo: se puede desplazar cuando no cabe en la pantalla */
+  .nav{
+    max-height:calc(100vh - 4.4rem);max-height:calc(100dvh - 4.4rem);
+    overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;
+  }
+}
