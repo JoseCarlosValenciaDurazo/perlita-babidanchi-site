@@ -209,6 +209,37 @@
     </div>
   </section>
 
+  <section class="sec" id="context">
+    <div class="wrap">
+      <div class="sec-head stack">
+        <p class="eyebrow">Regional context</p>
+        <h2>Babidanchi lies in the volcanic region that supplies North America’s perlite</h2>
+        <p class="lede">United States perlite is mined in the west of the country, in regions of Cenozoic rhyolitic volcanism. The Selene deposit formed in a geological setting of the same kind, in the northern Sierra Madre Occidental, in Sonora.</p>
+      </div>
+
+      <figure class="mapfig">
+        <img src="assets/mapa-contexto-en.svg" alt="Map of the western United States and northern Mexico showing the perlite mines operating according to the USGS in 2019 and the location of Babidanchi, in Sonora." loading="lazy" width="1200" height="900">
+        <figcaption>Perlite mines of western North America. Operating: USGS, <em>Minerals Yearbook 2019</em> (eight mines at seven points, located by county; two are in Taos). All locations are approximate; that of Babidanchi, to within 5 to 10&nbsp;km. The map does not include deposits without operating production.</figcaption>
+      </figure>
+
+      <div class="cards three">
+        <article class="card pad">
+          <h3>Production concentrated in the west</h3>
+          <p class="big-num">9</p>
+          <p>mining operations run by six companies in six western states produce all of the crude perlite mined in the United States; New Mexico is the leading state (USGS, 2026). The map uses the mine-by-mine list available, from 2019.</p>
+        </article>
+        <article class="card pad">
+          <h3>The same kind of rock</h3>
+          <p>Perlite is hydrated rhyolitic volcanic glass. Commercial deposits in North America are associated with Cenozoic rhyolitic domes and flows; Selene is hosted in a rhyolitic flow dome within an Oligocene–Miocene volcanic assemblage (New Mexico Bureau of Geology; Boletín de la Sociedad Geológica Mexicana, 2016).</p>
+        </article>
+        <article class="card pad">
+          <h3>Already recorded by the USGS</h3>
+          <p>Rancho Babidanchi appears as a perlite occurrence in the USGS <em>Mineral Resources Data System</em>: a record reported in 1990, based on a 1985 inventory by the Sonora Mining Directorate.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
   <section class="sec alt" id="perlite">
     <div class="wrap">
       <div class="sec-head">
@@ -437,7 +468,6 @@
       <div class="sec-head">
         <p class="eyebrow">The place</p>
         <h2>Rancho Babidanchi</h2>
-        <p class="lede">In the Opata language, <em>babi</em> means water or spring and <em>danchi</em> means to run, so the name means “the place where the water runs.” The name is no coincidence.</p>
       </div>
 
       <figure class="mapfig">
@@ -445,12 +475,14 @@
         <figcaption>Rancho Babidanchi at property scale. The boundary follows the survey table of the property deed; deposits, boreholes, arroyos and roads come from the project's geological mapping.</figcaption>
       </figure>
 
+      <p class="lede after-map">In the Opata language, “babi” means water or spring and “danchi” means to run, so the name means “the place where the water runs.” The name is no coincidence.</p>
+
       <div class="railed center" style="margin-top:2.5rem">
         <div class="prosa">
           <h3>Water</h3>
           <p>A <strong>perennial spring-fed arroyo</strong> runs through the ranch, twelve months a year. It is not a seasonal wash that dries out between rains: the canyon it carves keeps pools and riparian vegetation all year round.</p>
-          <p>The name of the property recorded this long before any study: in the Opata language, <em>babi danchi</em> is the place where the water runs. The toponym predates the geology, and it describes exactly what is on the ground.</p>
-          <p class="note">For a mining project, having running water year-round inside the property itself, without hauling it in or depending on a third party, is a condition that rarely comes already settled.</p>
+          <p>The name of the property predates any study and describes exactly what can be seen on the ground.</p>
+          <p class="note">Perlite extraction is a dry operation and requires no process water. Even so, a permanent water source inside the property can supply the workforce and the facilities without hauling water in or depending on third parties.</p>
         </div>
         <figure class="railfig">
           <img src="assets/img/arroyo.jpg" alt="Perennial arroyo running through Rancho Babidanchi, with water flowing among the rocks" loading="lazy">
@@ -718,7 +750,7 @@
      images load lazily and the document height keeps changing as the
      reader scrolls. */
   var KEY='pb-lang-pos';
-  var MAP={resource:'recurso',perlite:'perlita',environment:'ambiente',market:'mercado',rights:'derechos',
+  var MAP={resource:'recurso',context:'contexto',perlite:'perlita',environment:'ambiente',market:'mercado',rights:'derechos',
              location:'ubicacion',ranch:'rancho',evidence:'evidencia',
              opportunity:'oportunidad',gallery:'galeria',contact:'contacto'};
   var secs=document.querySelectorAll('section[id]');

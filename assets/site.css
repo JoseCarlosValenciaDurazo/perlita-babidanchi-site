@@ -696,3 +696,9 @@ a.docitem:hover .tag{color:var(--accent);}
   .sec-head.stack h2{max-width:36ch;}
   .sec-head.stack .lede{max-width:62rem;align-self:center;}
 }
+
+/* Frase del nombre, bajo el mapa del polígono */
+.lede.after-map{max-width:62rem;margin:2.5rem auto 0;text-align:center;}
+/* Contexto regional */
+#context .card .big-num,#contexto .card .big-num{font-size:2.3rem;}
+#context .cards,#contexto .cards{margin-top:2rem;}
